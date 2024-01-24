@@ -1,9 +1,12 @@
+<!DOCTYPE html>
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%- console.log("Title inside _head.ejs:", title); %>
-  <title> <%- title %> | 架空のコーポレイトデモサイト</title>
-  <meta name="description" content="<%- description %>">
+  
+  <title> トップ | 架空のコーポレイトデモサイト</title>
+  <meta name="description" content="架空のコーポレートデモサイトのトップページです。">
   <meta name="keywords" content="wordpress, demo, coporate">
 
   <!-- Twitter カードの設定 (例: サマリーカード) -->
@@ -25,5 +28,24 @@
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-  <link rel="stylesheet" href="./css/<%- css %>.css" />
+  <link rel="stylesheet" href="./css/top.css" />
 </head>
+
+<body>
+  <header>
+  <div>
+    <img src="./img/logo.png" alt="ロゴ ExciteCode" />
+  </div>
+  <ul>
+    <li>TOP</li>
+    <li>ABOUT</li>
+    <li>SERVICE</li>
+    <li>WORKS</li>
+    <li>NEWS</li>
+    <li>CONTACT</li>
+  </ul>
+</header>
+  
+</body>
+
+</html>

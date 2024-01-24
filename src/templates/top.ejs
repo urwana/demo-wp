@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./parts/_head', { title: "トップ", css: "top", description: "架空のコーポレートデモサイトのトップページです。" }) %>
+<%
+title = "トップ";
+css = "top";
+description = "架空のコーポレートデモサイトのトップページです。";
+%>
+<%- include("./parts/_head", {title: "トップ", css: "top", description: "架空のコーポレートデモサイトのトップページです。"}); %>
 
 <body>
-  <%- include('./parts/_header', { title: "My Website" }) %>
-  <%- include('./parts/_footer', { title: "My Website" }) %>
+  <%- include('./parts/_header') %>
+  <%- include('./parts/_footer') %>
 </body>
 
 </html>
