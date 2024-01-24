@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -28,24 +29,33 @@
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="./css/top.css" />
+  <script src="https://kit.fontawesome.com/f46866a57f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <header>
-  <div>
+  <div class="wrapper">
+    <header class="header">
+  <div class="logoWrapper">
     <img src="./img/logo.png" alt="ロゴ ExciteCode" />
   </div>
-  <ul>
-    <li>TOP</li>
-    <li>ABOUT</li>
-    <li>SERVICE</li>
-    <li>WORKS</li>
-    <li>NEWS</li>
-    <li>CONTACT</li>
-  </ul>
+  <nav class="navigation">
+    <ul class="navigation__lists">
+      <li><a href="">TOP</a></li>
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">SERVICE</a></li>
+      <li><a href="">WORKS</a></li>
+      <li><a href="">NEWS</a></li>
+      <li class="nav__contact"><a href=""><i class="fa-regular fa-envelope size-custom"></i><span>CONTACT</span></a></li>
+    </ul>
+  </nav>
 </header>
-  
+    
+  </div>
 </body>
 
 </html>

@@ -1,0 +1,57 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", "Oswald", sans-serif;
+}
+
+header,
+footer {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.navigation__lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navigation__lists > li {
+  margin-left: 4.9rem;
+}
+.navigation__lists a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__contact {
+  background-color: #011950;
+}
+.nav__contact a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 2.8rem 4rem 2.8rem 4.2rem;
+}
+.nav__contact span {
+  margin-left: 1rem;
+}
+
+.size-custom::before {
+  font-size: 2.5rem;
+}
