@@ -1,0 +1,25 @@
+{
+  "name": "lp-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-ejs": "^5.1.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.70.0"
+  }
+}
