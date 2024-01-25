@@ -16,8 +16,31 @@ footer {
   width: 100%;
   max-width: 1920px;
   margin: auto;
+  height: 100vh;
 }
 
-// .fa-regular::before {
-//   font-family: "Font Awesome 5 Free";
-// }
+.displayPc {
+  @media only screen and (min-width: 769px) {
+    display: block !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+.displaySp {
+  @media only screen and (min-width: 769px) {
+    display: none !important;
+  }
+
+  @media only screen and (max-width: 768px) {
+    display: block !important;
+  }
+}
+
+.contents {
+  @media only screen and (max-width: 768px) {
+    width: 94.6%;
+  }
+}

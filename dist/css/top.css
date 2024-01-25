@@ -16,6 +16,35 @@ footer {
   width: 100%;
   max-width: 1920px;
   margin: auto;
+  height: 100vh;
+}
+
+@media only screen and (min-width: 769px) {
+  .displayPc {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .displayPc {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .displaySp {
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .displaySp {
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contents {
+    width: 94.6%;
+  }
 }
 
 .header {
@@ -24,6 +53,11 @@ footer {
   align-items: flex-start;
 }
 
+@media only screen and (max-width: 768px) {
+  .logoWrapper > img {
+    width: 11.5rem;
+  }
+}
 .navigation__lists {
   list-style: none;
   display: flex;
@@ -39,6 +73,22 @@ footer {
   color: #000000;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation {
+    color: #ffffff;
+  }
+  .navigation__lists {
+    display: block;
+  }
+  .navigation__lists > li {
+    margin-left: 0;
+  }
+  .navigation__lists a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
 .nav__contact {
   background-color: #011950;
 }
@@ -52,10 +102,29 @@ footer {
   margin-left: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav__contact {
+    background-color: initial;
+  }
+  .nav__contact a {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    padding: 0;
+  }
+  .nav__contact span {
+    margin-left: 1rem;
+  }
+}
 .size-custom::before {
   font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .imgWrapper > img {
+    width: 100%;
+  }
+}
 .footer {
   color: hsl(0, 0%, 100%);
 }
@@ -73,13 +142,36 @@ footer {
   margin-bottom: 2.4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .contactMethod {
+    border: solid 1px #ffffff;
+    padding: 2rem 3.1rem;
+    border-radius: 0.4rem;
+    max-width: 23.5rem;
+  }
+  .contactMethod:nth-of-type(1) {
+    margin-bottom: 2.5rem;
+  }
+  .contactMethod:nth-of-type(2) {
+    margin-bottom: 1.2rem;
+  }
+}
 .footer__upperContents {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: left;
   align-items: center;
   background-color: #011950;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer__upperContents {
+    display: block;
+  }
+  .contactMethod {
+    margin: auto;
+  }
+}
 .contactMethod__text {
   font-size: 2.2rem;
   margin-left: 1rem;
@@ -92,17 +184,52 @@ footer {
 .textContainer__lead {
   font-size: 1.8rem;
   line-height: 3rem;
+  margin-top: 8.4rem;
   margin-bottom: 2.4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .textContainer {
+    padding: 8rem 0;
+  }
+  .textContainer__lead {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 5rem;
+  }
+  .officeHours {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
 .footer__lowerContents {
   background-color: #001135;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   padding: 5.8rem 14rem 5.6rem 17.2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer__lowerContents {
+    display: block;
+    padding: 6rem 0 3rem 5rem;
+  }
+}
+.snsIconContainer {
+  margin-left: 4.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .snsIconContainer {
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+}
 .sns-icon-custom::before {
   font-size: 2.2rem;
 }
@@ -117,14 +244,20 @@ footer {
   align-items: center;
 }
 
-.snsIconContainer {
-  margin-left: 4.6rem;
+@media only screen and (max-width: 768px) {
+  .logoIconContainer {
+    display: block;
+  }
 }
-
 .leftContents {
   margin-top: 5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .leftContents {
+    margin-top: 6rem;
+  }
+}
 .footerNavigation a {
   font-size: 1.6rem;
 }
@@ -132,8 +265,20 @@ footer {
   margin-top: 2.3rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .footerNavigation a {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
 .copyRight {
   display: inline-block;
   font-size: 1.2rem;
   margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .copyRight {
+    margin-top: 5.6rem;
+  }
 }
