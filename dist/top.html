@@ -35,15 +35,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
   <link rel="stylesheet" href="./css/top.css" />
   <script src="https://kit.fontawesome.com/f46866a57f.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+  <script src="./js/common.js" defer></script>
 </head>
 
 <body>
   <div class="wrapper">
     <header class="header">
   <div class="logoWrapper">
-    <img src="./img/logo.png" alt="ロゴ ExciteCode" />
+    <picture>
+      <source media="(max-width: 768px)" srcset="./img/logo-sp.png" class="js-spLogo">
+      <img src="./img/logo.png" alt="ロゴ ExciteCode" />
+    </picture>
   </div>
-  <nav class="navigation">
+  <nav class="js-navigation navigation">
+    <div class="hamburgerButton"><span></span><span></span><span></span></div>
     <ul class="navigation__lists">
       <li><a href="">TOP</a></li>
       <li><a href="">ABOUT</a></li>
@@ -53,7 +59,13 @@
       <li class="nav__contact"><a href=""><i class="fa-regular fa-envelope size-custom displayPc"></i><span>CONTACT</span></a></li>
       <li class="displaySp"><a href="">プライバシーポリシー</a></li>
     </ul>
+    <div class="snsIconContainer">
+  <i class="fa-brands fa-facebook sns-icon-custom"></i>
+  <i class="fa-brands fa-twitter sns-icon-custom"></i>
+  <i class="fa-brands fa-instagram sns-icon-custom"></i>
+</div>
   </nav>
+  <div class="circleBackground displaySp"></div>
 </header>
     <div class="contents">
 
@@ -82,30 +94,31 @@
   </div>
 
   <div class="footer__lowerContents">
-    <nav class="footerNavigation">
-      <ul class="footerNavigation__lists">
-        <li><a href="">TOP</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">SERVICE</a></li>
-        <li><a href="">WORKS</a></li>
-        <li><a href="">NEWS</a></li>
-        <li><a href="">CONTACT</a></li>
-        <li><a href="">プライバシーポリシー</a></li>
-      </ul>
-    </nav>
+    <div class="footer__lowerContentsInner">
+      <div class="leftContents">
+        <div class="logoIconContainer">
+          <div class="logoWrapper">
+            <img src="./img/logo-footer.png" alt="ロゴ ExciteCode" />
+          </div>
 
-    <div class="leftContents">
-      <div class="logoIconContainer">
-        <div class="logoWrapper">
-          <img src="./img/logo-footer.png" alt="ロゴ ExciteCode" />
-        </div>
-
-        <div class="snsIconContainer">
-          <i class="fa-brands fa-facebook sns-icon-custom"></i>
-          <i class="fa-brands fa-twitter sns-icon-custom"></i>
-          <i class="fa-brands fa-instagram sns-icon-custom"></i>
+          <div class="snsIconContainer">
+  <i class="fa-brands fa-facebook sns-icon-custom"></i>
+  <i class="fa-brands fa-twitter sns-icon-custom"></i>
+  <i class="fa-brands fa-instagram sns-icon-custom"></i>
+</div>
         </div>
       </div>
+      <nav class="footerNavigation">
+        <ul class="footerNavigation__lists">
+          <li><a href="">TOP</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">SERVICE</a></li>
+          <li><a href="">WORKS</a></li>
+          <li><a href="">NEWS</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li><a href="">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
     </div>
     <small class="copyRight">&copy;2022 ExciteCode Automobile</small>
   </div>

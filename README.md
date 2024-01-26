@@ -17,3 +17,7 @@ https://fonts.google.com/
 fontawesome.com
 
 <script src="https://kit.fontawesome.com/f46866a57f.js" crossorigin="anonymous"></script>
+
+# 動く Web デザインアイディア帳
+
+https://coco-factory.jp/ugokuweb/
