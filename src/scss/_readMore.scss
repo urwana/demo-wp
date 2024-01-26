@@ -1,0 +1,49 @@
+.readMoreLink__text,
+.readMoreButton__text {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  color: #001e63;
+}
+
+.readMoreLink {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background-image: url("../img/readMoreArrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.readMoreLink::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.readMoreLink:hover::after {
+  transform: scale(1, 1);
+}
+
+.readMoreButton {
+  display: inline-block;
+  border: solid #001e63 1px;
+  border-radius: 0.4rem;
+  padding: 1.45rem 3.4rem 1.45rem 2.4rem;
+  background-image: url("../img/readMoreArrow.svg");
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.readMoreButton__text {
+  line-height: 1;
+}

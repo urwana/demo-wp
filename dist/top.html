@@ -5,7 +5,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <title> トップ | 架空のコーポレイトデモサイト</title>
   <meta name="description" content="架空のコーポレートデモサイトのトップページです。">
   <meta name="keywords" content="wordpress, demo, coporate">
@@ -36,6 +35,9 @@
   <link rel="stylesheet" href="./css/top.css" />
   <script src="https://kit.fontawesome.com/f46866a57f.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./js/common.js" defer></script>
 </head>
 
@@ -67,8 +69,138 @@
   </nav>
   <div class="circleBackground displaySp"></div>
 </header>
-    <div class="contents">
+    <div class="mainView">
+  
+  <div class="swiperContainer">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      
+      <div class="swiper-slide topSlide topSlide-1"></div>
+      
+      <div class="swiper-slide topSlide topSlide-2"></div>
+      
+      <div class="swiper-slide topSlide topSlide-3"></div>
+      
+      <div class="swiper-slide topSlide topSlide-4"></div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</div>
+  <div class="catchcopy-vertical">あなたの<br />日常が目覚める</div>
+</div>
+<div class="mainCopyContainer">
+  <div class="mainCopy">Good life for Good Car</div>
+</div>
+    <div class="contents">
+      <section class="aboutSection">
+  <div class="aboutSection__imgWrapper">
+    <img src="./img/aboutSection-pc.png" alt="About Us イメージ画像" width="550" height="480" />
+  </div>
+  <div class="aboutSection__textContainer">
+    <div class="aboutSection__title">About us</div>
+    <div class="aboutSection__text">弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。
+      これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。</div>
+    <div class="aboutSection__readMore">
+      <a class="readMoreLink">
+  <span class="readMoreLink__text">READ MORE</span>
+</a>
+    </div>
+  </div>
+</section>
+      
+<section class="serviceSection">
+  <h2 class="serviceSection__title">Service</h2>
+  <div class="serviceSection__inner">
+    
+    
+<div class="card">
+  <div class="card__image">
+    <div class="imgWrapper-card">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/service01.jpg" width="335" height="170">
+        <source media="(max-width: 767px)" srcset="./img/service01-sp.jpg" width="335" height="170">
+        <img src="image-large.jpg" alt="サービスイメージ" width="335" height="170">
+      </picture>
+      <div class="pictureText">
+        <div class="serviceNumber">Service01</div>
+        <div class="serviceName">購入サポート</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__body">
+    <p class="card__text">
+      国を超え、メーカーを超え、高級の本質をお届けする特別な一台との出会いをサポートします。
+    </p>
+    <a class="readMoreButton">
+  <span class="readMoreButton__text">READ MORE</span>
+</a>
+  </div>
+</div>
+    
+    
+<div class="card">
+  <div class="card__image">
+    <div class="imgWrapper-card">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/service02.jpg" width="335" height="170">
+        <source media="(max-width: 767px)" srcset="./img/service02-sp.jpg" width="335" height="170">
+        <img src="image-large.jpg" alt="サービスイメージ" width="335" height="170">
+      </picture>
+      <div class="pictureText">
+        <div class="serviceNumber">Service02</div>
+        <div class="serviceName">修理・整備</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__body">
+    <p class="card__text">
+      高度な輸入車修理技術と数多くの修理実績、熟練の技術・設備であなたの愛車を完全に直します。
+    </p>
+    <a class="readMoreButton">
+  <span class="readMoreButton__text">READ MORE</span>
+</a>
+  </div>
+</div>
+    
+    
+<div class="card">
+  <div class="card__image">
+    <div class="imgWrapper-card">
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/service03.jpg" width="335" height="170">
+        <source media="(max-width: 767px)" srcset="./img/service03-sp.jpg" width="335" height="170">
+        <img src="image-large.jpg" alt="サービスイメージ" width="335" height="170">
+      </picture>
+      <div class="pictureText">
+        <div class="serviceNumber">Service03</div>
+        <div class="serviceName">車検・点検</div>
+      </div>
+    </div>
+  </div>
+  <div class="card__body">
+    <p class="card__text">
+      輸入車の取り扱いが県内トップクラス。専門の整備工場へ任せたいなら弊社へご相談ください。
+    </p>
+    <a class="readMoreButton">
+  <span class="readMoreButton__text">READ MORE</span>
+</a>
+  </div>
+</div>
+    
+  </div>
+</section>
     </div>
     <footer class="footer">
 
@@ -98,7 +230,7 @@
       <div class="leftContents">
         <div class="logoIconContainer">
           <div class="logoWrapper">
-            <img src="./img/logo-footer.png" alt="ロゴ ExciteCode" />
+            <img src="./img/logo-footer.png" alt="ロゴ ExciteCode" width="258" height="180" />
           </div>
 
           <div class="snsIconContainer">

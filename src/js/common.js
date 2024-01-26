@@ -24,3 +24,38 @@ hamburgerButton.click(() => {
       : "./img/logo-sp.png";
   $(".js-spLogo").attr("srcset", srcSet);
 });
+
+const swiper = new Swiper(".swiper", {
+  direction: "vertical",
+  reverse: true,
+  navigation: {
+    nextEl: false, // 次へボタンを非表示
+    prevEl: null, // 前へボタンを非表示
+  },
+  speed: 400,
+  spaceBetween: 100,
+  autoplay: {
+    delay: 5000,
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
+  },
+});
+
+const identifyDevice = () => {
+  const ua = navigator.userAgent;
+  if (
+    ua.indexOf("iPhone") > 0 ||
+    ua.indexOf("iPod") > 0 ||
+    (ua.indexOf("Android") > 0 && ua.indexOf("Mobile") > 0)
+  ) {
+    return "sp";
+  } else {
+    return "pc";
+  }
+};

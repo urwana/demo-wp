@@ -1,18 +1,30 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
-.logoWrapper {
+%logoWrapper {
   max-width: 25.8rem;
   min-width: 11.5rem;
-  width: 17.9%;
 
   img {
     width: 100%;
     object-fit: cover;
   }
+}
+
+.header .logoWrapper {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  @extend %logoWrapper;
+  width: 17.9%;
+}
+
+.footer .logoWrapper {
+  @extend %logoWrapper;
+  width: 63.55%;
 }
 
 @media only screen and (max-width: 768px) {

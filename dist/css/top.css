@@ -18,6 +18,7 @@ footer {
   max-width: 1920px;
   margin: auto;
   height: 100vh;
+  position: relative;
 }
 
 @media only screen and (min-width: 769px) {
@@ -42,6 +43,11 @@ footer {
   }
 }
 
+.contents {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
 @media only screen and (max-width: 768px) {
   .contents {
     width: 94.6%;
@@ -50,18 +56,28 @@ footer {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
-.logoWrapper {
+.footer .logoWrapper, .header .logoWrapper {
   max-width: 25.8rem;
   min-width: 11.5rem;
-  width: 17.9%;
 }
-.logoWrapper img {
+.footer .logoWrapper img, .header .logoWrapper img {
   width: 100%;
   object-fit: cover;
+}
+
+.header .logoWrapper {
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  width: 17.9%;
+}
+
+.footer .logoWrapper {
+  width: 63.55%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -265,6 +281,245 @@ footer {
     }
   }
 }
+.mainView {
+  top: -5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.catchcopy-vertical {
+  font-size: 6rem;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 1.75;
+  letter-spacing: 0.2rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-18%);
+    opacity: 1;
+  }
+}
+@keyframes pause {
+  0%, 100% {
+    transform: translateX(-18%);
+    opacity: 1;
+  }
+}
+.mainCopyContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainCopy {
+  font-size: 15rem;
+  font-weight: bold;
+  color: #011950;
+  margin-top: 11.8rem;
+  white-space: nowrap;
+  transform: translateX(0%);
+  animation: slideIn 5s linear, pause 2s linear 5s forwards;
+  opacity: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiperContainer {
+  width: 71.8%;
+}
+
+.swiper {
+  width: 100%;
+  max-height: 780px;
+}
+
+.topSlide {
+  padding-bottom: 75.43%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.topSlide-1 {
+  background-image: url("../img/topSwiper/1.png");
+}
+
+.topSlide-2 {
+  background-image: url("../img/topSwiper/2.png");
+}
+
+.topSlide-3 {
+  background-image: url("../img/topSwiper/3.png");
+}
+
+.topSlide-4 {
+  background-image: url("../img/topSwiper/4.png");
+}
+
+@media only screen and (max-width: 768px) {
+  .topSlide {
+    padding-bottom: 135.2%;
+  }
+  .topSlide-1 {
+    background-image: url("../img/topSwiper/1-sp.png");
+  }
+  .topSlide-2 {
+    background-image: url("../img/topSwiper/2-sp.png");
+  }
+  .topSlide-3 {
+    background-image: url("../img/topSwiper/3-sp.png");
+  }
+  .topSlide-4 {
+    background-image: url("../img/topSwiper/4-sp.png");
+  }
+}
+.aboutSection {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 6rem;
+}
+
+.aboutSection__textContainer {
+  margin-left: 6rem;
+}
+
+.aboutSection__title {
+  font-family: "Oswald";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 4.6rem;
+}
+
+.aboutSection__text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+}
+
+.aboutSection__readMore {
+  text-align: right;
+}
+
+.card {
+  width: 30%;
+  max-width: 335px;
+}
+
+.card__body {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-align: right;
+}
+
+.card__text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+
+.imgWrapper-card {
+  position: relative;
+}
+
+.pictureText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 3rem);
+  height: calc(100% - 5.5rem);
+  color: #ffffff;
+  text-align: left;
+  padding: 5.5rem 0 0 3rem;
+}
+
+.serviceNumber {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.serviceName {
+  margin-top: 1.6rem;
+  font-size: 2.6rem;
+}
+
+.serviceSection {
+  margin-top: 12rem;
+}
+
+.serviceSection__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.serviceSection__title {
+  font-family: "Oswald";
+  font-size: 7rem;
+}
+
+.readMoreLink__text,
+.readMoreButton__text {
+  font-family: "Roboto";
+  font-size: 1.4rem;
+  color: #001e63;
+}
+
+.readMoreLink {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  background-image: url("../img/readMoreArrow.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.readMoreLink::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+
+.readMoreLink:hover::after {
+  transform: scale(1, 1);
+}
+
+.readMoreButton {
+  display: inline-block;
+  border: solid #001e63 1px;
+  border-radius: 0.4rem;
+  padding: 1.45rem 3.4rem 1.45rem 2.4rem;
+  background-image: url("../img/readMoreArrow.svg");
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.readMoreButton__text {
+  line-height: 1;
+}
+
 .footer {
   color: hsl(0, 0%, 100%);
 }
