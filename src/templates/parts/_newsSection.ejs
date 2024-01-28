@@ -1,0 +1,24 @@
+<% if (typeof newsData === 'undefined') { newsData = []; } %>
+<sevtion class="newsSection">
+  <div class="newsSection__head">
+    <div class="newsSection__title">News</div>
+    <div class="newsSection__linkContainer">
+      <ul class="newsSection__links">
+        <li class="newsSection__link active"><a href="">すべてのお知らせ</a></li>
+        <li class="newsSection__link"><a href="">トピックス</a></li>
+        <li class="newsSection__link"><a href="">イベント・キャンペーン</a></li>
+        <li class="newsSection__link"><a href="">入庫車情報</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="newsSection__body">
+    <ul class="news__lists">
+      <% newsData.forEach((element) => { %>
+      <%- include('./_listTop', { element :element}) %>
+      <% }) %>
+    </ul>
+    <div class="newsSection__readMore">
+      <%- include('./_readMoreLink') %>
+    </div>
+  </div>
+</sevtion>

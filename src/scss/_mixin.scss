@@ -20,3 +20,18 @@
   text-overflow: ellipsis;
   max-height: $height;
 }
+
+@mixin label($color, $backgroundColor) {
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  color: $color;
+  background-color: $backgroundColor;
+  display: inline-block;
+}
+
+@mixin date {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a9a9a9;
+}

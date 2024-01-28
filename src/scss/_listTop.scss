@@ -1,0 +1,23 @@
+.list {
+  border-bottom: #e2e2e2 solid 1px;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.newsDate {
+  @include date;
+}
+
+.newsLabels {
+  display: inline-block;
+}
+
+.newsLabel {
+  @include label(#626262, #ffffff);
+  margin-left: 2rem;
+}
+
+.list__text {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}

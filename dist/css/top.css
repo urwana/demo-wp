@@ -23,6 +23,7 @@ footer {
 
 .contents-dark {
   background-color: #f8f8f8;
+  padding-bottom: 16.5rem;
 }
 
 .contents__inner-dark {
@@ -494,9 +495,10 @@ footer {
 
 .cardHorizontal__label {
   padding: 0.5rem 2rem;
-  background-color: #f3f3f3;
-  color: #707070;
   font-size: 1.1rem;
+  color: #707070;
+  background-color: #f3f3f3;
+  display: inline-block;
 }
 
 .cardHorizontal__title {
@@ -525,10 +527,10 @@ footer {
 
 .cardHorizontal__link {
   display: inline-block;
-  margin-top: 4rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #a9a9a9;
+  margin-top: 4rem;
 }
 
 .worksSection__title {
@@ -543,6 +545,96 @@ footer {
 
 .worksSection__link {
   margin-top: 5.3rem;
+  text-align: right;
+}
+
+.list {
+  border-bottom: #e2e2e2 solid 1px;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.newsDate {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+.newsLabels {
+  display: inline-block;
+}
+
+.newsLabel {
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  color: #626262;
+  background-color: #ffffff;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.list__text {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.newsSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 15rem;
+}
+
+.newsSection__head {
+  flex-basis: 30rem;
+}
+
+.newsSection__title {
+  font-family: "Oswald";
+  font-size: 7rem;
+}
+.newsSection__linkContainer {
+  margin-top: 5rem;
+}
+
+.newsSection__links {
+  padding-left: 2rem;
+}
+
+.newsSection__link {
+  margin-bottom: 2.6rem;
+}
+
+.newsSection__link a {
+  font-size: 1.4rem;
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+.newsSection__link.active a {
+  color: #000000;
+  position: relative;
+}
+
+.newsSection__link.active a::before {
+  content: "";
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  background-color: #000000;
+  top: 0.8rem;
+  left: -1.6rem;
+}
+
+.newsSection__body {
+  padding-left: 6rem;
+  border-left: #e2e2e2 solid 1px;
+  flex: 1;
+}
+
+.newsSection__readMore {
   text-align: right;
 }
 

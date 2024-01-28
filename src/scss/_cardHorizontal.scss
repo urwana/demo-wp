@@ -12,10 +12,7 @@
 }
 
 .cardHorizontal__label {
-  padding: 0.5rem 2rem;
-  background-color: #f3f3f3;
-  color: #707070;
-  font-size: 1.1rem;
+  @include label(#707070, #f3f3f3);
 }
 
 .cardHorizontal__title {
@@ -36,9 +33,6 @@
 }
 
 .cardHorizontal__link {
-  display: inline-block;
+  @include date;
   margin-top: 4rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #a9a9a9;
 }
