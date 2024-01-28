@@ -1,0 +1,29 @@
+<% if (typeof element === "undefined") {element = []; } 
+   const returnLabel = (number) => {
+    console.log(number)
+    switch (number) {
+    case 1:
+      return "購入サポート";
+      break;
+    case 2:
+      return "修理・整備";
+      break;
+    case 3:
+      return "車検・点検";
+      break;
+    default:
+      return "その他";
+  }
+}
+%>
+<div class="cardHorizontal">
+  <div class="cardHorizontal__img">
+    <img src="<%- element.worksImg %>.jpg" alt="ワークスセクションのイメージ画像" width="290" height="229" />
+  </div>
+  <div class="cardHorizontal__body">
+    <span class="cardHorizontal__label"><%- returnLabel(element.worksLabel) %></span>
+    <h3 class="cardHorizontal__title"><%- element.worksTitle %></h3>
+    <p class="cardHorizontal__text"><%- element.worksText %></p>
+    <a class="cardHorizontal__link" href="<%- element.worksLink %>"><%- element.worksDate %></a>
+  </div>
+</div>

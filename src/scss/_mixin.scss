@@ -1,0 +1,22 @@
+@mixin topSectiontitle-h2 {
+  font-family: "Oswald";
+  font-size: 7rem;
+
+  @media only screen and (max-width: 768px) {
+  }
+}
+
+@mixin ellipsisSingle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin ellipsisMulti($number, $height) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: $number;
+  text-overflow: ellipsis;
+  max-height: $height;
+}

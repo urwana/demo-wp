@@ -10,6 +10,5 @@
 }
 
 .serviceSection__title {
-  font-family: "Oswald";
-  font-size: 7rem;
+  @include topSectiontitle-h2;
 }

@@ -15,6 +15,38 @@ description = "架空のコーポレートデモサイトのトップページ�
     <div class="contents">
       <%- include('./parts/_aboutSection') %>
       <%- include('./parts/_serviceSection') %>
+      <% const worksData = [
+        {
+          worksImg : "./img/worksSection1",
+          worksLabel : 3,
+          worksTitle : "車のドアが開けられなくなった｜ドアロックの交換と接合部噛み合わせの修正",
+          worksText : "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなくダミー文字の追加",
+          worksDate : "2022.09.02",
+          worksLink : "/2022/09/02"
+        },
+        {
+          worksImg : "./img/worksSection2",
+          worksLabel : 2,
+          worksTitle : "愛車のリアバンパーに傷がついた｜板金修理と塗装で本格リカバリー",
+          worksText : "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく確かな実績で判断すべきです。",
+          worksDate : "2022.09.26",
+          worksLink : "/2022/09/26"
+        },
+        {
+          worksImg : "./img/worksSection3",
+          worksLabel : 1,
+          worksTitle : "はじめて輸入車の購入を検討中のお客様｜憧れのBMWのXシリーズが30%格安に",
+          worksText : "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなくダミー文字が入ります。",
+          worksDate : "2022.08.20",
+          worksLink : "/2022/08/20"
+        },
+      ]
+      %>
+    </div>
+    <div class="contents-dark">
+      <div class="contents__inner-dark">
+        <%- include('./parts/_worksSection', { worksData : worksData}) %>
+      </div>
     </div>
     <%- include('./parts/_footer') %>
   </div>

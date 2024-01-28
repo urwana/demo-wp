@@ -1,0 +1,44 @@
+.cardHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5rem 0 8.8rem 4rem;
+  border-bottom: #e2e2e2 solid 1px;
+}
+
+.cardHorizontal__body {
+  margin-left: 5rem;
+}
+
+.cardHorizontal__label {
+  padding: 0.5rem 2rem;
+  background-color: #f3f3f3;
+  color: #707070;
+  font-size: 1.1rem;
+}
+
+.cardHorizontal__title {
+  margin-top: 3.7rem;
+  font-size: 2.4rem;
+  max-width: 59.6rem;
+  @include ellipsisSingle;
+}
+
+.cardHorizontal__text {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #626262;
+  line-height: 3.8rem;
+  max-width: 68rem;
+  @include ellipsisMulti(2, 6.6rem);
+}
+
+.cardHorizontal__link {
+  display: inline-block;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a9a9a9;
+}

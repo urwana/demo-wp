@@ -20,6 +20,16 @@ footer {
   position: relative;
 }
 
+.contents-dark {
+  background-color: #f8f8f8;
+}
+
+.contents__inner-dark {
+  padding-top: 12.6rem;
+  width: 110rem;
+  margin: auto;
+}
+
 .displayPc {
   @media only screen and (min-width: 769px) {
     display: block !important;

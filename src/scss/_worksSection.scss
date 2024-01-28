@@ -1,0 +1,14 @@
+.worksSection__title {
+  @include topSectiontitle-h2;
+}
+
+.worksSection__body {
+  margin-top: 4rem;
+  padding: 0 2.5rem 6rem 0;
+  background-color: #ffffff;
+}
+
+.worksSection__link {
+  margin-top: 5.3rem;
+  text-align: right;
+}

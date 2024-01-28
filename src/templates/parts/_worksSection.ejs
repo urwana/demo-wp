@@ -1,0 +1,13 @@
+<% if (typeof worksData === 'undefined') {worksData = []; } %>
+<section class="worksSection">
+  <h2 class="worksSection__title">Works</h2>
+  <div class="worksSection__body">
+    <% worksData.forEach(element => { %>
+    <%- include('./_cardHorizontal', { element :element}) %>
+    <% }); %>
+    <div class="worksSection__link">
+      <%- include('./_readMoreLink') %>
+    </div>
+  </div>
+
+</section>

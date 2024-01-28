@@ -21,6 +21,16 @@ footer {
   position: relative;
 }
 
+.contents-dark {
+  background-color: #f8f8f8;
+}
+
+.contents__inner-dark {
+  padding-top: 12.6rem;
+  width: 110rem;
+  margin: auto;
+}
+
 @media only screen and (min-width: 769px) {
   .displayPc {
     display: block !important;
@@ -468,6 +478,72 @@ footer {
 .serviceSection__title {
   font-family: "Oswald";
   font-size: 7rem;
+}
+.cardHorizontal {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5rem 0 8.8rem 4rem;
+  border-bottom: #e2e2e2 solid 1px;
+}
+
+.cardHorizontal__body {
+  margin-left: 5rem;
+}
+
+.cardHorizontal__label {
+  padding: 0.5rem 2rem;
+  background-color: #f3f3f3;
+  color: #707070;
+  font-size: 1.1rem;
+}
+
+.cardHorizontal__title {
+  margin-top: 3.7rem;
+  font-size: 2.4rem;
+  max-width: 59.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardHorizontal__text {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #626262;
+  line-height: 3.8rem;
+  max-width: 68rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  max-height: 6.6rem;
+}
+
+.cardHorizontal__link {
+  display: inline-block;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a9a9a9;
+}
+
+.worksSection__title {
+  font-family: "Oswald";
+  font-size: 7rem;
+}
+.worksSection__body {
+  margin-top: 4rem;
+  padding: 0 2.5rem 6rem 0;
+  background-color: #ffffff;
+}
+
+.worksSection__link {
+  margin-top: 5.3rem;
+  text-align: right;
 }
 
 .readMoreLink__text,
