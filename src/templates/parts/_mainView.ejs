@@ -1,12 +1,11 @@
-<div class="mainView">
-  <% topSlides = {
-  path : "./img/topSwiper/",
-  extension : "png",
-  number : 4
-}; %>
-  <%- include('./_swiper') %>
-  <div class="catchcopy-vertical">あなたの<br />日常が目覚める</div>
+<% if (typeof mainViewData === 'undefined') { mainViewData = []; } %>
+<div class="mainView-<%- mainViewData.pageImgClass %>">
+  <div class="mainView__titleContainer">
+    <h2 class="mainView__title"><%- mainViewData.pageNameEn %></h2>
+    <div class="mainView__subtitle"><%- mainViewData.pageNameJp %></div>
+  </div>
 </div>
-<div class="mainCopyContainer">
-  <div class="mainCopy">Good life for Good Car</div>
-</div>
+<ul>
+  <li>Top</li>
+  <li>About</li>
+</ul>

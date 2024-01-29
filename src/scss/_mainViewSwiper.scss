@@ -1,0 +1,51 @@
+.mainViewSwiper {
+  top: -5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.catchcopy-vertical {
+  font-size: 6rem;
+  font-weight: bold;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 1.75;
+  letter-spacing: 0.2rem;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(200%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-18%);
+    opacity: 1;
+  }
+}
+
+@keyframes pause {
+  0%,
+  100% {
+    transform: translateX(-18%);
+    opacity: 1;
+  }
+}
+
+.mainCopyContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainCopy {
+  font-size: 15rem;
+  font-weight: bold;
+  color: #011950;
+  margin-top: 11.8rem;
+  white-space: nowrap;
+  transform: translateX(0%);
+  animation: slideIn 5s linear, pause 2s linear 5s forwards;
+  opacity: 0;
+}

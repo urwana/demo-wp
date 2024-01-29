@@ -1,0 +1,33 @@
+<% base = { path: "./", title: "about", css: "about", description: "架空のコーポレートデモサイトのトップページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+<%
+title = "トップ";
+css = "top";
+description = "架空のコーポレートデモサイトのトップページです。";
+%>
+<%- include(base.path + "./parts/_head", { base: base}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./parts/_header') %>
+    <% const mainViewData = {
+      pageNameEn: "About",
+      pageNameJp: "私たちについて",
+      pageImgClass: "about"
+    }; %>
+    <%- include('./parts/_mainView', { mainViewData : mainViewData }) %>
+    <%- include('./parts/_summarySection') %>
+    <%- include('./parts/_philosophySection') %>
+
+    <div class="contents">
+    </div>
+    <!-- <div class="contents-dark">
+      <div class="contents__inner-dark">
+      </div>
+    </div> -->
+    <%- include('./parts/_footer') %>
+  </div>
+</body>
+
+</html>

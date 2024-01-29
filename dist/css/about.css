@@ -292,400 +292,136 @@ footer {
     }
   }
 }
-.mainViewSwiper {
-  top: -5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 8rem;
+.mainView-about {
+  width: 127rem;
+  max-width: 88%;
+  position: relative;
+  margin-left: 17rem;
+  margin-top: 15rem;
+  padding-bottom: 50rem;
 }
 
-.catchcopy-vertical {
-  font-size: 6rem;
-  font-weight: bold;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  line-height: 1.75;
-  letter-spacing: 0.2rem;
-}
-
-@keyframes slideIn {
-  from {
-    transform: translateX(200%);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-@keyframes pause {
-  0%, 100% {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-.mainCopyContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.mainCopy {
-  font-size: 15rem;
-  font-weight: bold;
-  color: #011950;
-  margin-top: 11.8rem;
-  white-space: nowrap;
-  transform: translateX(0%);
-  animation: slideIn 5s linear, pause 2s linear 5s forwards;
-  opacity: 0;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  display: none !important;
-}
-
-.swiperContainer {
-  width: 71.8%;
-}
-
-.swiper {
-  width: 100%;
-  max-height: 780px;
-}
-
-.topSlide {
-  padding-bottom: 75.43%;
-  background-size: cover;
-  background-position: center;
+.mainView-about {
+  background-image: url("../img/mainView/about.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
-.topSlide-1 {
-  background-image: url("../img/topSwiper/1.png");
+.mainView__titleContainer {
+  display: inline-block;
+  padding: 2rem 4.5rem 5rem 4.5rem;
+  min-width: 50rem;
+  background-color: #ffffff;
 }
 
-.topSlide-2 {
-  background-image: url("../img/topSwiper/2.png");
-}
-
-.topSlide-3 {
-  background-image: url("../img/topSwiper/3.png");
-}
-
-.topSlide-4 {
-  background-image: url("../img/topSwiper/4.png");
-}
-
-@media only screen and (max-width: 768px) {
-  .topSlide {
-    padding-bottom: 135.2%;
-  }
-  .topSlide-1 {
-    background-image: url("../img/topSwiper/1-sp.png");
-  }
-  .topSlide-2 {
-    background-image: url("../img/topSwiper/2-sp.png");
-  }
-  .topSlide-3 {
-    background-image: url("../img/topSwiper/3-sp.png");
-  }
-  .topSlide-4 {
-    background-image: url("../img/topSwiper/4-sp.png");
-  }
-}
-.aboutSection {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 6rem;
-}
-
-.aboutSection__textContainer {
-  margin-left: 6rem;
-}
-
-.aboutSection__title {
+.mainView__title {
   font-family: "Oswald";
+  font-size: 10rem;
+  line-height: 4.5rem 5rem;
+  font-weight: bold;
+}
+
+.mainView__subtitle {
   font-size: 2rem;
   font-weight: bold;
-  color: #000000;
-  margin-bottom: 4.6rem;
 }
 
-.aboutSection__text {
+.summarySection {
+  margin: 6rem auto 0 auto;
+  width: 100%;
+  max-width: 840px;
+}
+
+.summarySection__links {
+  text-align: center;
+}
+
+.summarySection__links > li {
+  display: inline-block;
+  color: "#011950";
+  background-image: url("../img/downArrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right 0.5rem;
+  margin-right: 12rem;
   font-size: 1.6rem;
-  line-height: 3.2rem;
+  padding-right: 2rem;
 }
 
-.aboutSection__readMore {
-  text-align: right;
+.summarySection__links > li:last-child {
+  margin-right: 0;
 }
 
-.card {
-  width: 30%;
-  max-width: 335px;
+.summarySection__title {
+  font-size: 4rem;
+  margin-top: 10rem;
 }
 
-.card__body {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  text-align: right;
-}
-
-.card__text {
+.summarySection__text {
   font-size: 1.6rem;
-  line-height: 3.2rem;
-  text-align: left;
-  margin-bottom: 3rem;
-}
-
-.imgWrapper-card {
-  position: relative;
-}
-
-.pictureText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: calc(100% - 3rem);
-  height: calc(100% - 5.5rem);
-  color: #ffffff;
-  text-align: left;
-  padding: 5.5rem 0 0 3rem;
-}
-
-.serviceNumber {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-.serviceName {
-  margin-top: 1.6rem;
-  font-size: 2.6rem;
-}
-
-.serviceSection {
-  margin-top: 12rem;
-}
-
-.serviceSection__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  line-height: 3.8rem;
   margin-top: 6rem;
 }
 
-.serviceSection__title {
-  font-family: "Oswald";
-  font-size: 7rem;
+.aboutTitleContainer {
+  color: "#001E63";
 }
-.cardHorizontal {
+
+.aboutTitleContainer__titleJp {
+  font-size: 1.6rem;
+}
+
+.mainTitleContainer {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  background-color: #ffffff;
-  padding: 5rem 0 8.8rem 4rem;
-  border-bottom: #e2e2e2 solid 1px;
+  align-items: flex-start;
 }
 
-.cardHorizontal__body {
-  margin-left: 5rem;
-}
-
-.cardHorizontal__label {
-  padding: 0.5rem 2rem;
-  font-size: 1.1rem;
-  color: #707070;
-  background-color: #f3f3f3;
-  display: inline-block;
-}
-
-.cardHorizontal__title {
-  margin-top: 3.7rem;
-  font-size: 2.4rem;
-  max-width: 59.6rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.cardHorizontal__text {
-  margin-top: 3rem;
-  font-size: 1.6rem;
-  font-weight: normal;
-  color: #626262;
-  line-height: 3.8rem;
-  max-width: 68rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  -webkit-line-clamp: 2;
-  text-overflow: ellipsis;
-  max-height: 6.6rem;
-}
-
-.cardHorizontal__link {
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #a9a9a9;
-  margin-top: 4rem;
-}
-
-.worksSection__title {
+.aboutTitleContainer__titleEn {
+  margin-top: 1rem;
   font-family: "Oswald";
-  font-size: 7rem;
-}
-.worksSection__body {
-  margin-top: 4rem;
-  padding: 0 2.5rem 6rem 0;
-  background-color: #ffffff;
-}
-
-.worksSection__link {
-  margin-top: 5.3rem;
-  text-align: right;
-}
-
-.list {
-  border-bottom: #e2e2e2 solid 1px;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
-}
-
-.newsDate {
-  display: inline-block;
-  font-size: 1.2rem;
+  font-size: 4rem;
   font-weight: bold;
-  color: #a9a9a9;
 }
 
-.newsLabels {
-  display: inline-block;
-}
-
-.newsLabel {
-  padding: 0.5rem 2rem;
-  font-size: 1.1rem;
-  color: #626262;
-  background-color: #ffffff;
-  display: inline-block;
+.decorativeLine {
+  width: 6rem;
+  padding-top: 3.5rem;
+  border-bottom: #001e63 solid 1px;
   margin-left: 2rem;
 }
 
-.list__text {
-  margin-top: 3rem;
+.philosophySection {
+  margin-top: 12rem;
+  background: linear-gradient(to left, #ffffff 20%, #f8f8f8 100%);
+}
+
+.philosophySection__inner {
+  width: 100%;
+  max-width: 110rem;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.philosophySection__textContainer {
+  padding-top: 7.5rem;
+}
+
+.philosophySection__text {
+  margin-top: 6rem;
+  line-height: 3.8rem;
   font-size: 1.6rem;
 }
 
-.newsSection {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 15rem;
-}
-
-.newsSection__head {
-  flex-basis: 30rem;
-}
-
-.newsSection__title {
-  font-family: "Oswald";
-  font-size: 7rem;
-}
-.newsSection__linkContainer {
+.philosophySection__name {
   margin-top: 5rem;
-}
-
-.newsSection__links {
-  padding-left: 2rem;
-}
-
-.newsSection__link {
-  margin-bottom: 2.6rem;
-}
-
-.newsSection__link a {
-  font-size: 1.4rem;
-  color: #a9a9a9;
-  text-decoration: none;
-}
-
-.newsSection__link.active a {
-  color: #000000;
-  position: relative;
-}
-
-.newsSection__link.active a::before {
-  content: "";
-  display: block;
-  width: 0.8rem;
-  height: 0.8rem;
-  position: absolute;
-  background-color: #000000;
-  top: 0.8rem;
-  left: -1.6rem;
-}
-
-.newsSection__body {
-  padding-left: 6rem;
-  border-left: #e2e2e2 solid 1px;
-  flex: 1;
-}
-
-.newsSection__readMore {
+  font-size: 1.6rem;
   text-align: right;
 }
 
-.readMoreLink__text,
-.readMoreButton__text {
-  font-family: "Roboto";
-  font-size: 1.4rem;
-  color: #001e63;
-}
-
-.readMoreLink {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  background-image: url("../img/readMoreArrow.svg");
-  background-position: center right;
-  background-repeat: no-repeat;
-  padding-right: 1rem;
-  cursor: pointer;
-}
-
-.readMoreLink::after {
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background: #000000;
-  transform: scale(0, 1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-
-.readMoreLink:hover::after {
-  transform: scale(1, 1);
-}
-
-.readMoreButton {
-  display: inline-block;
-  border: solid #001e63 1px;
-  border-radius: 0.4rem;
-  padding: 1.45rem 3.4rem 1.45rem 2.4rem;
-  background-image: url("../img/readMoreArrow.svg");
-  background-position: center right 12px;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.readMoreButton__text {
-  line-height: 1;
+.philosophySection__imgWrap {
+  margin-left: 6rem;
 }
 
 .footer {

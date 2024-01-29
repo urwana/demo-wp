@@ -1,51 +1,35 @@
-.mainView {
-  top: -5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 8rem;
+%mainView {
+  width: 127rem;
+  max-width: 88%;
+  position: relative;
+  margin-left: 17rem;
+  margin-top: 15rem;
+  padding-bottom: 50rem;
 }
 
-.catchcopy-vertical {
-  font-size: 6rem;
+.mainView-about {
+  @extend %mainView;
+  background-image: url("../img/mainView/about.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.mainView__titleContainer {
+  display: inline-block;
+  padding: 2rem 4.5rem 5rem 4.5rem;
+  min-width: 50rem;
+  background-color: #ffffff;
+}
+
+.mainView__title {
+  font-family: "Oswald";
+  font-size: 10rem;
+  line-height: 4.5rem 5rem;
   font-weight: bold;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  line-height: 1.75;
-  letter-spacing: 0.2rem;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(200%);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-
-@keyframes pause {
-  0%,
-  100% {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-
-.mainCopyContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.mainCopy {
-  font-size: 15rem;
+.mainView__subtitle {
+  font-size: 2rem;
   font-weight: bold;
-  color: #011950;
-  margin-top: 11.8rem;
-  white-space: nowrap;
-  transform: translateX(0%);
-  animation: slideIn 5s linear, pause 2s linear 5s forwards;
-  opacity: 0;
 }

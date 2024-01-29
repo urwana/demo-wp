@@ -1,0 +1,27 @@
+.aboutTitleContainer {
+  color: "#001E63";
+}
+
+.aboutTitleContainer__titleJp {
+  font-size: 1.6rem;
+}
+
+.mainTitleContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.aboutTitleContainer__titleEn {
+  margin-top: 1rem;
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.decorativeLine {
+  width: 6rem;
+  padding-top: 3.5rem;
+  border-bottom: #001e63 solid 1px;
+  margin-left: 2rem;
+}

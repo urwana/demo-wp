@@ -1,0 +1,32 @@
+.philosophySection {
+  margin-top: 12rem;
+  background: linear-gradient(to left, #ffffff 20%, #f8f8f8 100%);
+}
+
+.philosophySection__inner {
+  width: 100%;
+  max-width: 110rem;
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.philosophySection__textContainer {
+  padding-top: 7.5rem;
+}
+
+.philosophySection__text {
+  margin-top: 6rem;
+  line-height: 3.8rem;
+  font-size: 1.6rem;
+}
+
+.philosophySection__name {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  text-align: right;
+}
+
+.philosophySection__imgWrap {
+  margin-left: 6rem;
+}

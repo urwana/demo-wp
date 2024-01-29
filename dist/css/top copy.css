@@ -292,7 +292,7 @@ footer {
     }
   }
 }
-.mainViewSwiper {
+.mainView {
   top: -5rem;
   display: flex;
   justify-content: space-between;

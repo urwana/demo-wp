@@ -25,3 +25,8 @@ https://coco-factory.jp/ugokuweb/
 # swiper
 
 https://swiperjs.com/
+
+# site map
+
+http://localhost:8080/top.html
+http://localhost:8080/about.html
