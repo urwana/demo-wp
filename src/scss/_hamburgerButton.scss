@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@include sp {
   .hamburgerButton {
     position: relative;
     cursor: pointer;

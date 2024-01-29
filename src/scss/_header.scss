@@ -27,7 +27,7 @@
   width: 63.55%;
 }
 
-@media only screen and (max-width: 768px) {
+@include sp {
   .logoWrapper {
     z-index: 7;
     > img {
@@ -65,7 +65,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@include sp {
   .navigation__lists {
     display: block;
 
@@ -100,7 +100,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@include sp {
   .nav__contact {
     background-color: initial;
     padding: 1.2rem 0;
@@ -120,7 +120,7 @@
   font-size: 2.5rem;
 }
 
-@media only screen and (max-width: 768px) {
+@include sp {
   .imgWrapper > img {
     width: 100%;
   }
