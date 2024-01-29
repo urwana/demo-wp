@@ -1,0 +1,21 @@
+.slidePhoto {
+  margin: 12rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidePhoto__lists {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  @include slideInWithPauseAnimation(
+    $from: 100%,
+    $to: -32%,
+    $keepPosision: -32%
+  );
+}
+
+.slidePhoto__list {
+  margin-left: 0.5rem;
+}

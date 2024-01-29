@@ -35,3 +35,41 @@
   font-weight: bold;
   color: #a9a9a9;
 }
+
+@mixin slideInKeyframes($from, $to) {
+  @keyframes slideIn {
+    from {
+      transform: translateX($from);
+      opacity: 1;
+    }
+    to {
+      transform: translateX($to);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin pauseKeyframes($keepPosision) {
+  @keyframes pause {
+    0%,
+    100% {
+      transform: translateX($keepPosision);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slideInWithPauseAnimation(
+  $duration: 5s,
+  $pauseDuration: 2s,
+  $from: 200%,
+  $to: -18%,
+  $keepPosision: -18%
+) {
+  @include slideInKeyframes($from, $to);
+  @include pauseKeyframes($keepPosision);
+
+  transform: translateX(0%);
+  animation: slideIn #{$duration} linear,
+    pause #{$pauseDuration} linear #{$duration} forwards;
+}

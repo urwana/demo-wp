@@ -1,0 +1,22 @@
+<% const slidePhotoData = [
+  "./img/aboutSlide/1",
+  "./img/aboutSlide/2",
+  "./img/aboutSlide/3",
+  "./img/aboutSlide/4",
+  "./img/aboutSlide/5",
+  "./img/aboutSlide/6",
+  ];
+%>
+<div class="slidePhoto">
+  <ul class="slidePhoto__lists">
+    <% slidePhotoData.forEach(element => { %>
+    <li class="slidePhoto__list">
+      <picture>
+        <source media="(max-width: 768px)" srcset="<%- element %>-sp.jpg" width="" height="">
+        <source media="(min-width: 769px)" srcset="<%- element %>.jpg" width="480" height="400">
+        <img src="<%- element %>.jpg" alt="サービスのイメージ" width="480" height="400">
+      </picture>
+    </li>
+    <% }); %>
+  </ul>
+</div>

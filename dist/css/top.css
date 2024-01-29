@@ -309,6 +309,21 @@ footer {
   letter-spacing: 0.2rem;
 }
 
+.mainCopyContainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mainCopy {
+  font-size: 15rem;
+  font-weight: bold;
+  color: #011950;
+  margin-top: 11.8rem;
+  white-space: nowrap;
+  transform: translateX(0%);
+  animation: slideIn 5s linear, pause 2s linear 5s forwards;
+  opacity: 0;
+}
 @keyframes slideIn {
   from {
     transform: translateX(200%);
@@ -324,21 +339,6 @@ footer {
     transform: translateX(-18%);
     opacity: 1;
   }
-}
-.mainCopyContainer {
-  width: 100%;
-  overflow: hidden;
-}
-
-.mainCopy {
-  font-size: 15rem;
-  font-weight: bold;
-  color: #011950;
-  margin-top: 11.8rem;
-  white-space: nowrap;
-  transform: translateX(0%);
-  animation: slideIn 5s linear, pause 2s linear 5s forwards;
-  opacity: 0;
 }
 
 .swiper-button-prev,

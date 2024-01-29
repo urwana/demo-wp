@@ -475,6 +475,41 @@ footer {
   padding: 2rem 4.5rem 4.5rem 4.5rem;
 }
 
+.slidePhoto {
+  margin: 12rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidePhoto__lists {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  transform: translateX(0%);
+  animation: slideIn 5s linear, pause 2s linear 5s forwards;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-32%);
+    opacity: 1;
+  }
+}
+@keyframes pause {
+  0%, 100% {
+    transform: translateX(-32%);
+    opacity: 1;
+  }
+}
+
+.slidePhoto__list {
+  margin-left: 0.5rem;
+}
+
 .footer {
   color: hsl(0, 0%, 100%);
 }

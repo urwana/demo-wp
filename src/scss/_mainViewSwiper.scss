@@ -15,25 +15,6 @@
   letter-spacing: 0.2rem;
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateX(200%);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-
-@keyframes pause {
-  0%,
-  100% {
-    transform: translateX(-18%);
-    opacity: 1;
-  }
-}
-
 .mainCopyContainer {
   width: 100%;
   overflow: hidden;
@@ -45,7 +26,6 @@
   color: #011950;
   margin-top: 11.8rem;
   white-space: nowrap;
-  transform: translateX(0%);
-  animation: slideIn 5s linear, pause 2s linear 5s forwards;
+  @include slideInWithPauseAnimation;
   opacity: 0;
 }
