@@ -30,3 +30,9 @@ https://swiperjs.com/
 
 http://localhost:8080/top.html
 http://localhost:8080/about.html
+
+# google map
+
+https://console.cloud.google.com/google/maps-apis/home;onboard=true?project=formal-precinct-412706
+
+AIzaSyDtkBcsVltnWGZeI7WMqYe0SpeCQQ6FQco

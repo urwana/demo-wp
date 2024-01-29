@@ -39,6 +39,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="./js/common.js" defer></script>
+
+  <!-- The callback parameter is required, so we use console.debug as a noop -->
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtkBcsVltnWGZeI7WMqYe0SpeCQQ6FQco&callback=console.debug&libraries=maps,marker&v=beta">
+  </script>
 </head>
 
 <body>
@@ -111,6 +115,69 @@
     <div class="philosophySection__imgWrap">
       <img src="./img/philosophy.jpg" alt="代表取締役 田中太郎" width="360" height="560" />
     </div>
+  </div>
+</section>
+    <section class="accessSection">
+  <div class="accessSection__title">
+    
+
+<div class="aboutTitleContainer">
+  <p class="aboutTitleContainer__titleJp">アクセス</p>
+  <div class="mainTitleContainer">
+    <h2 class="aboutTitleContainer__titleEn">Access</h2>
+    <div class="decorativeLine"></div>
+  </div>
+</div>
+    <div class="accessSection__address">〒104-0061 東京都中央区銀座６丁目10−１</div>
+    <gmp-map center="35.669986724853516,139.7639923095703" zoom="14" map-id="DEMO_MAP_ID" class="googleMap">
+      <gmp-advanced-marker position="35.669986724853516,139.7639923095703" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </div>
+</section>
+    <section class="companyProfileSection">
+  <div class="companyProfileSection__title">
+    
+
+<div class="aboutTitleContainer">
+  <p class="aboutTitleContainer__titleJp">会社概要</p>
+  <div class="mainTitleContainer">
+    <h2 class="aboutTitleContainer__titleEn">Company Profile</h2>
+    <div class="decorativeLine"></div>
+  </div>
+</div>
+  </div>
+  <div class="companyProfileSection__table">
+    <table class="table-companyProfile">
+      <tr>
+        <th>会社名</th>
+        <td>株式会社Excitecode</td>
+      </tr>
+      <tr>
+        <th>所在地</th>
+        <td>〒104-0061 東京都中央区銀座６丁目10−１</td>
+      </tr>
+      <tr>
+        <th>設立</th>
+        <td>2015年12月10日</td>
+      </tr>
+      <tr>
+        <th>代表取締役</th>
+        <td>田中　太郎</td>
+      </tr>
+      <tr class="cell-business">
+        <th rowspan="4">事業内容</th>
+        <td>自動車販売（新車、中古車）古物No.第00000000号</td>
+      </tr>
+      <tr class="cell-business">
+        <td>自動車整備（国産車、輸入車）陸運局認証工場　認証No.0-0000</td>
+      </tr>
+      <tr class="cell-business">
+        <td>輸入車販売（自動車、自動車関連部品）</td>
+      </tr>
+      <tr class="cell-business">
+        <td>保険代理店（ABC損害保険株式会社、DFG損害保険株式会社）</td>
+      </tr>
+    </table>
   </div>
 </section>
 

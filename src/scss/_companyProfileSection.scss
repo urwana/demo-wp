@@ -1,0 +1,44 @@
+.companyProfileSection {
+  margin-top: 12rem;
+  padding-top: 7rem;
+  padding-left: 17rem;
+  background-color: #f8f8f8;
+}
+
+.companyProfileSection__table {
+  margin-top: 6.5rem;
+}
+
+.table-companyProfile {
+  tr {
+    border-bottom: #e2e2e2 solid 1px;
+  }
+
+  th,
+  td {
+    font-size: 1.6rem;
+    padding: 4.5rem;
+    font-weight: normal;
+  }
+}
+
+.cell-business {
+  > th,
+  > td {
+    padding: 2rem 4.5rem;
+  }
+}
+
+.cell-business:first-child {
+  > th,
+  > td {
+    padding: 4.5rem 4.5rem 2rem 4.5rem;
+  }
+}
+
+.cell-business:last-child {
+  > th,
+  > td {
+    padding: 2rem 4.5rem 4.5rem 4.5rem;
+  }
+}

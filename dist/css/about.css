@@ -364,7 +364,7 @@ footer {
 }
 
 .aboutTitleContainer {
-  color: "#001E63";
+  color: #001e63;
 }
 
 .aboutTitleContainer__titleJp {
@@ -422,6 +422,57 @@ footer {
 
 .philosophySection__imgWrap {
   margin-left: 6rem;
+}
+
+.accessSection {
+  margin-top: 20rem;
+  padding-left: 17rem;
+}
+
+.accessSection__address {
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.googleMap {
+  height: 40rem;
+  margin-top: 6rem;
+}
+
+.companyProfileSection {
+  margin-top: 12rem;
+  padding-top: 7rem;
+  padding-left: 17rem;
+  background-color: #f8f8f8;
+}
+
+.companyProfileSection__table {
+  margin-top: 6.5rem;
+}
+
+.table-companyProfile tr {
+  border-bottom: #e2e2e2 solid 1px;
+}
+.table-companyProfile th,
+.table-companyProfile td {
+  font-size: 1.6rem;
+  padding: 4.5rem;
+  font-weight: normal;
+}
+
+.cell-business > th,
+.cell-business > td {
+  padding: 2rem 4.5rem;
+}
+
+.cell-business:first-child > th,
+.cell-business:first-child > td {
+  padding: 4.5rem 4.5rem 2rem 4.5rem;
+}
+
+.cell-business:last-child > th,
+.cell-business:last-child > td {
+  padding: 2rem 4.5rem 4.5rem 4.5rem;
 }
 
 .footer {
