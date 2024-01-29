@@ -6,19 +6,19 @@ title = "トップ";
 css = "top";
 description = "架空のコーポレートデモサイトのトップページです。";
 %>
-<%- include(base.path + "./parts/_head", { base: base}) %>
+<%- include(base.path + "./parts/common/_head", { base: base}) %>
 
 <body>
   <div class="wrapper">
-    <%- include('./parts/_header') %>
+    <%- include('./parts/common/_header') %>
     <% const mainViewData = {
       pageNameEn: "About",
       pageNameJp: "私たちについて",
       pageImgClass: "about"
     }; %>
-    <%- include('./parts/_mainView', { mainViewData : mainViewData }) %>
-    <%- include('./parts/_summarySection') %>
-    <%- include('./parts/_philosophySection') %>
+    <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
+    <%- include('./parts/common/_summarySection') %>
+    <%- include('./parts/about/_philosophySection') %>
 
     <div class="contents">
     </div>
@@ -26,7 +26,7 @@ description = "架空のコーポレートデモサイトのトップページ�
       <div class="contents__inner-dark">
       </div>
     </div> -->
-    <%- include('./parts/_footer') %>
+    <%- include('./parts/common/_footer') %>
   </div>
 </body>
 
