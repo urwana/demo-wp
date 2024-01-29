@@ -1,6 +1,10 @@
 .card {
   width: 30%;
   max-width: 335px;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .card__body {

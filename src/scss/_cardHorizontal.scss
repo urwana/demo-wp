@@ -5,10 +5,27 @@
   background-color: #ffffff;
   padding: 5rem 0 8.8rem 4rem;
   border-bottom: #e2e2e2 solid 1px;
+
+  @include sp {
+    padding: 3rem 0;
+    align-items: flex-start;
+  }
 }
 
+.cardHorizontal__img {
+  @include sp {
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 .cardHorizontal__body {
   margin-left: 5rem;
+
+  @include sp {
+    margin-left: 1.8rem;
+  }
 }
 
 .cardHorizontal__label {
@@ -20,6 +37,14 @@
   font-size: 2.4rem;
   max-width: 59.6rem;
   @include ellipsisSingle;
+
+  @include sp {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    white-space: wrap;
+    line-height: 2.8rem;
+    @include ellipsisMulti(3, 8rem);
+  }
 }
 
 .cardHorizontal__text {
@@ -35,4 +60,8 @@
 .cardHorizontal__link {
   @include date;
   margin-top: 4rem;
+
+  @include sp {
+    margin-top: 2rem;
+  }
 }

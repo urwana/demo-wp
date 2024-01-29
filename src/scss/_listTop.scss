@@ -10,6 +10,11 @@
 
 .newsLabels {
   display: inline-block;
+
+  @include sp {
+    display: inline;
+    margin-left: 1rem;
+  }
 }
 
 .newsLabel {
@@ -20,4 +25,10 @@
 .list__text {
   margin-top: 3rem;
   font-size: 1.6rem;
+
+  @include sp {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    line-height: 2.8rem;
+  }
 }

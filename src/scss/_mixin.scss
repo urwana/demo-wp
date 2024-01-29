@@ -21,7 +21,7 @@
   overflow: hidden;
   -webkit-line-clamp: $number;
   text-overflow: ellipsis;
-  max-height: $height;
+  height: $height;
 }
 
 @mixin label($color, $backgroundColor) {
@@ -30,6 +30,12 @@
   color: $color;
   background-color: $backgroundColor;
   display: inline-block;
+
+  @include sp {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
 }
 
 @mixin date {

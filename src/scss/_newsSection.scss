@@ -3,6 +3,10 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 15rem;
+
+  @include sp {
+    display: block;
+  }
 }
 
 .newsSection__head {
@@ -23,6 +27,8 @@
 
 .newsSection__link {
   margin-bottom: 2.6rem;
+  display: inline-block;
+  margin-left: 4rem;
 }
 
 .newsSection__link a {
@@ -51,6 +57,10 @@
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
   flex: 1;
+
+  @include sp {
+    padding-left: 3rem;
+  }
 }
 
 .newsSection__readMore {

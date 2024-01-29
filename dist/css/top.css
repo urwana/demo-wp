@@ -31,6 +31,11 @@ footer {
   width: 110rem;
   margin: auto;
 }
+@media only screen and (max-width: 768px) {
+  .contents__inner-dark {
+    width: 100%;
+  }
+}
 
 @media only screen and (min-width: 769px) {
   .displayPc {
@@ -467,6 +472,11 @@ footer {
   width: 30%;
   max-width: 335px;
 }
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
 
 .card__body {
   margin-top: 3rem;
@@ -516,6 +526,11 @@ footer {
   align-items: center;
   margin-top: 6rem;
 }
+@media only screen and (max-width: 768px) {
+  .serviceSection__inner {
+    display: block;
+  }
+}
 
 .serviceSection__title {
   font-family: "Oswald";
@@ -530,9 +545,27 @@ footer {
   padding: 5rem 0 8.8rem 4rem;
   border-bottom: #e2e2e2 solid 1px;
 }
+@media only screen and (max-width: 768px) {
+  .cardHorizontal {
+    padding: 3rem 0;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cardHorizontal__img > img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .cardHorizontal__body {
   margin-left: 5rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardHorizontal__body {
+    margin-left: 1.8rem;
+  }
 }
 
 .cardHorizontal__label {
@@ -542,6 +575,13 @@ footer {
   background-color: #f3f3f3;
   display: inline-block;
 }
+@media only screen and (max-width: 768px) {
+  .cardHorizontal__label {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
+}
 
 .cardHorizontal__title {
   margin-top: 3.7rem;
@@ -550,6 +590,20 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media only screen and (max-width: 768px) {
+  .cardHorizontal__title {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    white-space: wrap;
+    line-height: 2.8rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    height: 8rem;
+  }
 }
 
 .cardHorizontal__text {
@@ -564,7 +618,7 @@ footer {
   overflow: hidden;
   -webkit-line-clamp: 2;
   text-overflow: ellipsis;
-  max-height: 6.6rem;
+  height: 6.6rem;
 }
 
 .cardHorizontal__link {
@@ -573,6 +627,11 @@ footer {
   font-weight: bold;
   color: #a9a9a9;
   margin-top: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardHorizontal__link {
+    margin-top: 2rem;
+  }
 }
 
 .worksSection__title {
@@ -607,6 +666,12 @@ footer {
 .newsLabels {
   display: inline-block;
 }
+@media only screen and (max-width: 768px) {
+  .newsLabels {
+    display: inline;
+    margin-left: 1rem;
+  }
+}
 
 .newsLabel {
   padding: 0.5rem 2rem;
@@ -616,10 +681,24 @@ footer {
   display: inline-block;
   margin-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .newsLabel {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
+}
 
 .list__text {
   margin-top: 3rem;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+  .list__text {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    line-height: 2.8rem;
+  }
 }
 
 .newsSection {
@@ -627,6 +706,11 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 15rem;
+}
+@media only screen and (max-width: 768px) {
+  .newsSection {
+    display: block;
+  }
 }
 
 .newsSection__head {
@@ -648,6 +732,8 @@ footer {
 
 .newsSection__link {
   margin-bottom: 2.6rem;
+  display: inline-block;
+  margin-left: 4rem;
 }
 
 .newsSection__link a {
@@ -676,6 +762,11 @@ footer {
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
   flex: 1;
+}
+@media only screen and (max-width: 768px) {
+  .newsSection__body {
+    padding-left: 3rem;
+  }
 }
 
 .newsSection__readMore {
