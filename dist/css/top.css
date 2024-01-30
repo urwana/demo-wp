@@ -75,6 +75,11 @@ footer {
   justify-content: flex-end;
   align-items: flex-start;
 }
+@media only screen and (max-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+}
 
 .footer .logoWrapper, .header .logoWrapper {
   max-width: 25.8rem;
@@ -90,6 +95,11 @@ footer {
   left: 0;
   z-index: 3;
   width: 17.9%;
+}
+@media only screen and (max-width: 768px) {
+  .header .logoWrapper {
+    position: relative;
+  }
 }
 
 .footer .logoWrapper {

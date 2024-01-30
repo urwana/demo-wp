@@ -1,6 +1,11 @@
 .accessSection {
   margin-top: 20rem;
   padding-left: 17rem;
+
+  @include sp {
+    margin-top: 8rem;
+    padding-left: 5%;
+  }
 }
 
 .accessSection__address {

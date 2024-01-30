@@ -2,6 +2,10 @@
   margin: 6rem auto 0 auto;
   width: 100%;
   max-width: 840px;
+
+  @include sp {
+    margin-top: 3.3rem;
+  }
 }
 
 .summarySection__links {
@@ -10,13 +14,17 @@
 
 .summarySection__links > li {
   display: inline-block;
-  color: "#011950";
+  color: #011950;
   background-image: url("../img/downArrow.svg");
   background-repeat: no-repeat;
   background-position: center right 0.5rem;
   margin-right: 12rem;
   font-size: 1.6rem;
   padding-right: 2rem;
+
+  @include sp {
+    margin-right: 4rem;
+  }
 }
 
 .summarySection__links > li:last-child {
@@ -26,10 +34,20 @@
 .summarySection__title {
   font-size: 4rem;
   margin-top: 10rem;
+
+  @include sp {
+    font-size: 1.8rem;
+    margin-top: 6.2rem;
+    line-height: 3.8rem;
+  }
 }
 
 .summarySection__text {
   font-size: 1.6rem;
   line-height: 3.8rem;
   margin-top: 6rem;
+
+  @include sp {
+    margin-top: 3.8rem;
+  }
 }

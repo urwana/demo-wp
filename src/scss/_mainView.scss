@@ -5,6 +5,12 @@
   margin-left: 17rem;
   margin-top: 15rem;
   padding-bottom: 50rem;
+
+  @include sp {
+    width: 100%;
+    margin: 0 0 0 1rem;
+    padding-bottom: 28rem;
+  }
 }
 
 .mainView-about {
@@ -13,6 +19,13 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+  @include sp {
+    margin-top: 3rem;
+    background-image: url("../img/mainView/about-sp.jpg");
+    width: 100%;
+    height: auto;
+  }
 }
 
 .mainView__titleContainer {
@@ -20,6 +33,11 @@
   padding: 2rem 4.5rem 5rem 4.5rem;
   min-width: 50rem;
   background-color: #ffffff;
+
+  @include sp {
+    padding: 1rem 6.8rem 5.5rem 1.8rem;
+    min-width: 19rem;
+  }
 }
 
 .mainView__title {
@@ -27,9 +45,17 @@
   font-size: 10rem;
   line-height: 4.5rem 5rem;
   font-weight: bold;
+
+  @include sp {
+    font-size: 4.4rem;
+  }
 }
 
 .mainView__subtitle {
   font-size: 2rem;
   font-weight: bold;
+
+  @include sp {
+    font-size: 1.2rem;
+  }
 }

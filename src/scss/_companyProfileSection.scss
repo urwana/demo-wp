@@ -1,8 +1,12 @@
 .companyProfileSection {
   margin-top: 12rem;
-  padding-top: 7rem;
-  padding-left: 17rem;
+  padding-top: 7rem 0 0 17rem;
   background-color: #f8f8f8;
+
+  @include sp {
+    padding-left: 0;
+    padding: 6.3rem 0 0 5%;
+  }
 }
 
 .companyProfileSection__table {
@@ -20,25 +24,57 @@
     padding: 4.5rem;
     font-weight: normal;
   }
+
+  @include sp {
+    tr {
+      display: block;
+      padding-bottom: 2.2rem;
+    }
+
+    th,
+    td {
+      font-size: 1.4rem;
+      display: block;
+      padding: 2.2rem 0 0 0;
+    }
+  }
 }
 
-.cell-business {
+.table-companyProfile .cell-business {
+  padding: 0;
   > th,
   > td {
     padding: 2rem 4.5rem;
   }
+
+  @include sp {
+    border-bottom: transparent;
+    > th,
+    > td {
+      padding: 0 0 2.2rem 0;
+    }
+  }
 }
 
-.cell-business:first-child {
+.table-companyProfile .cell-business:first-child {
   > th,
   > td {
     padding: 4.5rem 4.5rem 2rem 4.5rem;
   }
+
+  @include sp {
+    padding: 2.2rem 0;
+  }
 }
 
 .cell-business:last-child {
+  border-bottom: #e2e2e2 solid 1px;
   > th,
   > td {
     padding: 2rem 4.5rem 4.5rem 4.5rem;
+
+    @include sp {
+      padding: 0 0 2.2rem 0;
+    }
   }
 }
