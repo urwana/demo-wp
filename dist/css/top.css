@@ -386,49 +386,15 @@ footer {
 
 .swiper {
   width: 100%;
-  max-height: 780px;
+  height: 78rem;
 }
 
 .topSlide {
-  padding-bottom: 75.43%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.topSlide-1 {
-  background-image: url("../img/topSwiper/1.png");
-}
-
-.topSlide-2 {
-  background-image: url("../img/topSwiper/2.png");
-}
-
-.topSlide-3 {
-  background-image: url("../img/topSwiper/3.png");
-}
-
-.topSlide-4 {
-  background-image: url("../img/topSwiper/4.png");
-}
-
-@media only screen and (max-width: 768px) {
-  .topSlide {
-    padding-bottom: 135.2%;
-  }
-  .topSlide-1 {
-    background-image: url("../img/topSwiper/1-sp.png");
-  }
-  .topSlide-2 {
-    background-image: url("../img/topSwiper/2-sp.png");
-  }
-  .topSlide-3 {
-    background-image: url("../img/topSwiper/3-sp.png");
-  }
-  .topSlide-4 {
-    background-image: url("../img/topSwiper/4-sp.png");
-  }
-}
 .aboutSection {
   display: flex;
   justify-content: flex-start;
@@ -647,14 +613,36 @@ footer {
 .worksSection__title {
   font-family: "Oswald";
   font-size: 7rem;
+  animation: slideIn 1s ease;
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .worksSection__body {
   margin-top: 4rem;
   padding: 0 2.5rem 6rem 0;
   background-color: #ffffff;
+  animation: displayeInFluff 1s ease;
 }
 
+@keyframes displayeInFluff {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .worksSection__link {
   margin-top: 5.3rem;
   text-align: right;
@@ -700,8 +688,26 @@ footer {
 }
 
 .list__text {
+  display: inline-block;
   margin-top: 3rem;
   font-size: 1.6rem;
+  cursor: pointer;
+  position: relative;
+}
+.list__text::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.list__text:hover::after {
+  transform: scale(1, 1);
 }
 @media only screen and (max-width: 768px) {
   .list__text {
@@ -791,7 +797,6 @@ footer {
 }
 
 .readMoreLink {
-  position: relative;
   display: inline-block;
   text-decoration: none;
   background-image: url("../img/readMoreArrow.svg");
@@ -799,8 +804,8 @@ footer {
   background-repeat: no-repeat;
   padding-right: 1rem;
   cursor: pointer;
+  position: relative;
 }
-
 .readMoreLink::after {
   position: absolute;
   bottom: -3px;
@@ -813,7 +818,6 @@ footer {
   transform-origin: left top;
   transition: transform 0.3s;
 }
-
 .readMoreLink:hover::after {
   transform: scale(1, 1);
 }
@@ -845,6 +849,37 @@ footer {
 }
 .contactMethod:nth-of-type(1) {
   margin-bottom: 2rem;
+  position: relative;
+}
+.contactMethod:nth-of-type(1) span {
+  position: relative;
+  z-index: 5;
+}
+.contactMethod:nth-of-type(1) i {
+  position: relative;
+  z-index: 5;
+}
+.contactMethod:nth-of-type(1):hover span {
+  color: #011950;
+}
+.contactMethod:nth-of-type(1):hover i {
+  color: #011950;
+}
+.contactMethod:nth-of-type(1):before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+  transform: scale(0, 1);
+  transform-origin: right top;
+}
+.contactMethod:nth-of-type(1):hover:before {
+  transform-origin: left top;
+  transform: scale(1, 1);
 }
 .contactMethod:nth-of-type(2) {
   margin-bottom: 2.4rem;

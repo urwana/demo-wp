@@ -1,0 +1,32 @@
+// TODO 正規の消しかたを調査
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
+.swiperContainer {
+  width: 71.8%;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  //max-height: 780px;
+  height: 78rem;
+}
+
+.topSlide {
+  //padding-bottom: 75.43%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@include sp {
+  .topSlide {
+    //padding-bottom: 135.2%;
+  }
+}

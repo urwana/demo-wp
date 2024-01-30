@@ -23,8 +23,11 @@
 }
 
 .list__text {
+  display: inline-block;
   margin-top: 3rem;
   font-size: 1.6rem;
+  cursor: pointer;
+  @include underlineAnimation(#000000, 1px, 0.3s);
 
   @include sp {
     font-size: 1.4rem;

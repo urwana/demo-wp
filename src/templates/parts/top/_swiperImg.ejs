@@ -1,0 +1,29 @@
+<div class="swiperContainer">
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <% for(var i=1; i < topSlides.number+1; i++) {
+      %>
+      <div class="swiper-slide topSlide">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./img/topSwiper/<%- i %>-sp.png" width="355" height="480">
+          <source media="(min-width: 769px)" srcset="./img/topSwiper/<%- i %>.png" width="1034" height="780">
+          <img src="./img/topSwiper/<%- i %>.png" alt="top swiper イメージ <%- i %>" width="1034" height="780">
+        </picture>
+
+      </div>
+      <% } %>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+</div>
