@@ -1,11 +1,6 @@
-<% base = { path: "./", title: "about", css: "about", description: "架空のコーポレートデモサイトのトップページです。"} %>
+<% base = { path: "./", title: "about", css: "about", description: "架空のコーポレートデモサイトの企業紹介ページです。"} %>
 <!DOCTYPE html>
 <html lang="ja">
-<%
-title = "トップ";
-css = "top";
-description = "架空のコーポレートデモサイトのトップページです。";
-%>
 <%- include(base.path + "./parts/common/_head", { base: base}) %>
 
 <body>
@@ -14,10 +9,21 @@ description = "架空のコーポレートデモサイトのトップページ�
     <% const mainViewData = {
       pageNameEn: "About",
       pageNameJp: "私たちについて",
-      pageImgClass: "about"
+      pageKeyWord: "about"
     }; %>
     <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
-    <%- include('./parts/common/_summarySection') %>
+
+    <% const summarySectionData = {
+      anchorLink1:"philosophy",
+      sectionName1:"経営理念",
+      anchorLink2:"access",
+      sectionName2:"アクセス",
+      anchorLink3:"companyProfile",
+      sectionName3:"会社概要",
+      sectionTitle:"国境を超え、メーカーを超え<br />「型にはまらない」あなただけの歓びを",
+      sectionText:"弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。"
+    }; %>
+    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData}) %>
     <%- include('./parts/about/_philosophySection') %>
     <%- include('./parts/about/_accessSection') %>
     <%- include('./parts/about/_companyProfileSection') %>

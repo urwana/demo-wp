@@ -1,0 +1,29 @@
+@import "mixin";
+@import "common";
+@import "header";
+@import "hamburgerButton";
+@import "hamburgerMenu";
+@import "mainView";
+@import "summarySection";
+@import "newslists";
+@import "newsLinkTabs";
+@import "footer";
+
+.newsMainContents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 110rem;
+  margin: 9.6rem auto 12rem;
+}
+
+.newsMainContents__tabs {
+  flex-basis: 30rem;
+}
+
+.newsMainContents__body {
+  flex: 1;
+  padding-left: 6rem;
+  border-left: #e2e2e2 solid 1px;
+}

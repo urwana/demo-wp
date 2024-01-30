@@ -1,0 +1,37 @@
+<% base = { path: "./", title: "service", css: "service", description: "架空のコーポレートデモサイトのサービス紹介ページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(base.path + "./parts/common/_head", { base: base}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./parts/common/_header') %>
+    <% const mainViewData = {
+      pageNameEn: "Service",
+      pageNameJp: "サービス紹介",
+      pageKeyWord: "service"
+    }; %>
+    <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
+    <% const summarySectionData = {
+      anchorLink1:"purchaseSupport",
+      sectionName1:"購入サポート",
+      anchorLink2:"repairAndMaintenance",
+      sectionName2:"修理・整備",
+      anchorLink3:"vehicleInspection",
+      sectionName3:"車検・点検",
+      sectionTitle:"お客様一人一人が求める<br />理想のカーライフに寄り添います",
+      sectionText:"様々な輸入車・国産車のメンテナンスのご相談から点検・整備まで、親切かつスピーディな対応を心がけ、あらゆる疑問や不安にお答えします。最新鋭の自社集中工場には、四輪アライメントをはじめ最新コンピューターと各ブランドに精通した熟練のサービススタッフを配置、フロ ントでは車種ブランド別の専用電話回線をご用意しております。"
+    }; %>
+    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData}) %>
+
+    <div class="contents">
+    </div>
+    <!-- <div class="contents-dark">
+      <div class="contents__inner-dark">
+      </div>
+    </div> -->
+    <%- include('./parts/common/_footer') %>
+  </div>
+</body>
+
+</html>

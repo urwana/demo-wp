@@ -5,26 +5,44 @@
   margin-left: 17rem;
   margin-top: 15rem;
   padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   @include sp {
     width: 100%;
     margin: 0 0 0 1rem;
+    margin-top: 3rem;
     padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
   }
 }
 
 .mainView-about {
   @extend %mainView;
   background-image: url("../img/mainView/about.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 
   @include sp {
-    margin-top: 3rem;
     background-image: url("../img/mainView/about-sp.jpg");
-    width: 100%;
-    height: auto;
+  }
+}
+
+.mainView-service {
+  @extend %mainView;
+  background-image: url("../img/mainView/service.jpg");
+
+  @include sp {
+    background-image: url("../img/mainView/service-sp.jpg");
+  }
+}
+
+.mainView-news {
+  @extend %mainView;
+  background-image: url("../img/mainView/service.jpg");
+
+  @include sp {
+    background-image: url("../img/mainView/service-sp.jpg");
   }
 }
 
@@ -57,5 +75,32 @@
 
   @include sp {
     font-size: 1.2rem;
+  }
+}
+
+.breadCrumbs {
+  font-size: 1.5rem;
+  text-align: right;
+  padding-right: 6rem;
+}
+
+.breadCrumb {
+  margin-top: 1.8rem;
+  display: inline-block;
+}
+
+.breadCrumb:nth-of-type(2) {
+  margin-left: 4rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #a9a9a9;
   }
 }
