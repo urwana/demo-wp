@@ -1,0 +1,7 @@
+<% if (typeof pageNames === 'undefined') { pageNames = []; } %>
+<ul class="breadCrumbs">
+  <li class="breadCrumb"><a href="./about.html">Top</a></li>
+  <% pageNames.forEach((page, index) => { %>
+  <li class="breadCrumb <%= index === pageNames.length - 1 ? 'current' : '' %>"><%- page %></li>
+  <% }) %>
+</ul>

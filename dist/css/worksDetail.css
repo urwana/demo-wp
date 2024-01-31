@@ -840,20 +840,14 @@ footer {
     margin-top: 5.6rem;
   }
 }
-.worksMainContents {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+.worksDetailMainContents {
+  display: block;
   width: 100%;
   max-width: 110rem;
   margin: 9.6rem auto 12rem;
 }
 
-.worksMainContents__tabs {
-  flex-basis: 30rem;
-}
-
-.worksMainContents__body {
+.worksDetailMainContents__body {
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;

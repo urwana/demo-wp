@@ -1,11 +1,8 @@
 <% if (typeof mainViewData === 'undefined') { mainViewData = []; } %>
-<div class="mainView-<%- mainViewData.pageKeyWord %>">
+<div class="mainView-<%- mainViewData.pageNames %>">
   <div class="mainView__titleContainer">
     <h2 class="mainView__title"><%- mainViewData.pageNameEn %></h2>
     <div class="mainView__subtitle"><%- mainViewData.pageNameJp %></div>
   </div>
 </div>
-<ul class="breadCrumbs">
-  <li class="breadCrumb"><a href="./about.html">Top</a></li>
-  <li class="breadCrumb current"><%- mainViewData.pageKeyWord %></li>
-</ul>
+<%- include('./_breadCrumb', { pageNames : [mainViewData.pageNames]}) %>

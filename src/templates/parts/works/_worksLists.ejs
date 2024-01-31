@@ -20,15 +20,14 @@
   <% worksData.forEach((element, index) => { 
     const photoNumber = index + 1;
   %>
-  <li class="list-work">
-    <div class="list-imgContainer-work">
-      <picture>
-        <source media="(max-width: 768px)" srcset="./img/works/<%- photoNumber %>-sp.jpg" width="130" height="100">
-        <source media="(min-width: 769px)" srcset="./img/works/<%- photoNumber %>.jpg" width="160" height="160">
-        <img src="./img/works/<%- photoNumber %>.jpg" alt="実績のイメージ <%- photoNumber %>" width="160" height="160">
-      </picture>
-    </div>
-    <div class="list-textContainer-work">
+  <li class="list-work"><a href="/worksDetail.html">
+      <div class="list-imgContainer-work">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./img/works/<%- photoNumber %>-sp.jpg" width="130" height="100">
+          <source media="(min-width: 769px)" srcset="./img/works/<%- photoNumber %>.jpg" width="160" height="160">
+          <img src="./img/works/<%- photoNumber %>.jpg" alt="実績のイメージ <%- photoNumber %>" width="160" height="160">
+        </picture>
+      </div>
       <div class="list-textContainer-work">
         <div class="list__upperContents">
 
@@ -43,7 +42,7 @@
         <div class="list__text-work"><%- element.worksText %></div>
         <div class="worksDate"><%- element.worksDate %></div>
       </div>
-  </li>
+    </a></li>
   <% }) %>
 </ul>
 <%- include('../common/_pager') %>
