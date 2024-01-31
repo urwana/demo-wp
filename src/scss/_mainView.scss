@@ -39,10 +39,19 @@
 
 .mainView-news {
   @extend %mainView;
-  background-image: url("../img/mainView/service.jpg");
+  background-image: url("../img/mainView/news.jpg");
 
   @include sp {
-    background-image: url("../img/mainView/service-sp.jpg");
+    background-image: url("../img/mainView/news-sp.jpg");
+  }
+}
+
+.mainView-works {
+  @extend %mainView;
+  background-image: url("../img/mainView/works.jpg");
+
+  @include sp {
+    background-image: url("../img/mainView/works-sp.jpg");
   }
 }
 

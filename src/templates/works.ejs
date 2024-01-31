@@ -1,4 +1,4 @@
-<% base = { path: "./", title: "news", css: "news", description: "架空のコーポレートデモサイトのニュース紹介ページです。"} %>
+<% base = { path: "./", title: "works", css: "works", description: "架空のコーポレートデモサイトのニュース紹介ページです。"} %>
 <!DOCTYPE html>
 <html lang="ja">
 <%- include(base.path + "./parts/common/_head", { base: base}) %>
@@ -7,72 +7,71 @@
   <div class="wrapper">
     <%- include('./parts/common/_header') %>
     <% const mainViewData = {
-      pageNameEn: "News",
-      pageNameJp: "お知らせ",
-      pageKeyWord: "news"
+      pageNameEn: "Works",
+      pageNameJp: "実績紹介",
+      pageKeyWord: "works"
     }; %>
     <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
-    <% const newsData =[
+    <% const worksData =[
     {
-      newsDate : "2022.09.02",
-      newsLabels: [1,2],
-      newsText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
+      worksDate : "2022.09.02",
+      worksLabels: [1,2],
+      worksText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
     },
     {
-      newsDate : "2022.08.23",
-      newsLabels: [1,3],
-      newsText:"【入庫車のご案内】メルセデスベンツG 350が入庫しました"
+      worksDate : "2022.08.23",
+      worksLabels: [1,3],
+      worksText:"【入庫車のご案内】メルセデスベンツG 350が入庫しました"
     },
     {
-      newsDate : "2022.08.07",
-      newsLabels: [1],
-      newsText:"お盆休みのご案内"
+      worksDate : "2022.08.07",
+      worksLabels: [1],
+      worksText:"お盆休みのご案内"
     },
     {
-      newsDate : "2022.08.03",
-      newsLabels: [1,3],
-      newsText:"【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました"
+      worksDate : "2022.08.03",
+      worksLabels: [1,3],
+      worksText:"【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました"
     },
     {
-      newsDate : "2022.07.26",
-      newsLabels: [1,2,3],
-      newsText:"半導体不足は輸入車・輸入中古車にどう影響するか"
+      worksDate : "2022.07.26",
+      worksLabels: [1,2,3],
+      worksText:"半導体不足は輸入車・輸入中古車にどう影響するか"
     },
     {
-      newsDate : "2022.09.02",
-      newsLabels: [1,2],
-      newsText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
-    },
-    {
-      newsDate : "2022.08.23",
-      newsLabels: [1,3],
-      newsText:"【入庫車のご案内】メルセデスベンツG 350が入庫しました"
-    },
-    {
-      newsDate : "2022.08.07",
-      newsLabels: [1],
-      newsText:"お盆休みのご案内"
-    },
-    {
-      newsDate : "2022.08.03",
-      newsLabels: [1,3],
-      newsText:"【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました"
-    },
-    {
-      newsDate : "2022.07.26",
-      newsLabels: [1,2,3],
-      newsText:"半導体不足は輸入車・輸入中古車にどう影響するか"
+      worksDate : "2022.09.02",
+      worksLabels: [1,2],
+      worksText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
     },
   ];
   %>
-    <div class="newsMainContents">
-      <div class="newsMainContents__tabs">
-        <%- include('./parts/common/_linkTabs') %>
+    <div class="worksMainContents">
+      <div class="worksMainContents__tabs">
+        <% const workLinkTabData = [
+            {
+              actions:"e",
+              labels:"すべての実績"
+            },
+            {
+              actions:"f",
+              labels:"購入サポート"
+            },
+            {
+              actions:"g",
+              labels:"修理・整備"
+            },
+            {
+              actions:"h",
+              labels:"車検・点検"
+            },
+          ]
+      %>
+        <%- include('./parts/common/_linkTabs', { linkTabData : workLinkTabData }) %>
       </div>
-      <div class="newsMainContents__body">
+      <div class="worksMainContents__body">
 
-        <ul class="news__lists">
-          <%- include('./parts/common/_newsLists', { newsData : newsData}) %>
+        <ul class="works__lists">
+          <%- include('./parts/works/_worksLists', { worksData : worksData}) %>
         </ul>
       </div>
     </div>

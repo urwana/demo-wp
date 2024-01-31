@@ -1,6 +1,6 @@
+<% if (typeof linkTabData === 'undefined') { linkTabData = []; } %>
 <ul class="linkTabs">
-  <li class="linkTab active"><a href="">すべてのお知らせ</a></li>
-  <li class="linkTab"><a href="">トピックス</a></li>
-  <li class="linkTab"><a href="">イベント・キャンペーン</a></li>
-  <li class="linkTab"><a href="">入庫車情報</a></li>
+  <% linkTabData.forEach((linkTab, index)=> { %>
+  <li class="linkTab <%- index === 0 ? "active" : ""; %>"><a href="" class="<%- linkTab.actions %>"><%- linkTab.labels %></a></li>
+  <% }); %>
 </ul>

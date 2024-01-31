@@ -1,14 +1,26 @@
-.list {
+.list-work {
   border-bottom: #e2e2e2 solid 1px;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.newsDate {
+.list-textContainer-work {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.worksDate {
+  margin-top: 4rem;
   @include date;
 }
 
-.newsLabels {
+.labels-works {
   display: inline-block;
 
   @include sp {
@@ -17,16 +29,17 @@
   }
 }
 
-.newsLabel {
-  @include label(#626262, #ffffff);
-  margin-left: 2rem;
+.label-works {
+  @include label(#626262, #f3f3f3);
+  margin-right: 2rem;
 }
 
-.list__text {
+.list__text-work {
   display: inline-block;
   margin-top: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   cursor: pointer;
+  line-height: 3.2rem;
   @include underlineAnimation(#000000, 1px, 0.3s);
 
   @include sp {

@@ -2,13 +2,13 @@
   const returnWorksLabel = (number) => {
     switch (number) {
       case 1:
-        return "トピックス";
+        return "購入サポート";
         break;
       case 2:
-        return "イベント・キャンペーン";
+        return "修理・整備";
         break;
       case 3:
-        return "入庫車情報";
+        return "車検・点検";
         break;
       default:
         return "その他";
@@ -17,25 +17,33 @@
 %>
 
 <ul class="works__lists">
-  <% worksData.forEach((element) => { %>
-
-
-
-
+  <% worksData.forEach((element, index) => { 
+    const photoNumber = index + 1;
+  %>
   <li class="list-work">
-    <div class="list__upperContents">
-      <span class="worksDate"><%- element.worksDate %></span>
-      <ul class="worksLabels">
-        <% const labels = element.worksLabels || [];
-          labels.forEach((label) => { %>
-        <li class="worksLabel"><%- returnWorksLabel(label) %></li>
-        <% }) %>
-      </ul>
+    <div class="list-imgContainer-work">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./img/works/<%- photoNumber %>-sp.jpg" width="130" height="100">
+        <source media="(min-width: 769px)" srcset="./img/works/<%- photoNumber %>.jpg" width="160" height="160">
+        <img src="./img/works/<%- photoNumber %>.jpg" alt="実績のイメージ <%- photoNumber %>" width="160" height="160">
+      </picture>
     </div>
-    <div class="list__text"><%- element.worksText %></div>
+    <div class="list-textContainer-work">
+      <div class="list-textContainer-work">
+        <div class="list__upperContents">
+
+          <ul class="labels-works">
+            <% const labels = element.worksLabels || [];
+          labels.forEach((label) => { %>
+            <li class="label-works"><%- returnWorksLabel(label) %></li>
+            <% }) %>
+          </ul>
+
+        </div>
+        <div class="list__text-work"><%- element.worksText %></div>
+        <div class="worksDate"><%- element.worksDate %></div>
+      </div>
   </li>
-
-
-
   <% }) %>
 </ul>
+<%- include('../common/_pager') %>

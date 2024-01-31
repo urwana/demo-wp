@@ -1,0 +1,14 @@
+<% const dummyData = [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]; %>
+<div class="pager">
+  <ul class="pages">
+    <li><img src="./img/arrow-before.svg" alt="前へ矢印" /></li>
+    <% const displayNumber = 6;
+    const pagerNumber = Math.ceil(dummyData.length / displayNumber);
+    for(let i = 1; i < pagerNumber; i++){ %>
+
+    <li class="page <%- i === 1 ? "current" : "" %>"><%- i %></li>
+
+    <% } %>
+    <li><img src="./img/arrow-next.svg" alt="次へ矢印" /></li>
+  </ul>
+</div>

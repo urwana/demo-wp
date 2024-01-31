@@ -489,53 +489,66 @@ footer {
   }
 }
 
-.list {
+.list-work {
   border-bottom: #e2e2e2 solid 1px;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.newsDate {
+.list-textContainer-work {
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.worksDate {
+  margin-top: 4rem;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   color: #a9a9a9;
 }
 
-.newsLabels {
+.labels-works {
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
-  .newsLabels {
+  .labels-works {
     display: inline;
     margin-left: 1rem;
   }
 }
 
-.newsLabel {
+.label-works {
   padding: 0.5rem 2rem;
   font-size: 1.1rem;
   color: #626262;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   display: inline-block;
-  margin-left: 2rem;
+  margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .newsLabel {
+  .label-works {
     margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
   }
 }
 
-.list__text {
+.list__text-work {
   display: inline-block;
   margin-top: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   cursor: pointer;
+  line-height: 3.2rem;
   position: relative;
 }
-.list__text::after {
+.list__text-work::after {
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -547,11 +560,11 @@ footer {
   transform-origin: left top;
   transition: transform 0.3s;
 }
-.list__text:hover::after {
+.list__text-work:hover::after {
   transform: scale(1, 1);
 }
 @media only screen and (max-width: 768px) {
-  .list__text {
+  .list__text-work {
     font-size: 1.4rem;
     padding-right: 1rem;
     line-height: 2.8rem;
@@ -587,6 +600,32 @@ footer {
   background-color: #000000;
   top: 0.8rem;
   left: -1.6rem;
+}
+
+.pager {
+  margin-top: 6rem;
+}
+
+.pages {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.pages > li {
+  margin-left: 1.2rem;
+}
+
+.page {
+  font-family: "Oswald";
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  background-color: #e9eeef;
+  display: inline-block;
+}
+
+.page.current {
+  background-color: #001e63;
+  color: #ffffff;
 }
 
 .footer {
@@ -800,7 +839,7 @@ footer {
     margin-top: 5.6rem;
   }
 }
-.newsMainContents {
+.worksMainContents {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -809,11 +848,11 @@ footer {
   margin: 9.6rem auto 12rem;
 }
 
-.newsMainContents__tabs {
+.worksMainContents__tabs {
   flex-basis: 30rem;
 }
 
-.newsMainContents__body {
+.worksMainContents__body {
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;

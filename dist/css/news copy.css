@@ -307,7 +307,7 @@ footer {
     }
   }
 }
-.mainView-works, .mainView-news, .mainView-service, .mainView-about {
+.mainView-news, .mainView-service, .mainView-about {
   width: 127rem;
   max-width: 88%;
   position: relative;
@@ -319,7 +319,7 @@ footer {
   background-size: cover;
 }
 @media only screen and (max-width: 768px) {
-  .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+  .mainView-news, .mainView-service, .mainView-about {
     width: 100%;
     margin: 0 0 0 1rem;
     margin-top: 3rem;
@@ -348,20 +348,11 @@ footer {
 }
 
 .mainView-news {
-  background-image: url("../img/mainView/news.jpg");
+  background-image: url("../img/mainView/service.jpg");
 }
 @media only screen and (max-width: 768px) {
   .mainView-news {
-    background-image: url("../img/mainView/news-sp.jpg");
-  }
-}
-
-.mainView-works {
-  background-image: url("../img/mainView/works.jpg");
-}
-@media only screen and (max-width: 768px) {
-  .mainView-works {
-    background-image: url("../img/mainView/works-sp.jpg");
+    background-image: url("../img/mainView/service-sp.jpg");
   }
 }
 

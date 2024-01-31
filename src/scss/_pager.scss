@@ -1,0 +1,26 @@
+.pager {
+  margin-top: 6rem;
+}
+
+.pages {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  > li {
+    margin-left: 1.2rem;
+  }
+}
+
+.page {
+  font-family: "Oswald";
+  font-size: 1.4rem;
+  padding: 1rem 1.5rem;
+  background-color: #e9eeef;
+  display: inline-block;
+}
+
+.page.current {
+  background-color: #001e63;
+  color: #ffffff;
+}

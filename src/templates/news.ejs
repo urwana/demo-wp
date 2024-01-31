@@ -67,7 +67,26 @@
   %>
     <div class="newsMainContents">
       <div class="newsMainContents__tabs">
-        <%- include('./parts/common/_linkTabs') %>
+        <% const linkTabData = [
+            {
+              actions:"a",
+              labels:"すべてのお知らせ"
+            },
+            {
+              actions:"b",
+              labels:"トピックス"
+            },
+            {
+              actions:"c",
+              labels:"イベント・キャンペーン"
+            },
+            {
+              actions:"d",
+              labels:"入庫車情報"
+            },
+          ]
+      %>
+        <%- include('./parts/common/_linkTabs', { linkTabData : linkTabData}) %>
       </div>
       <div class="newsMainContents__body">
 

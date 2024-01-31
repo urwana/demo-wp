@@ -1,19 +1,19 @@
-<% if (typeof cardServiceData === 'undefined') { cardServiceData = []; }
-  const returnNewsLabel = (number) => {
-    switch (number) {
-      case 1:
-        return "トピックス";
-        break;
-      case 2:
-        return "イベント・キャンペーン";
-        break;
-      case 3:
-        return "入庫車情報";
-        break;
-      default:
-        return "その他";
-      }
-  }
+<% if (typeof cardServiceData === 'undefined') { cardServiceData = []; } %>
+<% const returnNewsLabel = (number) => {
+      switch (number) {
+        case 1:
+          return "トピックス";
+          break;
+        case 2:
+          return "イベント・キャンペーン";
+          break;
+        case 3:
+          return "入庫車情報";
+          break;
+        default:
+          return "その他";
+        }
+    }
 %>
 
 <ul class="news__lists">
