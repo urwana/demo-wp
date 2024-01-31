@@ -87,6 +87,11 @@
 .breadCrumb {
   margin-top: 1.8rem;
   display: inline-block;
+  color: #a9a9a9;
+}
+
+.breadCrumb.current {
+  color: #242424;
 }
 
 .breadCrumb:nth-of-type(2) {

@@ -1,0 +1,74 @@
+.cardService {
+  margin-top: 12rem;
+  margin-bottom: 16rem;
+}
+
+.cardService__item {
+  margin-top: 16rem;
+}
+
+.cardService__item:first-child {
+  margin-top: 0;
+}
+
+.cardService__upperContents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.cardService__header {
+  background-color: #f8f8f8;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 11rem 0 11.8%;
+}
+
+.cardService__no {
+  font-family: "Oswald";
+  color: #001e63;
+  font-size: 4rem;
+}
+
+.cardService__title {
+  margin-top: 2.8rem;
+  font-size: 2.8rem;
+}
+
+.cardService__summary {
+  margin-top: 2.5rem;
+  font-size: 2.2rem;
+  line-height: 4rem;
+}
+
+.decoratedLine {
+  display: inline-block;
+  width: 0.1rem;
+  height: 3.4rem;
+  background-color: #000000;
+  margin-left: 1.6rem;
+}
+
+.cardService__lowerContents {
+  padding: 3rem 11.8% 0;
+}
+
+.cardService__titleSub {
+  font-family: "Oswald";
+  font-size: 2.2rem;
+
+  > span {
+    font-size: 1.2rem;
+    color: #626262;
+    padding-left: 1.6rem;
+  }
+}
+
+.cardService__featureText {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+}

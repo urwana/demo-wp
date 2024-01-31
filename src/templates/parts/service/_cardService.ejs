@@ -1,0 +1,26 @@
+<% if (typeof cardServiceData === 'undefined') { cardServiceData = []; } %>
+<div class="cardService">
+  <% cardServiceData.forEach((card) => { %>
+  <section class="cardService__item">
+    <div class="cardService__upperContents">
+      <div class="cardService__header">
+        <div class="cardService__no"><%- card.serviceNumber %><span class="decoratedLine"></span>
+        </div>
+        <h2 class="cardService__title"><%- card.serviceTitle %></h2>
+        <div class="cardService__summary"><%- card.serviceSummary %></div>
+      </div>
+      <div class="cardService__imgWrapper">
+        <picture>
+          <source media="(max-width: 768px)" srcset="<%- card.serviceImg %>-sp.jpg" width="" height="">
+          <source media="(min-width: 769px)" srcset="<%- card.serviceImg %>.jpg" width="760" height="500">
+          <img src="<%- card.serviceImg %>.jpg" alt="サービスのイメージ" width="760" height="500">
+        </picture>
+      </div>
+    </div>
+    <div class="cardService__lowerContents">
+      <div class="cardService__titleSub">FEATURE<span>特徴</span></div>
+      <p class="cardService__featureText"><%- card.featureText %></p>
+    </div>
+  </section>
+  <% }); %>
+</div>

@@ -400,6 +400,11 @@ footer {
 .breadCrumb {
   margin-top: 1.8rem;
   display: inline-block;
+  color: #a9a9a9;
+}
+
+.breadCrumb.current {
+  color: #242424;
 }
 
 .breadCrumb:nth-of-type(2) {
@@ -544,27 +549,27 @@ footer {
   }
 }
 
-.newsLinkTabs {
+.linkTabs {
   padding-left: 2rem;
 }
 
-.newsLinkTab {
+.linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
 }
 
-.newsLinkTab a {
+.linkTab a {
   font-size: 1.4rem;
   color: #a9a9a9;
   text-decoration: none;
 }
 
-.newsLinkTab.active a {
+.linkTab.active a {
   color: #000000;
   position: relative;
 }
 
-.newsLinkTab.active a::before {
+.linkTab.active a::before {
   content: "";
   display: block;
   width: 0.8rem;
@@ -584,6 +589,7 @@ footer {
   padding: 2rem 3.1rem;
   border-radius: 0.4rem;
   max-width: 23.5rem;
+  cursor: pointer;
 }
 .contactMethod:nth-of-type(1) {
   margin-bottom: 2rem;

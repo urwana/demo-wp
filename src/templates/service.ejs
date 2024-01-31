@@ -23,13 +23,31 @@
       sectionText:"様々な輸入車・国産車のメンテナンスのご相談から点検・整備まで、親切かつスピーディな対応を心がけ、あらゆる疑問や不安にお答えします。最新鋭の自社集中工場には、四輪アライメントをはじめ最新コンピューターと各ブランドに精通した熟練のサービススタッフを配置、フロ ントでは車種ブランド別の専用電話回線をご用意しております。"
     }; %>
     <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData}) %>
-
-    <div class="contents">
-    </div>
-    <!-- <div class="contents-dark">
-      <div class="contents__inner-dark">
-      </div>
-    </div> -->
+    <% const cardServiceData = [
+      {
+        serviceNumber: "01",
+        serviceTitle: "購入サポート",
+        serviceSummary: "国を超え、メーカーを超え、高級の本質をお届けする特別な一台との出会いをサポートします。",
+        serviceImg: "./img/service/1",
+        featureText: "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。"
+      },
+      {
+        serviceNumber: "02",
+        serviceTitle: "修理・整備",
+        serviceSummary: "高度な輸入車修理技術と数多くの修理実績、熟練の技術・設備であなたの愛車を完全に直します。",
+        serviceImg: "./img/service/2",
+        featureText: "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。"
+      },
+      {
+        serviceNumber: "03",
+        serviceTitle: "車検・点検",
+        serviceSummary: "輸入車の取り扱いが県内トップクラス。専門の整備工場へ任せたいならわたしたちへご相談ください。",
+        serviceImg: "./img/service/3",
+        featureText: "弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。"
+      },
+    ];
+    %>
+    <%- include('./parts/service/_cardService', { cardServiceData : cardServiceData}) %>
     <%- include('./parts/common/_footer') %>
   </div>
 </body>
