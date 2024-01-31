@@ -307,120 +307,19 @@ footer {
     }
   }
 }
-.mainView-works, .mainView-news, .mainView-service, .mainView-about {
-  width: 127rem;
-  max-width: 88%;
-  position: relative;
-  margin-left: 17rem;
-  margin-top: 15rem;
-  padding-bottom: 50rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-@media only screen and (max-width: 768px) {
-  .mainView-works, .mainView-news, .mainView-service, .mainView-about {
-    width: 100%;
-    margin: 0 0 0 1rem;
-    margin-top: 3rem;
-    padding-bottom: 28rem;
-    width: 100%;
-    height: auto;
-  }
-}
-
-.mainView-about {
-  background-image: url("../img/mainView/about.jpg");
-}
-@media only screen and (max-width: 768px) {
-  .mainView-about {
-    background-image: url("../img/mainView/about-sp.jpg");
-  }
-}
-
-.mainView-service {
-  background-image: url("../img/mainView/service.jpg");
-}
-@media only screen and (max-width: 768px) {
-  .mainView-service {
-    background-image: url("../img/mainView/service-sp.jpg");
-  }
-}
-
-.mainView-news {
-  background-image: url("../img/mainView/news.jpg");
-}
-@media only screen and (max-width: 768px) {
-  .mainView-news {
-    background-image: url("../img/mainView/news-sp.jpg");
-  }
-}
-
-.mainView-works {
-  background-image: url("../img/mainView/works.jpg");
-}
-@media only screen and (max-width: 768px) {
-  .mainView-works {
-    background-image: url("../img/mainView/works-sp.jpg");
-  }
-}
-
-.mainView__titleContainer {
-  display: inline-block;
-  padding: 2rem 4.5rem 5rem 4.5rem;
-  min-width: 50rem;
-  background-color: #ffffff;
-}
-@media only screen and (max-width: 768px) {
-  .mainView__titleContainer {
-    padding: 1rem 6.8rem 5.5rem 1.8rem;
-    min-width: 19rem;
-  }
-}
-
-.mainView__title {
-  font-family: "Oswald";
-  font-size: 10rem;
-  line-height: 4.5rem 5rem;
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  .mainView__title {
-    font-size: 4.4rem;
-  }
-}
-
-.mainView__subtitle {
-  font-size: 2rem;
-  font-weight: bold;
-}
-@media only screen and (max-width: 768px) {
-  .mainView__subtitle {
-    font-size: 1.2rem;
-  }
-}
-
 .breadCrumbs {
   font-size: 1.5rem;
   text-align: right;
-  padding-right: 6rem;
 }
 
 .breadCrumb {
   margin-top: 1.8rem;
   display: inline-block;
   color: #a9a9a9;
-}
-
-.breadCrumb.current {
-  color: #242424;
-}
-
-.breadCrumb:nth-of-type(2) {
   margin-left: 4rem;
   position: relative;
 }
-.breadCrumb:nth-of-type(2)::before {
+.breadCrumb::before {
   content: "";
   display: block;
   position: absolute;
@@ -429,6 +328,14 @@ footer {
   width: 2rem;
   height: 0.2rem;
   background-color: #a9a9a9;
+}
+
+.breadCrumb.current {
+  color: #242424;
+}
+
+.breadCrumb:first-child::before {
+  display: none;
 }
 
 .summarySection {
@@ -489,7 +396,7 @@ footer {
   }
 }
 
-.list-work {
+.list-work a {
   border-bottom: #e2e2e2 solid 1px;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
@@ -840,15 +747,74 @@ footer {
     margin-top: 5.6rem;
   }
 }
-.worksDetailMainContents {
-  display: block;
-  width: 100%;
-  max-width: 110rem;
-  margin: 9.6rem auto 12rem;
+.breadCrumbContainer {
+  margin-top: 12rem;
 }
 
-.worksDetailMainContents__body {
-  flex: 1;
-  padding-left: 6rem;
-  border-left: #e2e2e2 solid 1px;
+.worksDetail {
+  display: block;
+  width: 100%;
+  max-width: 84rem;
+  margin: 9.6rem auto 12rem;
+  padding: 6rem 0 12rem 0;
+}
+
+.worksDetail__label {
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  color: #626262;
+  background-color: #f3f3f3;
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  .worksDetail__label {
+    margin-left: 0.8rem;
+    font-size: 1rem;
+    padding: 0.5rem 1.6rem;
+  }
+}
+
+.worksDetail__title {
+  margin-top: 2rem;
+  font-size: 2.6rem;
+}
+
+.worksDetail__date {
+  margin-top: 3.6rem;
+  font-size: 1.1rem;
+  color: #a9a9a9;
+}
+
+.worksDetail__text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  width: 100%;
+  max-width: 68rem;
+  margin: 4rem auto 0 auto;
+}
+
+.worksDetail__imgContainer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.worksDetail__buttonContainer {
+  margin-top: 7.5rem;
+  text-align: center;
+}
+
+.worksDetail__button {
+  color: #001e63;
+  font-size: 1.4rem;
+  padding: 1.5rem 8rem 1.5rem 10rem;
+  border: #001e63 solid 1px;
+  border-radius: 4px;
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-position: 8rem center;
+  transition: background-position 1s ease-in-out;
+}
+
+.worksDetail__button:hover {
+  background-position: 6rem center;
 }

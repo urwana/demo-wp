@@ -1,0 +1,33 @@
+.breadCrumbs {
+  font-size: 1.5rem;
+  text-align: right;
+}
+
+.breadCrumb {
+  margin-top: 1.8rem;
+  display: inline-block;
+  color: #a9a9a9;
+  margin-left: 4rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: #a9a9a9;
+  }
+}
+
+.breadCrumb.current {
+  color: #242424;
+}
+
+.breadCrumb:first-child {
+  &::before {
+    display: none;
+  }
+}

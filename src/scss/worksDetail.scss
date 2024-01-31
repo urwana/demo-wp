@@ -3,22 +3,70 @@
 @import "header";
 @import "hamburgerButton";
 @import "hamburgerMenu";
-@import "mainView";
+@import "breadCrumb";
 @import "summarySection";
 @import "workslists";
 @import "linkTabs";
 @import "pager";
 @import "footer";
 
-.worksDetailMainContents {
-  display: block;
-  width: 100%;
-  max-width: 110rem;
-  margin: 9.6rem auto 12rem;
+.breadCrumbContainer {
+  margin-top: 12rem;
 }
 
-.worksDetailMainContents__body {
-  flex: 1;
-  padding-left: 6rem;
-  border-left: #e2e2e2 solid 1px;
+.worksDetail {
+  display: block;
+  width: 100%;
+  max-width: 84rem;
+  margin: 9.6rem auto 12rem;
+  padding: 6rem 0 12rem 0;
+}
+
+.worksDetail__label {
+  @include label(#626262, #f3f3f3);
+}
+
+.worksDetail__title {
+  margin-top: 2rem;
+  font-size: 2.6rem;
+}
+
+.worksDetail__date {
+  margin-top: 3.6rem;
+  font-size: 1.1rem;
+  color: #a9a9a9;
+}
+
+.worksDetail__text {
+  font-size: 1.6rem;
+  line-height: 3.2rem;
+  width: 100%;
+  max-width: 68rem;
+  margin: 4rem auto 0 auto;
+}
+
+.worksDetail__imgContainer {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.worksDetail__buttonContainer {
+  margin-top: 7.5rem;
+  text-align: center;
+}
+
+.worksDetail__button {
+  color: #001e63;
+  font-size: 1.4rem;
+  padding: 1.5rem 8rem 1.5rem 10rem;
+  border: #001e63 solid 1px;
+  border-radius: 4px;
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-position: 8rem center;
+  transition: background-position 1s ease-in-out;
+}
+
+.worksDetail__button:hover {
+  background-position: 6rem center;
 }

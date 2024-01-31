@@ -403,24 +403,16 @@ footer {
 .breadCrumbs {
   font-size: 1.5rem;
   text-align: right;
-  padding-right: 6rem;
 }
 
 .breadCrumb {
   margin-top: 1.8rem;
   display: inline-block;
   color: #a9a9a9;
-}
-
-.breadCrumb.current {
-  color: #242424;
-}
-
-.breadCrumb:nth-of-type(2) {
   margin-left: 4rem;
   position: relative;
 }
-.breadCrumb:nth-of-type(2)::before {
+.breadCrumb::before {
   content: "";
   display: block;
   position: absolute;
@@ -429,6 +421,14 @@ footer {
   width: 2rem;
   height: 0.2rem;
   background-color: #a9a9a9;
+}
+
+.breadCrumb.current {
+  color: #242424;
+}
+
+.breadCrumb:first-child::before {
+  display: none;
 }
 
 .summarySection {
@@ -489,7 +489,7 @@ footer {
   }
 }
 
-.list-work {
+.list-work a {
   border-bottom: #e2e2e2 solid 1px;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
