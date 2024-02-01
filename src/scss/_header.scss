@@ -29,21 +29,6 @@
     position: relative;
   }
 }
-
-.footer .logoWrapper {
-  @extend %logoWrapper;
-  width: 63.55%;
-}
-
-@include sp {
-  .logoWrapper {
-    z-index: 7;
-    > img {
-      width: 11.5rem;
-    }
-  }
-}
-
 .navigation__lists {
   list-style: none;
   display: flex;
@@ -138,7 +123,7 @@
   display: none;
   position: absolute;
   left: 13%;
-  top: 55%;
+  top: 45rem;
   z-index: 4;
 
   > i {

@@ -123,17 +123,31 @@
 
 @include sp {
   .footer__lowerContents {
-    //display: block;
-
     padding: 6rem 0 3rem 5rem;
   }
 
   .footer__lowerContentsInner {
-    // display: block;
     flex-direction: row;
     flex-direction: column-reverse;
-    // justify-content: space-between;
     align-items: flex-start;
+  }
+}
+
+.footer .logoWrapper {
+  @extend %logoWrapper;
+  width: 63.55%;
+}
+
+@include sp {
+  .logoWrapper {
+    z-index: 7;
+    max-width: 25.8rem;
+    min-width: 11.5rem;
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 

@@ -102,18 +102,6 @@ footer {
   }
 }
 
-.footer .logoWrapper {
-  width: 63.55%;
-}
-
-@media only screen and (max-width: 768px) {
-  .logoWrapper {
-    z-index: 7;
-  }
-  .logoWrapper > img {
-    width: 11.5rem;
-  }
-}
 .navigation__lists {
   list-style: none;
   display: flex;
@@ -193,7 +181,7 @@ footer {
   display: none;
   position: absolute;
   left: 13%;
-  top: 55%;
+  top: 45rem;
   z-index: 4;
 }
 .navigation .snsIconContainer > i {
@@ -900,6 +888,21 @@ footer {
     flex-direction: row;
     flex-direction: column-reverse;
     align-items: flex-start;
+  }
+}
+.footer .logoWrapper {
+  width: 63.55%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logoWrapper {
+    z-index: 7;
+    max-width: 25.8rem;
+    min-width: 11.5rem;
+  }
+  .logoWrapper > img {
+    width: 100%;
+    height: auto;
   }
 }
 .snsIconContainer {
