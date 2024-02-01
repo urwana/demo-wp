@@ -1,5 +1,9 @@
 .sideBar {
   width: 30rem;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .title-sideBar {

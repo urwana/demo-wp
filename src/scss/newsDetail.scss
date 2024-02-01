@@ -7,13 +7,47 @@
 @import "summarySection";
 @import "sideBar";
 @import "photoLists";
-// @import "linkTabs";
 @import "pager";
 @import "footer";
 
 .breadCrumbContainer {
   margin: 12rem 0;
   padding-top: 6rem;
+
+  @include sp {
+    margin: 1rem 0;
+    padding-top: 0;
+  }
+}
+
+.title__h2-service {
+  margin-top: 4rem;
+  font-size: 2.2rem;
+  background-color: #f8f9f9;
+  padding: 0 0 0.3rem 0.5rem;
+  border-left: 1px solid #707070;
+
+  @include sp {
+    font-size: 1.6rem;
+  }
+}
+
+.title__h3-service {
+  margin-top: 4rem;
+  border-bottom: 1px solid #707070;
+
+  > span {
+    font-size: 1.8rem;
+
+    border-bottom: 1px solid #001e63;
+    padding: 0 0 0.3rem 1.5rem;
+  }
+
+  @include sp {
+    > span {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .newsDetail {
@@ -21,12 +55,21 @@
   justify-content: space-between;
   align-items: flex-start;
   margin: 9.6rem auto 12rem;
+
+  @include sp {
+    display: block;
+    margin: 4rem auto 8rem;
+  }
 }
 
 .newsDetail__main {
   display: block;
   width: 100%;
   max-width: 84rem;
+
+  @include sp {
+    padding-bottom: 4rem;
+  }
 }
 
 .newsDetail__label {
@@ -36,6 +79,11 @@
 .newsDetail__title {
   margin-top: 2rem;
   font-size: 2.6rem;
+
+  @include sp {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
 }
 
 .newsDetail__date {
@@ -50,6 +98,10 @@
   width: 100%;
   max-width: 68rem;
   margin: 4rem auto 0 auto;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 
 .newsDetail__imgContainer {
