@@ -6,6 +6,7 @@
     <li><a href="#<%- summarySectionData.anchorLink2 %>"><%- summarySectionData.sectionName2 %></a></li>
     <li><a href="#<%- summarySectionData.anchorLink3 %>"><%- summarySectionData.sectionName3 %></a></li>
   </ul>
+  <%- include('./_linktabs', { linkTabData :linkTabData}) %>
   <h2 class="summarySection__title"><%- summarySectionData.sectionTitle %></h2>
   <p class="summarySection__text"><%- summarySectionData.sectionText %></p>
 </section>

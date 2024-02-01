@@ -24,6 +24,7 @@
 
   @include sp {
     margin-right: 4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -43,11 +44,13 @@
 }
 
 .summarySection__text {
+  margin-top: 6rem;
   font-size: 1.6rem;
   line-height: 3.8rem;
-  margin-top: 6rem;
 
   @include sp {
     margin-top: 3.8rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
   }
 }

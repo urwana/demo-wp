@@ -464,6 +464,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .summarySection__links > li {
     margin-right: 4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -484,13 +485,15 @@ footer {
 }
 
 .summarySection__text {
+  margin-top: 6rem;
   font-size: 1.6rem;
   line-height: 3.8rem;
-  margin-top: 6rem;
 }
 @media only screen and (max-width: 768px) {
   .summarySection__text {
     margin-top: 3.8rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
   }
 }
 
@@ -498,9 +501,20 @@ footer {
   margin-top: 12rem;
   margin-bottom: 16rem;
 }
+@media only screen and (max-width: 768px) {
+  .cardService {
+    margin-top: 8.6rem;
+    margin-bottom: 10rem;
+  }
+}
 
 .cardService__item {
   margin-top: 16rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardService__item {
+    margin-top: 8.4rem;
+  }
 }
 
 .cardService__item:first-child {
@@ -512,6 +526,11 @@ footer {
   justify-content: flex-start;
   align-items: stretch;
 }
+@media only screen and (max-width: 768px) {
+  .cardService__upperContents {
+    display: block;
+  }
+}
 
 .cardService__header {
   background-color: #f8f8f8;
@@ -522,22 +541,42 @@ footer {
   justify-content: center;
   padding: 0 11rem 0 11.8%;
 }
+@media only screen and (max-width: 768px) {
+  .cardService__header {
+    padding: 6rem 2rem 0 2rem;
+  }
+}
 
 .cardService__no {
   font-family: "Oswald";
   color: #001e63;
   font-size: 4rem;
 }
+@media only screen and (max-width: 768px) {
+  .cardService__no {
+    font-size: 3.2rem;
+  }
+}
 
 .cardService__title {
   margin-top: 2.8rem;
   font-size: 2.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardService__title {
+    font-size: 2rem;
+  }
 }
 
 .cardService__summary {
   margin-top: 2.5rem;
   font-size: 2.2rem;
   line-height: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardService__summary {
+    font-size: 1.4rem;
+  }
 }
 
 .decoratedLine {
@@ -547,9 +586,25 @@ footer {
   background-color: #000000;
   margin-left: 1.6rem;
 }
+@media only screen and (max-width: 768px) {
+  .decoratedLine {
+    height: 3rem;
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .cardService__imgWrapper img {
+    width: 100%;
+    height: auto;
+  }
+}
 .cardService__lowerContents {
   padding: 3rem 11.8% 0;
+}
+@media only screen and (max-width: 768px) {
+  .cardService__lowerContents {
+    padding: 1.4rem 0 0 0;
+  }
 }
 
 .cardService__titleSub {
@@ -561,11 +616,25 @@ footer {
   color: #626262;
   padding-left: 1.6rem;
 }
+@media only screen and (max-width: 768px) {
+  .cardService__titleSub {
+    font-size: 1.8rem;
+  }
+  .cardService__titleSub > span {
+    font-size: 1rem;
+  }
+}
 
 .cardService__featureText {
   margin-top: 2rem;
   font-size: 1.6rem;
   line-height: 3.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .cardService__featureText {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .footer {

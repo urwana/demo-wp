@@ -464,6 +464,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .summarySection__links > li {
     margin-right: 4rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -484,13 +485,15 @@ footer {
 }
 
 .summarySection__text {
+  margin-top: 6rem;
   font-size: 1.6rem;
   line-height: 3.8rem;
-  margin-top: 6rem;
 }
 @media only screen and (max-width: 768px) {
   .summarySection__text {
     margin-top: 3.8rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
   }
 }
 
