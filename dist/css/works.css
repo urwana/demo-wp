@@ -501,6 +501,11 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media only screen and (max-width: 768px) {
+  .list-textContainer-work {
+    margin-left: 1.5rem;
+  }
+}
 
 .worksDate {
   margin-top: 4rem;
@@ -509,6 +514,11 @@ footer {
   font-weight: bold;
   color: #a9a9a9;
 }
+@media only screen and (max-width: 768px) {
+  .worksDate {
+    margin-top: 2rem;
+  }
+}
 
 .labels-works {
   display: inline-block;
@@ -516,7 +526,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .labels-works {
     display: inline;
-    margin-left: 1rem;
   }
 }
 
@@ -533,6 +542,11 @@ footer {
     margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .label-works {
+    margin-left: 0;
   }
 }
 
@@ -563,18 +577,33 @@ footer {
 @media only screen and (max-width: 768px) {
   .list__text-work {
     font-size: 1.4rem;
-    padding-right: 1rem;
+    padding: 0;
     line-height: 2.8rem;
+    margin-top: 1rem;
+    width: auto;
   }
 }
 
 .linkTabs {
   padding-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .linkTabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 
 .linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .linkTab {
+    display: block;
+  }
 }
 
 .linkTab a {
@@ -615,7 +644,7 @@ footer {
 .page {
   font-family: "Oswald";
   font-size: 1.4rem;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.7rem;
   background-color: #e9eeef;
   display: inline-block;
 }
@@ -859,6 +888,12 @@ footer {
   max-width: 110rem;
   margin: 9.6rem auto 12rem;
 }
+@media only screen and (max-width: 768px) {
+  .worksMainContents {
+    display: block;
+    margin: 3.3rem auto 8rem;
+  }
+}
 
 .worksMainContents__tabs {
   flex-basis: 30rem;
@@ -868,4 +903,10 @@ footer {
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
+}
+@media only screen and (max-width: 768px) {
+  .worksMainContents__body {
+    padding: 0;
+    border-left: transparent;
+  }
 }

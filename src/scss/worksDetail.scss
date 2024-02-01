@@ -12,6 +12,10 @@
 
 .breadCrumbContainer {
   margin-top: 12rem;
+
+  @include sp {
+    margin-top: 1rem;
+  }
 }
 
 .worksDetail {
@@ -20,6 +24,11 @@
   max-width: 84rem;
   margin: 9.6rem auto 12rem;
   padding: 6rem 0 12rem 0;
+
+  @include sp {
+    margin: 3.3rem auto 8rem;
+    padding: 0;
+  }
 }
 
 .worksDetail__label {
@@ -29,12 +38,20 @@
 .worksDetail__title {
   margin-top: 2rem;
   font-size: 2.6rem;
+
+  @include sp {
+    font-size: 1.8rem;
+  }
 }
 
 .worksDetail__date {
   margin-top: 3.6rem;
   font-size: 1.1rem;
   color: #a9a9a9;
+
+  @include sp {
+    margin-top: 2.2rem;
+  }
 }
 
 .worksDetail__text {
@@ -43,6 +60,11 @@
   width: 100%;
   max-width: 68rem;
   margin: 4rem auto 0 auto;
+
+  @include sp {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .worksDetail__imgContainer {
@@ -53,6 +75,10 @@
 .worksDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
+
+  @include sp {
+    margin-top: 4rem;
+  }
 }
 
 .worksDetail__button {

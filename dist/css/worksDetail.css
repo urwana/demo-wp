@@ -407,6 +407,11 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media only screen and (max-width: 768px) {
+  .list-textContainer-work {
+    margin-left: 1.5rem;
+  }
+}
 
 .worksDate {
   margin-top: 4rem;
@@ -415,6 +420,11 @@ footer {
   font-weight: bold;
   color: #a9a9a9;
 }
+@media only screen and (max-width: 768px) {
+  .worksDate {
+    margin-top: 2rem;
+  }
+}
 
 .labels-works {
   display: inline-block;
@@ -422,7 +432,6 @@ footer {
 @media only screen and (max-width: 768px) {
   .labels-works {
     display: inline;
-    margin-left: 1rem;
   }
 }
 
@@ -439,6 +448,11 @@ footer {
     margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .label-works {
+    margin-left: 0;
   }
 }
 
@@ -469,18 +483,33 @@ footer {
 @media only screen and (max-width: 768px) {
   .list__text-work {
     font-size: 1.4rem;
-    padding-right: 1rem;
+    padding: 0;
     line-height: 2.8rem;
+    margin-top: 1rem;
+    width: auto;
   }
 }
 
 .linkTabs {
   padding-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .linkTabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 
 .linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .linkTab {
+    display: block;
+  }
 }
 
 .linkTab a {
@@ -521,7 +550,7 @@ footer {
 .page {
   font-family: "Oswald";
   font-size: 1.4rem;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.7rem;
   background-color: #e9eeef;
   display: inline-block;
 }
@@ -760,6 +789,11 @@ footer {
 .breadCrumbContainer {
   margin-top: 12rem;
 }
+@media only screen and (max-width: 768px) {
+  .breadCrumbContainer {
+    margin-top: 1rem;
+  }
+}
 
 .worksDetail {
   display: block;
@@ -767,6 +801,12 @@ footer {
   max-width: 84rem;
   margin: 9.6rem auto 12rem;
   padding: 6rem 0 12rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .worksDetail {
+    margin: 3.3rem auto 8rem;
+    padding: 0;
+  }
 }
 
 .worksDetail__label {
@@ -788,11 +828,21 @@ footer {
   margin-top: 2rem;
   font-size: 2.6rem;
 }
+@media only screen and (max-width: 768px) {
+  .worksDetail__title {
+    font-size: 1.8rem;
+  }
+}
 
 .worksDetail__date {
   margin-top: 3.6rem;
   font-size: 1.1rem;
   color: #a9a9a9;
+}
+@media only screen and (max-width: 768px) {
+  .worksDetail__date {
+    margin-top: 2.2rem;
+  }
 }
 
 .worksDetail__text {
@@ -801,6 +851,12 @@ footer {
   width: 100%;
   max-width: 68rem;
   margin: 4rem auto 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .worksDetail__text {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .worksDetail__imgContainer {
@@ -811,6 +867,11 @@ footer {
 .worksDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .worksDetail__buttonContainer {
+    margin-top: 4rem;
+  }
 }
 
 .worksDetail__button {

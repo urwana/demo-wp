@@ -557,10 +557,23 @@ footer {
 .linkTabs {
   padding-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .linkTabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 
 .linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .linkTab {
+    display: block;
+  }
 }
 
 .linkTab a {
@@ -583,6 +596,32 @@ footer {
   background-color: #000000;
   top: 0.8rem;
   left: -1.6rem;
+}
+
+.pager {
+  margin-top: 6rem;
+}
+
+.pages {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.pages > li {
+  margin-left: 1.2rem;
+}
+
+.page {
+  font-family: "Oswald";
+  font-size: 1.4rem;
+  padding: 1.2rem 1.7rem;
+  background-color: #e9eeef;
+  display: inline-block;
+}
+
+.page.current {
+  background-color: #001e63;
+  color: #ffffff;
 }
 
 .footer {
@@ -819,6 +858,12 @@ footer {
   max-width: 110rem;
   margin: 9.6rem auto 12rem;
 }
+@media only screen and (max-width: 768px) {
+  .newsMainContents {
+    display: block;
+    margin: 3.3rem auto 8rem;
+  }
+}
 
 .newsMainContents__tabs {
   flex-basis: 30rem;
@@ -828,4 +873,11 @@ footer {
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
+}
+@media only screen and (max-width: 768px) {
+  .newsMainContents__body {
+    padding-left: 0;
+    margin-top: 4.2rem;
+    border-left: transparent;
+  }
 }

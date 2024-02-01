@@ -18,6 +18,11 @@
   width: 100%;
   max-width: 110rem;
   margin: 9.6rem auto 12rem;
+
+  @include sp {
+    display: block;
+    margin: 3.3rem auto 8rem;
+  }
 }
 
 .worksMainContents__tabs {
@@ -28,4 +33,9 @@
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
+
+  @include sp {
+    padding: 0;
+    border-left: transparent;
+  }
 }

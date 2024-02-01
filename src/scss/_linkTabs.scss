@@ -1,10 +1,21 @@
 .linkTabs {
   padding-left: 2rem;
+
+  @include sp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
+
+  @include sp {
+    display: block;
+  }
 }
 
 .linkTab a {

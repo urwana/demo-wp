@@ -13,11 +13,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+  @include sp {
+    margin-left: 1.5rem;
+  }
 }
 
 .worksDate {
   margin-top: 4rem;
   @include date;
+
+  @include sp {
+    margin-top: 2rem;
+  }
 }
 
 .labels-works {
@@ -25,13 +33,16 @@
 
   @include sp {
     display: inline;
-    margin-left: 1rem;
   }
 }
 
 .label-works {
   @include label(#626262, #f3f3f3);
   margin-right: 2rem;
+
+  @include sp {
+    margin-left: 0;
+  }
 }
 
 .list__text-work {
@@ -45,7 +56,9 @@
 
   @include sp {
     font-size: 1.4rem;
-    padding-right: 1rem;
+    padding: 0;
     line-height: 2.8rem;
+    margin-top: 1rem;
+    width: auto;
   }
 }

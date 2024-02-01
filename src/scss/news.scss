@@ -8,6 +8,7 @@
 @import "summarySection";
 @import "newslists";
 @import "linkTabs";
+@import "pager";
 @import "footer";
 
 .newsMainContents {
@@ -17,6 +18,11 @@
   width: 100%;
   max-width: 110rem;
   margin: 9.6rem auto 12rem;
+
+  @include sp {
+    display: block;
+    margin: 3.3rem auto 8rem;
+  }
 }
 
 .newsMainContents__tabs {
@@ -27,4 +33,10 @@
   flex: 1;
   padding-left: 6rem;
   border-left: #e2e2e2 solid 1px;
+
+  @include sp {
+    padding-left: 0;
+    margin-top: 4.2rem;
+    border-left: transparent;
+  }
 }

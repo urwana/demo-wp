@@ -707,10 +707,23 @@ footer {
 .linkTabs {
   padding-left: 2rem;
 }
+@media only screen and (max-width: 768px) {
+  .linkTabs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
 
 .linkTab {
   margin-bottom: 2.6rem;
   margin-left: 4rem;
+}
+@media only screen and (max-width: 768px) {
+  .linkTab {
+    display: block;
+  }
 }
 
 .linkTab a {
