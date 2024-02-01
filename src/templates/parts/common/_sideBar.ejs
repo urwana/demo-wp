@@ -1,0 +1,49 @@
+<div class="sideBar">
+  <section class="latestNews">
+    <h3 class="title-sideBar">最新記事</h3>
+    <% const photoListData = [
+      {
+        photoListImg:"./img/news/article1",
+        photoListTitle:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します",
+        photoListDate:"2022.09.02",
+      },
+      {
+        photoListImg:"./img/news/article2",
+        photoListTitle:"【入庫車のご案内】メルセデスベンツG 350が入庫しました",
+        photoListDate:"2022.08.23",
+      },
+      {
+        photoListImg:"./img/news/articleNone",
+        photoListTitle:"お盆休みのご案内",
+        photoListDate:"2022.08.07",
+      },
+      {
+        photoListImg:"./img/news/article4",
+        photoListTitle:"【入庫車のご案内】JEEPラングラー アンリミテッドスポーツが入荷しまし...",
+        photoListDate:"2022.08.03",
+      },
+      {
+        photoListImg:"./img/news/articleNone",
+        photoListTitle:"タイトルが36文字以降は点々で表示されますタイトルが36文字以降は点々で...",
+        photoListDate:"2022.08.07",
+      },
+    ]; %>
+    <%- include('./_photoLists', { photoListData : photoListData}) %>
+  </section>
+  <section class="archive">
+    <h3 class="title-sideBar">アーカイブ</h3>
+    <ul class="sideBarLists">
+      <li><a href="">2022年9月</a></li>
+      <li><a href=""></a>2022年8月</li>
+      <li><a href=""></a>2022年7月</li>
+    </ul>
+  </section>
+  <section class="category">
+    <h3 class="title-sideBar">カテゴリー</h3>
+    <ul class="sideBarLists">
+      <li><a href="">トピックス</a></li>
+      <li><a href="">イベント・キャンペーン</a></li>
+      <li><a href="">入庫車情報</a></li>
+    </ul>
+  </section>
+</div>

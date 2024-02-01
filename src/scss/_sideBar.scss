@@ -1,0 +1,21 @@
+.sideBar {
+  width: 30rem;
+}
+
+.title-sideBar {
+  @include title-sideBar;
+}
+
+.sideBarLists {
+  padding: 0 1.8rem 4rem 1.8rem;
+}
+
+.sideBarLists > li {
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-bottom: #e4e4e4 solid 1px;
+}
+
+.photoLists {
+  padding: 0 1.8rem;
+}

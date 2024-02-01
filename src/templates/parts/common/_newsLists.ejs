@@ -1,4 +1,4 @@
-<% if (typeof cardServiceData === 'undefined') { cardServiceData = []; } %>
+<% if (typeof newsData === 'undefined') { newsData = []; } %>
 <% const returnNewsLabel = (number) => {
       switch (number) {
         case 1:
@@ -15,23 +15,20 @@
         }
     }
 %>
-
 <ul class="news__lists">
   <% newsData.forEach((element) => { %>
-  <li class="list">
-    <div class="list__upperContents">
-      <span class="newsDate"><%- element.newsDate %></span>
-      <ul class="newsLabels">
-        <% const labels = element.newsLabels || [];
+  <li class="list"><a href="./newsDetail.html">
+      <div class="list__upperContents">
+        <span class="newsDate"><%- element.newsDate %></span>
+        <ul class="newsLabels">
+          <% const labels = element.newsLabels || [];
           labels.forEach((label) => { %>
-        <li class="newsLabel"><%- returnNewsLabel(label) %></li>
-        <% }) %>
-      </ul>
-    </div>
-    <div class="list__text"><%- element.newsText %></div>
+          <li class="newsLabel"><%- returnNewsLabel(label) %></li>
+          <% }) %>
+        </ul>
+      </div>
+      <div class="list__text"><%- element.newsText %></div>
+    </a>
   </li>
-
-
-
   <% }) %>
 </ul>

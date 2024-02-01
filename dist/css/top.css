@@ -204,8 +204,7 @@ footer {
   .hamburgerButton {
     position: relative;
     cursor: pointer;
-    margin-top: 2.2rem;
-    margin-right: 3rem;
+    margin: 3rem 3rem 0 0;
     width: 2.5rem;
     height: 2.5rem;
     z-index: 100;
@@ -224,11 +223,11 @@ footer {
   }
   .hamburgerButton span:nth-of-type(2) {
     width: 100%;
-    top: 1.5rem;
+    top: 0.7rem;
   }
   .hamburgerButton span:nth-of-type(3) {
     width: 60%;
-    top: 3.1rem;
+    top: 1.4rem;
   }
   .hamburgerButton.active span {
     background: #ffffff;

@@ -1,0 +1,42 @@
+<% base = { path: "./", title: "news詳細", css: "newsDetail", description: "架空のコーポレートデモサイトの事業紹介の詳細ページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(base.path + "./parts/common/_head", { base: base}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./parts/common/_header') %>
+    <div class="breadCrumbContainer">
+      <%- include('./parts/common/_breadCrumb', { pageNames : ["news","車のドアが開けられなくなった｜ドアロックの交換と車両の点検"]}) %>
+    </div>
+    <div class="newsDetail">
+      <div class="newsDetail__main">
+        <div class="newsDetail__head">
+          <div class="newsDetail__label">修理・整備</div>
+          <div class="newsDetail__title">車のドアが開けられなくなった｜ドアロックの交換と車両の点検</div>
+          <div class="newsDetail__date">2022.09.02</div>
+        </div>
+
+        <div class="newsDetail__imgContainer">
+          <picture>
+            <source media="(max-width: 768px)" srcset="./img/news/detail-sp.jpg" width="315" height="176">
+            <source media="(min-width: 769px)" srcset="./img/news/detail.jpg" width="840" height="471">
+            <img src="./img/news/detail.jpg" alt="実績のイメージ %>" width="840" height="471">
+          </picture>
+        </div>
+
+        <p class="newsDetail__text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。<br /><br />本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
+
+        <div class="newsDetail__buttonContainer">
+          <a href="./news.html" class="newsDetail__button">実績一覧へ戻る</a>
+        </div>
+      </div>
+      <div class="newsDetail__sideBar">
+        <%- include('./parts/common/_sideBar') %>
+      </div>
+    </div>
+    <%- include('./parts/common/_footer') %>
+  </div>
+</body>
+
+</html>

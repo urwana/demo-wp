@@ -1,0 +1,56 @@
+.latestNews {
+}
+
+.photoList {
+  padding-top: 4rem;
+}
+
+.photoList a {
+  border-bottom: #e2e2e2 solid 1px;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.photoList__textContainer {
+  margin-left: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photoList__date {
+  margin-top: 2rem;
+  @include date;
+}
+
+.photoList__labelContainer {
+  display: inline-block;
+
+  @include sp {
+    display: inline;
+    margin-left: 1rem;
+  }
+}
+
+.photoList__label {
+  @include label(#626262, #f3f3f3);
+  margin-right: 2rem;
+}
+
+.photoList__text {
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 2.8rem;
+  @include underlineAnimation(#000000, 1px, 0.3s);
+
+  @include sp {
+    font-size: 1.4rem;
+    padding-right: 1rem;
+    line-height: 2.8rem;
+  }
+}

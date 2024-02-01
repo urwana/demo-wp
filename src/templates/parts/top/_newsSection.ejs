@@ -1,9 +1,10 @@
 <% if (typeof newsData === 'undefined') { newsData = []; } %>
+<% if (typeof linkTabData === 'undefined') { linkTabData = []; } %>
 <sevtion class="newsSection">
   <div class="newsSection__head">
     <div class="newsSection__title">News</div>
     <div class="newsSection__linkContainer">
-      <%- include('../common/_linktabs', { element :element}) %>
+      <%- include('../common/_linktabs', { linkTabData :linkTabData}) %>
 
     </div>
   </div>

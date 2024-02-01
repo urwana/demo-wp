@@ -1,0 +1,21 @@
+<% if (typeof photoListData === 'undefined') { photoListData = []; } %>
+
+<ul class="photoLists">
+  <% photoListData.forEach((element, index) => {
+    const photoNumber = index + 1;
+  %>
+  <li class="photoList"><a href="/worksDetail.html">
+      <div class="photoList__imgContainer">
+        <picture>
+          <source media="(max-width: 768px)" srcset="<%- element.photoListImg %>-sp.jpg" width="100" height="100">
+          <source media="(min-width: 769px)" srcset="<%- element.photoListImg %>.jpg" width="100" height="100">
+          <img src="<%- element.photoListImg %>.jpg" alt="実績のイメージ <%- photoNumber %>" width="100" height="100">
+        </picture>
+      </div>
+      <div class="photoList__textContainer">
+        <div class="photoList__text"><%- element.photoListTitle %></div>
+        <div class="photoList__date"><%- element.photoListDate %></div>
+      </div>
+    </a></li>
+  <% }) %>
+</ul>

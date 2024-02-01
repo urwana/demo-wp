@@ -36,39 +36,60 @@
           worksLink : "/2022/08/20"
         },
       ];
-      const newsData =[
-        {
-          newsDate : "2022.09.02",
-          newsLabels: [1,2],
-          newsText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
-        },
-        {
-          newsDate : "2022.08.23",
-          newsLabels: [1,3],
-          newsText:"【入庫車のご案内】メルセデスベンツG 350が入庫しました"
-        },
-        {
-          newsDate : "2022.08.07",
-          newsLabels: [1],
-          newsText:"お盆休みのご案内"
-        },
-        {
-          newsDate : "2022.08.03",
-          newsLabels: [1,3],
-          newsText:"【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました"
-        },
-        {
-          newsDate : "2022.07.26",
-          newsLabels: [1,2,3],
-          newsText:"半導体不足は輸入車・輸入中古車にどう影響するか"
-        },
-      ]
       %>
     </div>
     <div class="contents-dark">
       <div class="contents__inner-dark">
         <%- include('./parts/top/_worksSection', { worksData : worksData}) %>
-        <%- include('./parts/top/_newsSection', { newsData : newsData}) %>
+        <%
+        const newsData =[
+          {
+            newsDate : "2022.09.02",
+            newsLabels: [1,2],
+            newsText:"2022年10月8日・9日・10日の3日間、試乗車フェアを開催します"
+          },
+          {
+            newsDate : "2022.08.23",
+            newsLabels: [1,3],
+            newsText:"【入庫車のご案内】メルセデスベンツG 350が入庫しました"
+          },
+          {
+            newsDate : "2022.08.07",
+            newsLabels: [1],
+            newsText:"お盆休みのご案内"
+          },
+          {
+            newsDate : "2022.08.03",
+            newsLabels: [1,3],
+            newsText:"【入庫車のご案内】JEEPラングラー アンリミテッド サハラが入庫しました"
+          },
+          {
+            newsDate : "2022.07.26",
+            newsLabels: [1,2,3],
+            newsText:"半導体不足は輸入車・輸入中古車にどう影響するか"
+          },
+        ]
+        const linkTabData = [
+              {
+                actions:"a",
+                labels:"すべてのお知らせ"
+              },
+              {
+                actions:"b",
+                labels:"トピックス"
+              },
+              {
+                actions:"c",
+                labels:"イベント・キャンペーン"
+              },
+              {
+                actions:"d",
+                labels:"入庫車情報"
+              },
+            ]
+        %>
+
+        <%- include('./parts/top/_newsSection', { newsData : newsData, linkTabData : linkTabData}) %>
       </div>
     </div>
     <%- include('./parts/common/_footer') %>

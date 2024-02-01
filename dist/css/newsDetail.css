@@ -400,7 +400,37 @@ footer {
   }
 }
 
-.list-work a {
+.sideBar {
+  width: 30rem;
+}
+
+.title-sideBar {
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: #001135;
+  padding: 1.8rem;
+  text-align: left;
+}
+
+.sideBarLists {
+  padding: 0 1.8rem 4rem 1.8rem;
+}
+
+.sideBarLists > li {
+  font-size: 1.4rem;
+  padding: 2rem;
+  border-bottom: #e4e4e4 solid 1px;
+}
+
+.photoLists {
+  padding: 0 1.8rem;
+}
+
+.photoList {
+  padding-top: 4rem;
+}
+
+.photoList a {
   border-bottom: #e2e2e2 solid 1px;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
@@ -409,33 +439,33 @@ footer {
   align-items: flex-start;
 }
 
-.list-textContainer-work {
-  margin-left: 3rem;
+.photoList__textContainer {
+  margin-left: 1.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.worksDate {
-  margin-top: 4rem;
+.photoList__date {
+  margin-top: 2rem;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
   color: #a9a9a9;
 }
 
-.labels-works {
+.photoList__labelContainer {
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
-  .labels-works {
+  .photoList__labelContainer {
     display: inline;
     margin-left: 1rem;
   }
 }
 
-.label-works {
+.photoList__label {
   padding: 0.5rem 2rem;
   font-size: 1.1rem;
   color: #626262;
@@ -444,23 +474,21 @@ footer {
   margin-right: 2rem;
 }
 @media only screen and (max-width: 768px) {
-  .label-works {
+  .photoList__label {
     margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
   }
 }
 
-.list__text-work {
+.photoList__text {
   display: inline-block;
-  margin-top: 3rem;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  line-height: 3.2rem;
-  width: 50rem;
+  line-height: 2.8rem;
   position: relative;
 }
-.list__text-work::after {
+.photoList__text::after {
   position: absolute;
   bottom: -3px;
   left: 0;
@@ -472,46 +500,15 @@ footer {
   transform-origin: left top;
   transition: transform 0.3s;
 }
-.list__text-work:hover::after {
+.photoList__text:hover::after {
   transform: scale(1, 1);
 }
 @media only screen and (max-width: 768px) {
-  .list__text-work {
+  .photoList__text {
     font-size: 1.4rem;
     padding-right: 1rem;
     line-height: 2.8rem;
   }
-}
-
-.linkTabs {
-  padding-left: 2rem;
-}
-
-.linkTab {
-  margin-bottom: 2.6rem;
-  margin-left: 4rem;
-}
-
-.linkTab a {
-  font-size: 1.4rem;
-  color: #a9a9a9;
-  text-decoration: none;
-}
-
-.linkTab.active a {
-  color: #000000;
-  position: relative;
-}
-
-.linkTab.active a::before {
-  content: "";
-  display: block;
-  width: 0.8rem;
-  height: 0.8rem;
-  position: absolute;
-  background-color: #000000;
-  top: 0.8rem;
-  left: -1.6rem;
 }
 
 .pager {
@@ -752,18 +749,24 @@ footer {
   }
 }
 .breadCrumbContainer {
-  margin-top: 12rem;
+  margin: 12rem 0;
+  padding-top: 6rem;
 }
 
-.worksDetail {
+.newsDetail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 9.6rem auto 12rem;
+}
+
+.newsDetail__main {
   display: block;
   width: 100%;
   max-width: 84rem;
-  margin: 9.6rem auto 12rem;
-  padding: 6rem 0 12rem 0;
 }
 
-.worksDetail__label {
+.newsDetail__label {
   padding: 0.5rem 2rem;
   font-size: 1.1rem;
   color: #626262;
@@ -771,25 +774,25 @@ footer {
   display: inline-block;
 }
 @media only screen and (max-width: 768px) {
-  .worksDetail__label {
+  .newsDetail__label {
     margin-left: 0.8rem;
     font-size: 1rem;
     padding: 0.5rem 1.6rem;
   }
 }
 
-.worksDetail__title {
+.newsDetail__title {
   margin-top: 2rem;
   font-size: 2.6rem;
 }
 
-.worksDetail__date {
+.newsDetail__date {
   margin-top: 3.6rem;
   font-size: 1.1rem;
   color: #a9a9a9;
 }
 
-.worksDetail__text {
+.newsDetail__text {
   font-size: 1.6rem;
   line-height: 3.2rem;
   width: 100%;
@@ -797,17 +800,17 @@ footer {
   margin: 4rem auto 0 auto;
 }
 
-.worksDetail__imgContainer {
+.newsDetail__imgContainer {
   margin-top: 4rem;
   text-align: center;
 }
 
-.worksDetail__buttonContainer {
+.newsDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
 }
 
-.worksDetail__button {
+.newsDetail__button {
   color: #001e63;
   font-size: 1.4rem;
   padding: 1.5rem 8rem 1.5rem 10rem;
@@ -819,6 +822,6 @@ footer {
   transition: background-position 1s ease-in-out;
 }
 
-.worksDetail__button:hover {
+.newsDetail__button:hover {
   background-position: 6rem center;
 }

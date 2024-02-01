@@ -9,6 +9,14 @@
   font-size: 7rem;
 }
 
+@mixin title-sideBar {
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-color: #001135;
+  padding: 1.8rem;
+  text-align: left;
+}
+
 @mixin ellipsisSingle {
   white-space: nowrap;
   overflow: hidden;
