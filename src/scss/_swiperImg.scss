@@ -14,19 +14,14 @@
 
 .swiper {
   width: 100%;
-  //max-height: 780px;
   height: 78rem;
-}
 
-.topSlide {
-  //padding-bottom: 75.43%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-@include sp {
-  .topSlide {
-    //padding-bottom: 135.2%;
+  @include sp {
+    height: 48rem;
   }
+}
+
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
 }

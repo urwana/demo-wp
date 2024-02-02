@@ -375,11 +375,15 @@ footer {
   width: 100%;
   height: 78rem;
 }
+@media only screen and (max-width: 768px) {
+  .swiper {
+    height: 48rem;
+  }
+}
 
-.topSlide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.swiper-slide img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .aboutSection {
