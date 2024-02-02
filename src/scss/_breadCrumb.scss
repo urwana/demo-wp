@@ -24,6 +24,10 @@
     height: 0.2rem;
     background-color: #a9a9a9;
   }
+
+  @include sp {
+    margin-top: 1rem;
+  }
 }
 
 .breadCrumb.current {
@@ -31,6 +35,8 @@
 }
 
 .breadCrumb:first-child {
+  margin-left: 0;
+
   &::before {
     display: none;
   }

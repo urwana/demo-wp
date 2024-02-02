@@ -1,6 +1,5 @@
 %mainView {
-  width: 127rem;
-  max-width: 88%;
+  height: 51.4rem;
   position: relative;
   margin-left: 17rem;
   margin-top: 15rem;
@@ -85,5 +84,13 @@
 
   @include sp {
     font-size: 1.2rem;
+  }
+}
+
+.breadCrumbsContainer-mainView {
+  padding-right: 6rem;
+
+  @include sp {
+    padding-right: 1rem;
   }
 }

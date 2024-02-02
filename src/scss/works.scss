@@ -21,12 +21,13 @@
 
   @include sp {
     display: block;
-    margin: 3.3rem auto 8rem;
+    //margin: 3.3rem auto 8rem;
+    padding: 3.3rem 6.67% 8rem;
   }
 }
 
 .worksMainContents__tabs {
-  flex-basis: 30rem;
+  flex-basis: 26rem;
 }
 
 .worksMainContents__body {

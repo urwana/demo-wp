@@ -24,16 +24,16 @@
   @include date;
 
   @include sp {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
 .labels-works {
   display: inline-block;
 
-  @include sp {
-    display: inline;
-  }
+  // @include sp {
+  //   display: inline;
+  // }
 }
 
 .label-works {
@@ -42,6 +42,12 @@
 
   @include sp {
     margin-left: 0;
+    margin-right: 0.8rem;
+    display: none;
+
+    &:first-child {
+      display: inline-block;
+    }
   }
 }
 
@@ -51,7 +57,6 @@
   font-size: 1.8rem;
   cursor: pointer;
   line-height: 3.2rem;
-  width: 50rem;
   @include underlineAnimation(#000000, 1px, 0.3s);
 
   @include sp {

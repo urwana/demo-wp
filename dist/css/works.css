@@ -181,7 +181,7 @@ footer {
   display: none;
   position: absolute;
   left: 13%;
-  top: 60%;
+  top: 65vh;
   z-index: 4;
 }
 .navigation .snsIconContainer > i {
@@ -295,8 +295,7 @@ footer {
   }
 }
 .mainView-works, .mainView-news, .mainView-service, .mainView-about {
-  width: 127rem;
-  max-width: 88%;
+  height: 51.4rem;
   position: relative;
   margin-left: 17rem;
   margin-top: 15rem;
@@ -388,6 +387,15 @@ footer {
   }
 }
 
+.breadCrumbsContainer-mainView {
+  padding-right: 6rem;
+}
+@media only screen and (max-width: 768px) {
+  .breadCrumbsContainer-mainView {
+    padding-right: 1rem;
+  }
+}
+
 .breadCrumbs {
   font-size: 1.5rem;
   text-align: right;
@@ -415,11 +423,19 @@ footer {
   height: 0.2rem;
   background-color: #a9a9a9;
 }
+@media only screen and (max-width: 768px) {
+  .breadCrumb {
+    margin-top: 1rem;
+  }
+}
 
 .breadCrumb.current {
   color: #242424;
 }
 
+.breadCrumb:first-child {
+  margin-left: 0;
+}
 .breadCrumb:first-child::before {
   display: none;
 }
@@ -437,10 +453,17 @@ footer {
 
 .summarySection__links {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media only screen and (max-width: 768px) {
+  .summarySection__links {
+    justify-content: space-between;
+  }
 }
 
 .summarySection__links > li {
-  display: inline-block;
   color: #011950;
   background-image: url("../img/downArrow.svg");
   background-repeat: no-repeat;
@@ -451,7 +474,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .summarySection__links > li {
-    margin-right: 4rem;
+    margin-right: 0;
     font-size: 1.2rem;
   }
 }
@@ -479,7 +502,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .summarySection__text {
-    margin-top: 3.8rem;
+    margin-top: 3.4rem;
     font-size: 1.4rem;
     line-height: 3.2rem;
   }
@@ -516,17 +539,12 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .worksDate {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 }
 
 .labels-works {
   display: inline-block;
-}
-@media only screen and (max-width: 768px) {
-  .labels-works {
-    display: inline;
-  }
 }
 
 .label-works {
@@ -547,6 +565,11 @@ footer {
 @media only screen and (max-width: 768px) {
   .label-works {
     margin-left: 0;
+    margin-right: 0.8rem;
+    display: none;
+  }
+  .label-works:first-child {
+    display: inline-block;
   }
 }
 
@@ -556,7 +579,6 @@ footer {
   font-size: 1.8rem;
   cursor: pointer;
   line-height: 3.2rem;
-  width: 50rem;
   position: relative;
 }
 .list__text-work::after {
@@ -891,12 +913,12 @@ footer {
 @media only screen and (max-width: 768px) {
   .worksMainContents {
     display: block;
-    margin: 3.3rem auto 8rem;
+    padding: 3.3rem 6.67% 8rem;
   }
 }
 
 .worksMainContents__tabs {
-  flex-basis: 30rem;
+  flex-basis: 26rem;
 }
 
 .worksMainContents__body {

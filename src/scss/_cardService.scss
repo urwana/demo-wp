@@ -8,6 +8,10 @@
   }
 }
 
+.cardService:last-child {
+  margin-bottom: 0;
+}
+
 .cardService__item {
   margin-top: 16rem;
 
@@ -87,6 +91,8 @@
 
 @include sp {
   .cardService__imgWrapper {
+    background-color: #f8f8f8;
+    padding-top: 2.6rem;
     img {
       width: 100%;
       height: auto;

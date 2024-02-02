@@ -1,7 +1,7 @@
 <% if (typeof cardServiceData === 'undefined') { cardServiceData = []; } %>
 <div class="cardService">
   <% cardServiceData.forEach((card) => { %>
-  <section class="cardService__item">
+  <section class="cardService__item" id="<%- card.anchorLink %>">
     <div class="cardService__upperContents">
       <div class="cardService__header">
         <div class="cardService__no"><%- card.serviceNumber %><span class="decoratedLine"></span>

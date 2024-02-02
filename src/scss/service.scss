@@ -8,3 +8,9 @@
 @import "summarySection";
 @import "cardService";
 @import "footer";
+
+.service {
+  @include sp {
+    padding: 3.3rem 6.67% 8rem;
+  }
+}

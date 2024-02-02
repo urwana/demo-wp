@@ -181,7 +181,7 @@ footer {
   display: none;
   position: absolute;
   left: 13%;
-  top: 60%;
+  top: 65vh;
   z-index: 4;
 }
 .navigation .snsIconContainer > i {

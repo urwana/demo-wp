@@ -10,11 +10,11 @@
 @import "pager";
 @import "footer";
 
-.breadCrumbContainer {
-  margin-top: 12rem;
+.breadCrumbContainer-workDetail {
+  margin-top: 10rem;
 
   @include sp {
-    margin-top: 1rem;
+    margin-top: 0;
   }
 }
 
@@ -22,8 +22,7 @@
   display: block;
   width: 100%;
   max-width: 84rem;
-  margin: 9.6rem auto 12rem;
-  padding: 6rem 0 12rem 0;
+  margin: 6rem auto 12rem;
 
   @include sp {
     margin: 3.3rem auto 8rem;
@@ -33,6 +32,7 @@
 
 .worksDetail__label {
   @include label(#626262, #f3f3f3);
+  margin-right: 1rem;
 }
 
 .worksDetail__title {
@@ -89,6 +89,7 @@
   border-radius: 4px;
   background-image: url("../img/arrow-before.svg");
   background-repeat: no-repeat;
+  background-size: 0.6rem;
   background-position: 8rem center;
   transition: background-position 1s ease-in-out;
 }
