@@ -181,7 +181,7 @@ footer {
   display: none;
   position: absolute;
   left: 13%;
-  top: 45rem;
+  top: 60%;
   z-index: 4;
 }
 .navigation .snsIconContainer > i {
@@ -418,11 +418,15 @@ footer {
   border-bottom: #e4e4e4 solid 1px;
 }
 
+.sideBarLists > li:last-child {
+  border-bottom: transparent;
+}
+
 .photoLists {
   padding: 0 1.8rem;
 }
 
-.photoList {
+.photoList:first-child {
   padding-top: 4rem;
 }
 
@@ -435,6 +439,10 @@ footer {
   align-items: flex-start;
 }
 
+.photoList:last-child a {
+  border-bottom: transparent;
+}
+
 .photoList__textContainer {
   margin-left: 1.8rem;
   display: flex;
@@ -444,7 +452,7 @@ footer {
 }
 
 .photoList__date {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: bold;
@@ -481,7 +489,7 @@ footer {
   display: inline-block;
   font-size: 1.2rem;
   cursor: pointer;
-  line-height: 2.8rem;
+  line-height: 2.4rem;
   position: relative;
 }
 .photoList__text::after {
@@ -760,8 +768,8 @@ footer {
   }
 }
 .breadCrumbContainer {
-  margin: 12rem 0;
-  padding-top: 6rem;
+  margin: 9rem 0;
+  padding: 0 4.6rem 0 0;
 }
 @media only screen and (max-width: 768px) {
   .breadCrumbContainer {
@@ -774,8 +782,8 @@ footer {
   margin-top: 4rem;
   font-size: 2.2rem;
   background-color: #f8f9f9;
-  padding: 0 0 0.3rem 0.5rem;
-  border-left: 1px solid #707070;
+  padding: 0.5rem 0 1rem 0.8rem;
+  border-left: 2px solid #707070;
 }
 @media only screen and (max-width: 768px) {
   .title__h2-service {
@@ -785,12 +793,19 @@ footer {
 
 .title__h3-service {
   margin-top: 4rem;
-  border-bottom: 1px solid #707070;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
-.title__h3-service > span {
+.title__h3-service > span:first-child {
   font-size: 1.8rem;
   border-bottom: 1px solid #001e63;
-  padding: 0 0 0.3rem 1.5rem;
+  padding: 0 0 0.5rem 1.5rem;
+}
+.title__h3-service > span:last-child {
+  border-bottom: 1px solid #e4e4e4;
+  padding: 0 0 0.5rem 1.5rem;
+  flex: 1;
 }
 @media only screen and (max-width: 768px) {
   .title__h3-service > span {
@@ -802,7 +817,9 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 9.6rem auto 12rem;
+  margin: 8rem auto 12rem;
+  width: 100%;
+  max-width: 110rem;
 }
 @media only screen and (max-width: 768px) {
   .newsDetail {
@@ -814,11 +831,12 @@ footer {
 .newsDetail__main {
   display: block;
   width: 100%;
-  max-width: 84rem;
+  max-width: 76rem;
+  padding: 0 4rem;
 }
 @media only screen and (max-width: 768px) {
   .newsDetail__main {
-    padding-bottom: 4rem;
+    padding: 0 6.67% 8rem;
   }
 }
 
@@ -871,24 +889,51 @@ footer {
   margin-top: 4rem;
   text-align: center;
 }
+.newsDetail__imgContainer img {
+  width: 100%;
+  height: auto;
+}
 
 .newsDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .newsDetail__button {
+  display: inline-block;
   color: #001e63;
   font-size: 1.4rem;
-  padding: 1.5rem 8rem 1.5rem 10rem;
   border: #001e63 solid 1px;
   border-radius: 4px;
+}
+
+.newsDetail__button:first-child {
+  padding: 1.5rem 2rem 1.5rem 4rem;
   background-image: url("../img/arrow-before.svg");
   background-repeat: no-repeat;
-  background-position: 8rem center;
-  transition: background-position 1s ease-in-out;
+  background-size: 0.5rem;
+  background-position: 2rem center;
+}
+
+.newsDetail__button:last-child {
+  padding: 1.5rem 4rem 1.5rem 2rem;
+  background-image: url("../img/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 10rem center;
 }
 
 .newsDetail__button:hover {
   background-position: 6rem center;
+}
+
+.newsDetailLists {
+  margin: 4.4rem 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  list-style-type: disc;
+  margin-left: 2rem;
 }

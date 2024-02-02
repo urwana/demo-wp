@@ -21,8 +21,23 @@
       sectionName3:"車検・点検",
       sectionTitle:"お客様一人一人が求める<br />理想のカーライフに寄り添います",
       sectionText:"様々な輸入車・国産車のメンテナンスのご相談から点検・整備まで、親切かつスピーディな対応を心がけ、あらゆる疑問や不安にお答えします。最新鋭の自社集中工場には、四輪アライメントをはじめ最新コンピューターと各ブランドに精通した熟練のサービススタッフを配置、フロ ントでは車種ブランド別の専用電話回線をご用意しております。"
-    }; %>
-    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData}) %>
+    };
+    const linkTabDataService = [
+      {
+        actions:"#philosophy",
+        labels:"経営理念"
+      },
+      {
+        actions:"#access",
+        labels:"アクセス"
+      },
+      {
+        actions:"#companyProfile",
+        labels:"会社概要"
+      },
+    ];
+    %>
+    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData , linkTabData : linkTabDataService}) %>
     <% const cardServiceData = [
       {
         serviceNumber: "01",

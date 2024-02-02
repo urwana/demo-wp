@@ -11,8 +11,8 @@
 @import "footer";
 
 .breadCrumbContainer {
-  margin: 12rem 0;
-  padding-top: 6rem;
+  margin: 9rem 0;
+  padding: 0 4.6rem 0 0;
 
   @include sp {
     margin: 1rem 0;
@@ -24,8 +24,8 @@
   margin-top: 4rem;
   font-size: 2.2rem;
   background-color: #f8f9f9;
-  padding: 0 0 0.3rem 0.5rem;
-  border-left: 1px solid #707070;
+  padding: 0.5rem 0 1rem 0.8rem;
+  border-left: 2px solid #707070;
 
   @include sp {
     font-size: 1.6rem;
@@ -34,13 +34,20 @@
 
 .title__h3-service {
   margin-top: 4rem;
-  border-bottom: 1px solid #707070;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 
-  > span {
+  > span:first-child {
     font-size: 1.8rem;
-
     border-bottom: 1px solid #001e63;
-    padding: 0 0 0.3rem 1.5rem;
+    padding: 0 0 0.5rem 1.5rem;
+  }
+
+  > span:last-child {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 0 0 0.5rem 1.5rem;
+    flex: 1;
   }
 
   @include sp {
@@ -54,7 +61,9 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 9.6rem auto 12rem;
+  margin: 8rem auto 12rem;
+  width: 100%;
+  max-width: 110rem;
 
   @include sp {
     display: block;
@@ -65,10 +74,11 @@
 .newsDetail__main {
   display: block;
   width: 100%;
-  max-width: 84rem;
+  max-width: 76rem;
+  padding: 0 4rem;
 
   @include sp {
-    padding-bottom: 4rem;
+    padding: 0 6.67% 8rem;
   }
 }
 
@@ -107,25 +117,55 @@
 .newsDetail__imgContainer {
   margin-top: 4rem;
   text-align: center;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .newsDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .newsDetail__button {
+  display: inline-block;
   color: #001e63;
   font-size: 1.4rem;
-  padding: 1.5rem 8rem 1.5rem 10rem;
   border: #001e63 solid 1px;
   border-radius: 4px;
+  // background-position: 8rem center;
+  // transition: background-position 1s ease-in-out;
+}
+
+.newsDetail__button:first-child {
+  padding: 1.5rem 2rem 1.5rem 4rem;
   background-image: url("../img/arrow-before.svg");
   background-repeat: no-repeat;
-  background-position: 8rem center;
-  transition: background-position 1s ease-in-out;
+  background-size: 0.5rem;
+  background-position: 2rem center;
+}
+
+.newsDetail__button:last-child {
+  padding: 1.5rem 4rem 1.5rem 2rem;
+  background-image: url("../img/arrow-next.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 10rem center;
 }
 
 .newsDetail__button:hover {
   background-position: 6rem center;
+}
+
+.newsDetailLists {
+  margin: 4.4rem 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  list-style-type: disc;
+  margin-left: 2rem;
 }

@@ -1,7 +1,4 @@
-.latestNews {
-}
-
-.photoList {
+.photoList:first-child {
   padding-top: 4rem;
 }
 
@@ -14,6 +11,10 @@
   align-items: flex-start;
 }
 
+.photoList:last-child a {
+  border-bottom: transparent;
+}
+
 .photoList__textContainer {
   margin-left: 1.8rem;
   display: flex;
@@ -23,7 +24,7 @@
 }
 
 .photoList__date {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   @include date;
 }
 
@@ -45,7 +46,7 @@
   display: inline-block;
   font-size: 1.2rem;
   cursor: pointer;
-  line-height: 2.8rem;
+  line-height: 2.4rem;
   @include underlineAnimation(#000000, 1px, 0.3s);
 
   @include sp {

@@ -22,8 +22,23 @@
       sectionName3:"会社概要",
       sectionTitle:"国境を超え、メーカーを超え<br />「型にはまらない」あなただけの歓びを",
       sectionText:"弊社は、輸入車選びのすべてを見つめ直し、新たなスタイルを提案するインポート・セレクト・ブランドです。これまでの憧れだけや批評家の意見といったイメージで選ぶのではなく、オーナー様となる方がクルマから直接感じるリアルな感性を第一にした、最良の一台との出会いをコーディネートいたします。"
-    }; %>
-    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData}) %>
+    };
+    const linkTabDataAbout = [
+      {
+        actions:"#philosophy",
+        labels:"経営理念"
+      },
+      {
+        actions:"#access",
+        labels:"アクセス"
+      },
+      {
+        actions:"#companyProfile",
+        labels:"会社概要"
+      },
+    ];
+    %>
+    <%- include('./parts/common/_summarySection', { summarySectionData : summarySectionData, linkTabData : linkTabDataAbout }) %>
     <%- include('./parts/about/_philosophySection') %>
     <%- include('./parts/about/_accessSection') %>
     <%- include('./parts/about/_companyProfileSection') %>
@@ -31,10 +46,6 @@
 
     <div class="contents">
     </div>
-    <!-- <div class="contents-dark">
-      <div class="contents__inner-dark">
-      </div>
-    </div> -->
     <%- include('./parts/common/_footer') %>
   </div>
 </body>

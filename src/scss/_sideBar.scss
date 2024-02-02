@@ -20,6 +20,10 @@
   border-bottom: #e4e4e4 solid 1px;
 }
 
+.sideBarLists > li:last-child {
+  border-bottom: transparent;
+}
+
 .photoLists {
   padding: 0 1.8rem;
 }
