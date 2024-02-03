@@ -294,30 +294,25 @@ footer {
     }
   }
 }
-.mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+.mainView-about {
   height: 51.4rem;
   position: relative;
-  margin-left: 17rem;
-  margin-top: 15rem;
+  margin: 15rem 0 0 11.8%;
   padding-bottom: 50rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-image: url("../img/mainView/about.jpg");
 }
 @media only screen and (max-width: 768px) {
-  .mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+  .mainView-about {
     width: 100%;
     max-width: none;
-    margin: 0 0 0 1rem;
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
     padding-bottom: 28rem;
     width: 100%;
     height: auto;
   }
-}
-
-.mainView-about {
-  background-image: url("../img/mainView/about.jpg");
 }
 @media only screen and (max-width: 768px) {
   .mainView-about {
@@ -326,7 +321,24 @@ footer {
 }
 
 .mainView-service {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/service.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-service {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-service {
@@ -335,7 +347,24 @@ footer {
 }
 
 .mainView-news {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/news.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-news {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-news {
@@ -344,7 +373,24 @@ footer {
 }
 
 .mainView-works {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/works.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-works {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-works {
@@ -353,7 +399,24 @@ footer {
 }
 
 .mainView-contact {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/contact.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-contact {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-contact {

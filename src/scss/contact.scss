@@ -13,6 +13,13 @@
   font-size: smaller;
 }
 
+.contact {
+  @include sp {
+    width: 89%;
+    margin: auto;
+  }
+}
+
 .contact__lead {
   font-size: 1.6rem;
   line-height: 3.8rem;
@@ -21,10 +28,19 @@
 .contactForm {
   margin: 6rem auto 12rem;
   width: 64rem;
+
+  @include sp {
+    margin-top: 5rem;
+    width: 100%;
+  }
 }
 
 .contactTable {
   margin-top: 11.2rem;
+
+  @include sp {
+    margin-top: 5rem;
+  }
 }
 
 .contactTable tr,
@@ -42,6 +58,11 @@
 
 .contactTable tr {
   margin-bottom: 4.5rem;
+
+  @include sp {
+    display: block;
+    margin-bottom: 3.4rem;
+  }
 }
 
 .contactTable th {
@@ -53,6 +74,10 @@
   width: 64rem;
   border-radius: 0.4rem;
   padding-left: 1rem;
+
+  @include sp {
+    width: 100%;
+  }
 }
 
 .contactTable label {
@@ -64,6 +89,12 @@
   height: 5rem;
 }
 
+.inputExplanation {
+  @include sp {
+    display: block;
+    margin-top: 1.6rem;
+  }
+}
 .contactTable select {
   @extend %formBase;
   height: 5rem;
@@ -85,20 +116,189 @@
 
 .contactTable-confirm {
   margin-top: 11.2rem;
+
+  @include sp {
+    margin-top: 5rem;
+  }
 }
 
-// .contactTable-confirm th,
-// .contactTable-confirm td {
-//   display: inline-block;
-// }
+.contactTable-confirm tr {
+  display: block;
+  margin-bottom: 3.5rem;
+}
 
 .contactTable-confirm th,
 .contactTable-confirm td {
   font-size: 1.6rem;
   font-weight: normal;
   padding-bottom: 4.5rem;
+
+  @include sp {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .contactTable-confirm th {
   width: 19rem;
+}
+
+.contact__thankEn {
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact__thankJp {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.contact__explanation {
+  margin-top: 4.3rem;
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+}
+
+///////////////////////
+.contactLists {
+  margin: 4.4rem 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.contact__buttonContainer {
+  margin-top: 7.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%contact__button {
+  display: block;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  border: #001e63 solid 1px;
+  color: #001e63;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+  padding: 1.5rem 0;
+}
+
+%contact__button-dark {
+  display: block;
+  background-color: #001e63;
+  border: #001e63 solid 1px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+  padding: 1.5rem 0;
+}
+
+%contact__buttonArrow-before {
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+}
+
+%contact__buttonArrow-next-white {
+  background-image: url("../img/arrow-next-white.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+}
+
+.contact__toConfirm {
+  @extend %contact__button-dark;
+  @extend %contact__buttonArrow-next-white;
+  width: 46rem;
+
+  background-position: right 11rem center;
+
+  &:hover {
+    background-position: right 10rem center;
+  }
+
+  @include sp {
+    width: 28rem;
+
+    background-position: right 5rem center;
+
+    &:hover {
+      background-position: right 4rem center;
+    }
+  }
+}
+
+.contact__toInput {
+  @extend %contact__button;
+  @extend %contact__buttonArrow-before;
+
+  width: 28rem;
+  background-position: left 5rem center;
+
+  &:hover {
+    background-position: left 4rem center;
+  }
+
+  @include sp {
+    width: 15rem;
+    margin-left: 2.4rem;
+
+    background-position: left 3rem center;
+
+    &:hover {
+      background-position: left 2rem center;
+    }
+  }
+}
+
+.contact__send {
+  @extend %contact__button-dark;
+  @extend %contact__buttonArrow-next-white;
+
+  width: 28rem;
+  margin-left: 4rem;
+
+  background-position: right 5rem center;
+
+  &:hover {
+    background-position: right 4rem center;
+  }
+
+  @include sp {
+    width: 15rem;
+    margin-left: 2.4rem;
+
+    background-position: right 3rem center;
+
+    &:hover {
+      background-position: right 2rem center;
+    }
+  }
+}
+
+.contact__toTop {
+  @extend %contact__button;
+  @extend %contact__buttonArrow-before;
+  width: 46rem;
+
+  background-position: left 11rem center;
+
+  &:hover {
+    background-position: left 10rem center;
+  }
+
+  @include sp {
+    width: 28rem;
+
+    background-position: left 5rem center;
+
+    &:hover {
+      background-position: left 4rem center;
+    }
+  }
 }

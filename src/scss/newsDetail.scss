@@ -124,6 +124,8 @@
   }
 }
 
+// TODO: mixin 化する
+
 .newsDetail__buttonContainer {
   margin-top: 7.5rem;
   text-align: center;
@@ -138,8 +140,7 @@
   font-size: 1.4rem;
   border: #001e63 solid 1px;
   border-radius: 4px;
-  // background-position: 8rem center;
-  // transition: background-position 1s ease-in-out;
+  transition: background-position 0.3s ease;
 }
 
 .newsDetail__button:first-child {
@@ -158,8 +159,12 @@
   background-position: 10rem center;
 }
 
-.newsDetail__button:hover {
-  background-position: 6rem center;
+.newsDetail__button:first-child:hover {
+  background-position: 1rem center;
+}
+
+.newsDetail__button:last-child:hover {
+  background-position: 11rem center;
 }
 
 .newsDetailLists {

@@ -1,0 +1,102 @@
+@import "mixin";
+@import "common";
+@import "header";
+@import "hamburgerButton";
+@import "hamburgerMenu";
+@import "footer";
+
+.mainView-404 {
+  @include mainView;
+  background-image: url("../img/mainView/404.jpg");
+  margin-bottom: 12rem;
+
+  @include sp {
+    background-image: url("../img/mainView/404-sp.jpg");
+  }
+}
+
+%mainView__titleContainer-404 {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -60%);
+}
+
+.mainView__title-404 {
+  @extend %mainView__titleContainer-404;
+
+  font-family: "Oswald";
+  font-size: 7rem;
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+
+  @include sp {
+    font-size: 4.4rem;
+  }
+}
+
+.spTextContainer-404 {
+  width: 89.3%;
+  margin: auto;
+
+  @include sp {
+    padding-bottom: 8rem;
+  }
+}
+
+.mainView__subtitle-404 {
+  @extend %mainView__titleContainer-404;
+  margin-top: 11rem;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 3.8rem;
+  color: #ffffff;
+
+  @include sp {
+    color: #000000;
+    font-size: 1.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin-top: 4rem;
+  }
+}
+
+.mainView__buttonContainer-404 {
+  margin-top: 14rem;
+  text-align: center;
+  @extend %mainView__titleContainer-404;
+
+  @include sp {
+    font-size: 1.2rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    margin-top: 4.5rem;
+  }
+}
+
+// TODO: mixin 化する
+.button__404 {
+  display: inline-block;
+  color: #001e63;
+  font-size: 1.4rem;
+  border: #001e63 solid 1px;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+}
+
+.button__404:first-child {
+  padding: 1.5rem 2.7rem 1.5rem 4.2rem;
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+  background-position: 2rem center;
+}
+
+.button__404:first-child:hover {
+  background-position: 1rem center;
+}

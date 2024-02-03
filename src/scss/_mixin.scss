@@ -4,6 +4,27 @@
   }
 }
 
+@mixin mainView {
+  height: 51.4rem;
+  position: relative;
+  // margin: 15rem 0 0 17rem;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include sp {
+    width: 100%;
+    max-width: none;
+    // margin: 3rem 0 0 1rem;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
+}
+
 @mixin topSectiontitle-h2 {
   font-family: "Oswald";
   font-size: 7rem;

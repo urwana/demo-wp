@@ -294,30 +294,25 @@ footer {
     }
   }
 }
-.mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+.mainView-about {
   height: 51.4rem;
   position: relative;
-  margin-left: 17rem;
-  margin-top: 15rem;
+  margin: 15rem 0 0 11.8%;
   padding-bottom: 50rem;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-image: url("../img/mainView/about.jpg");
 }
 @media only screen and (max-width: 768px) {
-  .mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+  .mainView-about {
     width: 100%;
     max-width: none;
-    margin: 0 0 0 1rem;
-    margin-top: 3rem;
+    margin: 3rem 0 0 0;
     padding-bottom: 28rem;
     width: 100%;
     height: auto;
   }
-}
-
-.mainView-about {
-  background-image: url("../img/mainView/about.jpg");
 }
 @media only screen and (max-width: 768px) {
   .mainView-about {
@@ -326,7 +321,24 @@ footer {
 }
 
 .mainView-service {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/service.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-service {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-service {
@@ -335,7 +347,24 @@ footer {
 }
 
 .mainView-news {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/news.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-news {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-news {
@@ -344,7 +373,24 @@ footer {
 }
 
 .mainView-works {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/works.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-works {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-works {
@@ -353,7 +399,24 @@ footer {
 }
 
 .mainView-contact {
+  height: 51.4rem;
+  position: relative;
+  margin: 15rem 0 0 11.8%;
+  padding-bottom: 50rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   background-image: url("../img/mainView/contact.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-contact {
+    width: 100%;
+    max-width: none;
+    margin: 3rem 0 0 0;
+    padding-bottom: 28rem;
+    width: 100%;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .mainView-contact {
@@ -681,6 +744,13 @@ footer {
   font-size: smaller;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact {
+    width: 89%;
+    margin: auto;
+  }
+}
+
 .contact__lead {
   font-size: 1.6rem;
   line-height: 3.8rem;
@@ -690,9 +760,20 @@ footer {
   margin: 6rem auto 12rem;
   width: 64rem;
 }
+@media only screen and (max-width: 768px) {
+  .contactForm {
+    margin-top: 5rem;
+    width: 100%;
+  }
+}
 
 .contactTable {
   margin-top: 11.2rem;
+}
+@media only screen and (max-width: 768px) {
+  .contactTable {
+    margin-top: 5rem;
+  }
 }
 
 .contactTable tr,
@@ -711,6 +792,12 @@ footer {
 .contactTable tr {
   margin-bottom: 4.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .contactTable tr {
+    display: block;
+    margin-bottom: 3.4rem;
+  }
+}
 
 .contactTable th {
   margin-bottom: 1.2rem;
@@ -722,6 +809,11 @@ footer {
   border-radius: 0.4rem;
   padding-left: 1rem;
 }
+@media only screen and (max-width: 768px) {
+  .contactTable textarea, .contactTable select, .contactTable input {
+    width: 100%;
+  }
+}
 
 .contactTable label {
   margin-right: 2rem;
@@ -729,6 +821,13 @@ footer {
 
 .contactTable input {
   height: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .inputExplanation {
+    display: block;
+    margin-top: 1.6rem;
+  }
 }
 
 .contactTable select {
@@ -749,6 +848,16 @@ footer {
 .contactTable-confirm {
   margin-top: 11.2rem;
 }
+@media only screen and (max-width: 768px) {
+  .contactTable-confirm {
+    margin-top: 5rem;
+  }
+}
+
+.contactTable-confirm tr {
+  display: block;
+  margin-bottom: 3.5rem;
+}
 
 .contactTable-confirm th,
 .contactTable-confirm td {
@@ -756,7 +865,152 @@ footer {
   font-weight: normal;
   padding-bottom: 4.5rem;
 }
+@media only screen and (max-width: 768px) {
+  .contactTable-confirm th,
+  .contactTable-confirm td {
+    display: block;
+    padding-bottom: 1.5rem;
+  }
+}
 
 .contactTable-confirm th {
   width: 19rem;
+}
+
+.contact__thankEn {
+  font-family: "Oswald";
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.contact__thankJp {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+
+.contact__explanation {
+  margin-top: 4.3rem;
+  font-size: 1.8rem;
+  line-height: 3.8rem;
+}
+
+.contactLists {
+  margin: 4.4rem 0;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.contact__buttonContainer {
+  margin-top: 7.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__toTop, .contact__toInput {
+  display: block;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  border: #001e63 solid 1px;
+  color: #001e63;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+  padding: 1.5rem 0;
+}
+
+.contact__send, .contact__toConfirm {
+  display: block;
+  background-color: #001e63;
+  border: #001e63 solid 1px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  transition: background-position 0.3s ease;
+  padding: 1.5rem 0;
+}
+
+.contact__toTop, .contact__toInput {
+  background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+}
+
+.contact__send, .contact__toConfirm {
+  background-image: url("../img/arrow-next-white.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+}
+
+.contact__toConfirm {
+  width: 46rem;
+  background-position: right 11rem center;
+}
+.contact__toConfirm:hover {
+  background-position: right 10rem center;
+}
+@media only screen and (max-width: 768px) {
+  .contact__toConfirm {
+    width: 28rem;
+    background-position: right 5rem center;
+  }
+  .contact__toConfirm:hover {
+    background-position: right 4rem center;
+  }
+}
+
+.contact__toInput {
+  width: 28rem;
+  background-position: left 5rem center;
+}
+.contact__toInput:hover {
+  background-position: left 4rem center;
+}
+@media only screen and (max-width: 768px) {
+  .contact__toInput {
+    width: 15rem;
+    margin-left: 2.4rem;
+    background-position: left 3rem center;
+  }
+  .contact__toInput:hover {
+    background-position: left 2rem center;
+  }
+}
+
+.contact__send {
+  width: 28rem;
+  margin-left: 4rem;
+  background-position: right 5rem center;
+}
+.contact__send:hover {
+  background-position: right 4rem center;
+}
+@media only screen and (max-width: 768px) {
+  .contact__send {
+    width: 15rem;
+    margin-left: 2.4rem;
+    background-position: right 3rem center;
+  }
+  .contact__send:hover {
+    background-position: right 2rem center;
+  }
+}
+
+.contact__toTop {
+  width: 46rem;
+  background-position: left 11rem center;
+}
+.contact__toTop:hover {
+  background-position: left 10rem center;
+}
+@media only screen and (max-width: 768px) {
+  .contact__toTop {
+    width: 28rem;
+    background-position: left 5rem center;
+  }
+  .contact__toTop:hover {
+    background-position: left 4rem center;
+  }
 }

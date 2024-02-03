@@ -1,26 +1,5 @@
-%mainView {
-  height: 51.4rem;
-  position: relative;
-  margin-left: 17rem;
-  margin-top: 15rem;
-  padding-bottom: 50rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-
-  @include sp {
-    width: 100%;
-    max-width: none;
-    margin: 0 0 0 1rem;
-    margin-top: 3rem;
-    padding-bottom: 28rem;
-    width: 100%;
-    height: auto;
-  }
-}
-
 .mainView-about {
-  @extend %mainView;
+  @include mainView;
   background-image: url("../img/mainView/about.jpg");
 
   @include sp {
@@ -29,7 +8,7 @@
 }
 
 .mainView-service {
-  @extend %mainView;
+  @include mainView;
   background-image: url("../img/mainView/service.jpg");
 
   @include sp {
@@ -38,7 +17,7 @@
 }
 
 .mainView-news {
-  @extend %mainView;
+  @include mainView;
   background-image: url("../img/mainView/news.jpg");
 
   @include sp {
@@ -47,7 +26,7 @@
 }
 
 .mainView-works {
-  @extend %mainView;
+  @include mainView;
   background-image: url("../img/mainView/works.jpg");
 
   @include sp {
@@ -56,7 +35,7 @@
 }
 
 .mainView-contact {
-  @extend %mainView;
+  @include mainView;
   background-image: url("../img/mainView/contact.jpg");
 
   @include sp {
