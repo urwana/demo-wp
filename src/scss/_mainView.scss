@@ -55,6 +55,15 @@
   }
 }
 
+.mainView-contact {
+  @extend %mainView;
+  background-image: url("../img/mainView/contact.jpg");
+
+  @include sp {
+    background-image: url("../img/mainView/contact-sp.jpg");
+  }
+}
+
 .mainView__titleContainer {
   display: inline-block;
   padding: 2rem 4.5rem 5rem 4.5rem;

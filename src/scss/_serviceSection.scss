@@ -1,5 +1,6 @@
 .serviceSection {
   margin-top: 12rem;
+  padding-bottom: 5.4rem;
 }
 
 .serviceSection__inner {
@@ -15,4 +16,5 @@
 
 .serviceSection__title {
   @include topSectiontitle-h2;
+  text-align: right;
 }

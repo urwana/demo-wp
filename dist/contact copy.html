@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> works詳細 | 架空のコーポレイトデモサイト</title>
-  <meta name="description" content="架空のコーポレートデモサイトの事業紹介の詳細ページです。">
+  <title> contact | 架空のコーポレイトデモサイト</title>
+  <meta name="description" content="架空のコーポレートデモサイトのお問合せページです。">
   <meta name="keywords" content="wordpress, demo, coporate">
 
   <!-- Twitter カードの設定 (例: サマリーカード) -->
@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
-  <link rel="stylesheet" href="./css/worksDetail.css" />
+  <link rel="stylesheet" href="./css/contact.css" />
   <script src="https://kit.fontawesome.com/f46866a57f.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -72,39 +72,68 @@
   </nav>
   <div class="circleBackground displaySp"></div>
 </header>
-    <div class="breadCrumbContainer-workDetail">
-      
+    
+    
+<div class="mainView-contact">
+  <div class="mainView__titleContainer">
+    <h2 class="mainView__title">Contact</h2>
+    <div class="mainView__subtitle">お問合せ</div>
+  </div>
+</div>
+<div class="breadCrumbsContainer-mainView">
+  
 <ul class="breadCrumbs">
   <li class="breadCrumb"><a href="./about.html">Top</a></li>
   
-  <li class="breadCrumb ">works</li>
-  
-  <li class="breadCrumb current">車のドアが開けられなくなった｜ドアロックの交換と車両の点検</li>
+  <li class="breadCrumb current">contact</li>
   
 </ul>
-    </div>
-    <div class="worksDetail">
-      <div class="worksDetail__head">
-        <ul class="worksLabels">
-          <li class="worksDetail__label">トピックス</li>
-          <li class="worksDetail__label">イベント・キャンペーン</li>
-        </ul>
-        <div class="worksDetail__title">2022年10月8日・9日・10日の3日間、試乗車フェアを開催します</div>
-        <div class="worksDetail__date">2022.09.02</div>
-      </div>
+</div>
+    <div class="contact">
+      <div class="contact__inner">
 
-      <div class="worksDetail__imgContainer">
-        <picture>
-          <source media="(max-width: 768px)" srcset="./img/works/detail1-sp.jpg" width="315" height="176">
-          <source media="(min-width: 769px)" srcset="./img/works/detail1.jpg" width="840" height="471">
-          <img src="./img/works/detail1.jpg" alt="実績のイメージ " width="840" height="471">
-        </picture>
-      </div>
+        <div class="contactForm">
+          <div class="contact__lead">弊社へのお問い合わせは<br />
+            下記フォームより受け付けております。<br />
+            担当者が確認後、折り返しご連絡させていただきます。</div>
+          <form>
+            <div class="contactTable">
+              <table>
+                <tr>
+                  <th><label labelFor="">会社名<span class="asterisk">*</span></label>個人の場合は「個人」と入力してください</th>
+                  <td><input name="" type="text" placeholder="例）株式会社ABC" value="" /></td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">ご担当者名<span class="asterisk">*</span></label>個人の場合は氏名を入力してください</th>
+                  <td><input name="" type="text" placeholder="例）輸入車　太郎" value="" /></td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">電話番号<span class="asterisk">*</span></label></th>
+                  <td><input name="" type="text" placeholder="例）022-000-0000" value="" /></td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">メールアドレス<span class="asterisk">*</span></label></th>
+                  <td><input name="" type="text" placeholder="例）abcdefghijk@excitecode.co.jp" value="" /></td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">お問い合わせの種類<span class="asterisk">*</span></label></th>
+                  <td><select>
+                      <option>選択してください</option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">お問い合わせ内容<span class="asterisk">*</span></label></th>
+                  <td><textarea name="" type="text" placeholder=""></textarea></td>
+                </tr>
+              </table>
+              <p><span class="asterisk">*</span><input class="confirmCheckbox" type="checkbox" />「個人情報の取り扱いについて」同意する</p>
+            </div>
+          </form>
+        </div>
 
-      <p class="worksDetail__text">本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。<br /><br />本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。本文がここに入ります。</p>
-
-      <div class="worksDetail__buttonContainer">
-        <a href="./work.html" class="worksDetail__button">実績一覧へ戻る</a>
       </div>
     </div>
     <footer class="footer">

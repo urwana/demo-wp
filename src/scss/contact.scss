@@ -1,0 +1,104 @@
+@import "mixin";
+@import "common";
+@import "header";
+@import "hamburgerButton";
+@import "hamburgerMenu";
+@import "mainView";
+@import "breadCrumb";
+@import "footer";
+
+.asterisk {
+  color: #e20000;
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.contact__lead {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+}
+
+.contactForm {
+  margin: 6rem auto 12rem;
+  width: 64rem;
+}
+
+.contactTable {
+  margin-top: 11.2rem;
+}
+
+.contactTable tr,
+.contactTable th,
+.contactTable td {
+  display: inline-block;
+}
+
+.contactTable th,
+.contactTable td {
+  font-size: 1.6rem;
+  font-weight: normal;
+  display: block;
+}
+
+.contactTable tr {
+  margin-bottom: 4.5rem;
+}
+
+.contactTable th {
+  margin-bottom: 1.2rem;
+}
+
+%formBase {
+  border: #e2e2e2 1px solid;
+  width: 64rem;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+}
+
+.contactTable label {
+  margin-right: 2rem;
+}
+
+.contactTable input {
+  @extend %formBase;
+  height: 5rem;
+}
+
+.contactTable select {
+  @extend %formBase;
+  height: 5rem;
+}
+
+.contactTable textarea {
+  @extend %formBase;
+  height: 16rem;
+}
+
+.contactTable .confirmCheckbox {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-left: 0.5rem;
+}
+
+/////////////////////////////////
+
+.contactTable-confirm {
+  margin-top: 11.2rem;
+}
+
+// .contactTable-confirm th,
+// .contactTable-confirm td {
+//   display: inline-block;
+// }
+
+.contactTable-confirm th,
+.contactTable-confirm td {
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-bottom: 4.5rem;
+}
+
+.contactTable-confirm th {
+  width: 19rem;
+}

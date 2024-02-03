@@ -485,6 +485,7 @@ footer {
 
 .serviceSection {
   margin-top: 12rem;
+  padding-bottom: 5.4rem;
 }
 
 .serviceSection__inner {
@@ -502,6 +503,7 @@ footer {
 .serviceSection__title {
   font-family: "Oswald";
   font-size: 7rem;
+  text-align: right;
 }
 
 .cardHorizontal {

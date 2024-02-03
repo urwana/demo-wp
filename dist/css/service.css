@@ -294,7 +294,7 @@ footer {
     }
   }
 }
-.mainView-works, .mainView-news, .mainView-service, .mainView-about {
+.mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
   height: 51.4rem;
   position: relative;
   margin-left: 17rem;
@@ -305,7 +305,7 @@ footer {
   background-size: cover;
 }
 @media only screen and (max-width: 768px) {
-  .mainView-works, .mainView-news, .mainView-service, .mainView-about {
+  .mainView-contact, .mainView-works, .mainView-news, .mainView-service, .mainView-about {
     width: 100%;
     max-width: none;
     margin: 0 0 0 1rem;
@@ -349,6 +349,15 @@ footer {
 @media only screen and (max-width: 768px) {
   .mainView-works {
     background-image: url("../img/mainView/works-sp.jpg");
+  }
+}
+
+.mainView-contact {
+  background-image: url("../img/mainView/contact.jpg");
+}
+@media only screen and (max-width: 768px) {
+  .mainView-contact {
+    background-image: url("../img/mainView/contact-sp.jpg");
   }
 }
 

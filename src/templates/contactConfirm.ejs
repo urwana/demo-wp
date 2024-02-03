@@ -1,0 +1,58 @@
+<% base = { path: "./", title: "contact", css: "contact", description: "架空のコーポレートデモサイトのお問合せページです。"} %>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include(base.path + "./parts/common/_head", { base: base}) %>
+
+<body>
+  <div class="wrapper">
+    <%- include('./parts/common/_header') %>
+    <% const mainViewData = {
+      pageNameEn: "Contact",
+      pageNameJp: "お問合せ",
+      pageNames: ["contact"]
+    }; %>
+    <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
+    <div class="contact">
+      <div class="contact__inner">
+
+        <div class="contactForm">
+          <div class="contact__lead">入力内容をご確認ください。</div>
+          <form>
+            <div class="contactTable-confirm">
+              <table>
+                <tr>
+                  <th><label labelFor="">会社名<span class="asterisk">*</span></label></th>
+                  <td>株式会社ABC</td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">ご担当者名<span class="asterisk">*</span></label></th>
+                  <td>輸入車　太郎</td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">電話番号<span class="asterisk">*</span></label></th>
+                  <td>022-000-0000</td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">メールアドレス<span class="asterisk">*</span></label></th>
+                  <td>abcdefghijk@excitecode.co.jp</td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">お問い合わせの種類<span class="asterisk">*</span></label></th>
+                  <td>購入サポートについて</td>
+                </tr>
+                <tr>
+                  <th><label labelFor="">お問い合わせ内容<span class="asterisk">*</span></label></th>
+                  <td>お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。</td>
+                </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <%- include('./parts/common/_footer') %>
+  </div>
+</body>
+
+</html>
