@@ -40,6 +40,8 @@
 
   @include sp {
     background-image: url("../img/mainView/contact-sp.jpg");
+    background-size: 100%;
+    background-position: left 1rem top;
   }
 }
 
@@ -50,7 +52,7 @@
   background-color: #ffffff;
 
   @include sp {
-    padding: 1rem 6.8rem 5.5rem 1.8rem;
+    padding: 2rem 3rem 4rem 3rem;
     min-width: 19rem;
   }
 }
@@ -67,10 +69,12 @@
 }
 
 .mainView__subtitle {
+  margin-top: 2rem;
   font-size: 2rem;
   font-weight: bold;
 
   @include sp {
+    margin-top: 0.5rem;
     font-size: 1.2rem;
   }
 }

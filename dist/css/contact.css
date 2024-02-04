@@ -309,8 +309,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -335,8 +334,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -361,8 +359,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -387,8 +384,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -413,14 +409,15 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
   .mainView-contact {
     background-image: url("../img/mainView/contact-sp.jpg");
+    background-size: 100%;
+    background-position: left 1rem top;
   }
 }
 
@@ -432,7 +429,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .mainView__titleContainer {
-    padding: 1rem 6.8rem 5.5rem 1.8rem;
+    padding: 2rem 3rem 4rem 3rem;
     min-width: 19rem;
   }
 }
@@ -450,11 +447,13 @@ footer {
 }
 
 .mainView__subtitle {
+  margin-top: 2rem;
   font-size: 2rem;
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
   .mainView__subtitle {
+    margin-top: 0.5rem;
     font-size: 1.2rem;
   }
 }
@@ -664,6 +663,12 @@ footer {
 .footer .logoWrapper {
   width: 63.55%;
 }
+@media only screen and (max-width: 768px) {
+  .footer .logoWrapper {
+    width: 11.4rem;
+    height: auto;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .logoWrapper {
@@ -706,7 +711,7 @@ footer {
   }
 }
 .leftContents {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -720,6 +725,11 @@ footer {
 .footerNavigation li:not(:first-child) {
   margin-top: 2.3rem;
 }
+@media only screen and (max-width: 768px) {
+  .footerNavigation li:not(:first-child) {
+    margin-top: 2.8rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .footerNavigation a {
@@ -730,14 +740,16 @@ footer {
 .copyRight {
   display: inline-block;
   font-size: 1.2rem;
-  margin-top: 2rem;
+  position: relative;
+  top: -2rem;
 }
-
 @media only screen and (max-width: 768px) {
   .copyRight {
+    top: 0;
     margin-top: 5.6rem;
   }
 }
+
 .asterisk {
   color: #e20000;
   vertical-align: super;
@@ -757,12 +769,12 @@ footer {
 }
 
 .contactForm {
-  margin: 6rem auto 12rem;
+  margin: 7rem auto 12rem;
   width: 64rem;
 }
 @media only screen and (max-width: 768px) {
   .contactForm {
-    margin-top: 5rem;
+    margin: 8rem auto 8rem;
     width: 100%;
   }
 }
@@ -882,16 +894,33 @@ footer {
   font-size: 4rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 768px) {
+  .contact__thankEn {
+    font-size: 2.4rem;
+  }
+}
 
 .contact__thankJp {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   font-size: 1.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .contact__thankJp {
+    font-size: 1.4rem;
+  }
 }
 
 .contact__explanation {
-  margin-top: 4.3rem;
+  margin-top: 3.6rem;
   font-size: 1.8rem;
   line-height: 3.8rem;
+}
+@media only screen and (max-width: 768px) {
+  .contact__explanation {
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+  }
 }
 
 .contactLists {
@@ -903,37 +932,55 @@ footer {
 }
 
 .contact__buttonContainer {
-  margin-top: 7.5rem;
+  margin-top: 3.6rem;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contact__toTop, .contact__toInput {
+.contact__toInput {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   background-color: #ffffff;
   border: #001e63 solid 1px;
   color: #001e63;
   border-radius: 4px;
   transition: background-position 0.3s ease;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .contact__toInput {
+    padding: 1.3rem 0;
+    font-size: 1.4rem;
+  }
 }
 
-.contact__send, .contact__toConfirm {
-  display: block;
+.contact__toTop, .contact__send, .contact__toConfirm {
+  display: inline-block;
   background-color: #001e63;
   border: #001e63 solid 1px;
   color: #ffffff;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   border-radius: 4px;
   transition: background-position 0.3s ease;
-  padding: 1.5rem 0;
+  padding: 2rem 0;
+}
+@media only screen and (max-width: 768px) {
+  .contact__toTop, .contact__send, .contact__toConfirm {
+    padding: 1.3rem 9rem 1.3rem 11rem;
+    font-size: 1.4rem;
+  }
 }
 
-.contact__toTop, .contact__toInput {
+.contact__toInput {
   background-image: url("../img/arrow-before.svg");
+  background-repeat: no-repeat;
+  background-size: 0.5rem;
+}
+
+.contact__toTop {
+  background-image: url("../img/arrow-before-white.svg");
   background-repeat: no-repeat;
   background-size: 0.5rem;
 }
@@ -963,10 +1010,10 @@ footer {
 
 .contact__toInput {
   width: 28rem;
-  background-position: left 5rem center;
+  background-position: left 10rem center;
 }
 .contact__toInput:hover {
-  background-position: left 4rem center;
+  background-position: left 9rem center;
 }
 @media only screen and (max-width: 768px) {
   .contact__toInput {
@@ -999,18 +1046,16 @@ footer {
 }
 
 .contact__toTop {
-  width: 46rem;
-  background-position: left 11rem center;
+  background-position: left 17rem center;
 }
 .contact__toTop:hover {
-  background-position: left 10rem center;
+  background-position: left 16.5rem center;
 }
 @media only screen and (max-width: 768px) {
   .contact__toTop {
-    width: 28rem;
-    background-position: left 5rem center;
+    background-position: left 9rem center;
   }
   .contact__toTop:hover {
-    background-position: left 4rem center;
+    background-position: left 8.5rem center;
   }
 }

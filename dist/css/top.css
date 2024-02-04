@@ -994,6 +994,12 @@ footer {
 .footer .logoWrapper {
   width: 63.55%;
 }
+@media only screen and (max-width: 768px) {
+  .footer .logoWrapper {
+    width: 11.4rem;
+    height: auto;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .logoWrapper {
@@ -1036,7 +1042,7 @@ footer {
   }
 }
 .leftContents {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1050,6 +1056,11 @@ footer {
 .footerNavigation li:not(:first-child) {
   margin-top: 2.3rem;
 }
+@media only screen and (max-width: 768px) {
+  .footerNavigation li:not(:first-child) {
+    margin-top: 2.8rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .footerNavigation a {
@@ -1060,11 +1071,12 @@ footer {
 .copyRight {
   display: inline-block;
   font-size: 1.2rem;
-  margin-top: 2rem;
+  position: relative;
+  top: -2rem;
 }
-
 @media only screen and (max-width: 768px) {
   .copyRight {
+    top: 0;
     margin-top: 5.6rem;
   }
 }

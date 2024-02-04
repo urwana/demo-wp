@@ -309,8 +309,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -335,8 +334,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -361,8 +359,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -387,8 +384,7 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
@@ -413,14 +409,15 @@ footer {
     width: 100%;
     max-width: none;
     margin: 3rem 0 0 0;
-    padding-bottom: 28rem;
-    width: 100%;
+    padding-bottom: 15rem;
     height: auto;
   }
 }
 @media only screen and (max-width: 768px) {
   .mainView-contact {
     background-image: url("../img/mainView/contact-sp.jpg");
+    background-size: 100%;
+    background-position: left 1rem top;
   }
 }
 
@@ -432,7 +429,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .mainView__titleContainer {
-    padding: 1rem 6.8rem 5.5rem 1.8rem;
+    padding: 2rem 3rem 4rem 3rem;
     min-width: 19rem;
   }
 }
@@ -450,11 +447,13 @@ footer {
 }
 
 .mainView__subtitle {
+  margin-top: 2rem;
   font-size: 2rem;
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
   .mainView__subtitle {
+    margin-top: 0.5rem;
     font-size: 1.2rem;
   }
 }
@@ -900,6 +899,12 @@ footer {
 .footer .logoWrapper {
   width: 63.55%;
 }
+@media only screen and (max-width: 768px) {
+  .footer .logoWrapper {
+    width: 11.4rem;
+    height: auto;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .logoWrapper {
@@ -942,7 +947,7 @@ footer {
   }
 }
 .leftContents {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -956,6 +961,11 @@ footer {
 .footerNavigation li:not(:first-child) {
   margin-top: 2.3rem;
 }
+@media only screen and (max-width: 768px) {
+  .footerNavigation li:not(:first-child) {
+    margin-top: 2.8rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .footerNavigation a {
@@ -966,14 +976,16 @@ footer {
 .copyRight {
   display: inline-block;
   font-size: 1.2rem;
-  margin-top: 2rem;
+  position: relative;
+  top: -2rem;
 }
-
 @media only screen and (max-width: 768px) {
   .copyRight {
+    top: 0;
     margin-top: 5.6rem;
   }
 }
+
 .worksMainContents {
   display: flex;
   justify-content: flex-start;

@@ -136,6 +136,11 @@
 .footer .logoWrapper {
   @extend %logoWrapper;
   width: 63.55%;
+
+  @include sp {
+    width: 11.4rem;
+    height: auto;
+  }
 }
 
 @include sp {
@@ -183,7 +188,7 @@
 }
 
 .leftContents {
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 @include sp {
@@ -200,6 +205,12 @@
   li:not(:first-child) {
     margin-top: 2.3rem;
   }
+
+  @include sp {
+    li:not(:first-child) {
+      margin-top: 2.8rem;
+    }
+  }
 }
 
 @include sp {
@@ -214,11 +225,11 @@
 .copyRight {
   display: inline-block;
   font-size: 1.2rem;
-  margin-top: 2rem;
-}
+  position: relative;
+  top: -2rem;
 
-@include sp {
-  .copyRight {
+  @include sp {
+    top: 0;
     margin-top: 5.6rem;
   }
 }
