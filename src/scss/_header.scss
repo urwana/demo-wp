@@ -24,11 +24,13 @@
   z-index: 3;
   @extend %logoWrapper;
   width: 17.9%;
+  cursor: pointer;
 
   @include sp {
     position: relative;
   }
 }
+
 .navigation__lists {
   list-style: none;
   display: flex;

@@ -1,3 +1,5 @@
-<a class="readMoreButton">
+<% if (typeof link === 'undefined') { link = ""; } %>
+
+<a href="<%- link %>" class="readMoreButton">
   <span class="readMoreButton__text">READ MORE</span>
 </a>

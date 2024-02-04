@@ -95,6 +95,7 @@ footer {
   left: 0;
   z-index: 3;
   width: 17.9%;
+  cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
   .header .logoWrapper {
@@ -785,11 +786,11 @@ footer {
 }
 
 .contactTable {
-  margin-top: 11.2rem;
+  margin-top: 9rem;
 }
 @media only screen and (max-width: 768px) {
   .contactTable {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -801,18 +802,18 @@ footer {
 
 .contactTable th,
 .contactTable td {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: normal;
   display: block;
 }
 
 .contactTable tr {
-  margin-bottom: 4.5rem;
+  margin-bottom: 4rem;
 }
 @media only screen and (max-width: 768px) {
   .contactTable tr {
     display: block;
-    margin-bottom: 3.4rem;
+    margin-bottom: 2.8rem;
   }
 }
 
@@ -860,6 +861,10 @@ footer {
   width: 1.7rem;
   height: 1.7rem;
   margin-left: 0.5rem;
+}
+
+.personalInformation {
+  font-size: 1.4rem;
 }
 
 .contactTable-confirm {
@@ -1019,17 +1024,19 @@ footer {
 }
 
 .contact__toConfirm {
-  background-position: right 11rem center;
+  padding: 2rem 20rem 2rem 17rem;
+  background-position: right 18rem center;
 }
 .contact__toConfirm:hover {
   background-position: right 10rem center;
 }
 @media only screen and (max-width: 768px) {
   .contact__toConfirm {
-    background-position: right 5rem center;
+    padding: 1.3rem 11rem 1.3rem 9rem;
+    background-position: right 9rem center;
   }
   .contact__toConfirm:hover {
-    background-position: right 4rem center;
+    background-position: right 8.5rem center;
   }
 }
 
