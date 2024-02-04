@@ -352,7 +352,6 @@ footer {
   .catchcopy-vertical {
     font-size: 3.4rem;
     writing-mode: horizontal-tb;
-    text-orientation: horizontal;
     line-height: 2;
     letter-spacing: 0;
     margin-top: 3rem;
@@ -565,7 +564,7 @@ footer {
   .cardHorizontal__title {
     margin-top: 1rem;
     font-size: 1.4rem;
-    white-space: wrap;
+    white-space: normal;
     line-height: 2.8rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;

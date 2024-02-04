@@ -41,7 +41,7 @@
   @include sp {
     margin-top: 1rem;
     font-size: 1.4rem;
-    white-space: wrap;
+    white-space: normal;
     line-height: 2.8rem;
     @include ellipsisMulti(3, 8rem);
   }
