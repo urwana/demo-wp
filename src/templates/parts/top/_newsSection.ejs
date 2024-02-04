@@ -1,8 +1,8 @@
 <% if (typeof newsData === 'undefined') { newsData = []; } %>
 <% if (typeof linkTabData === 'undefined') { linkTabData = []; } %>
-<sevtion class="newsSection">
+<section class="newsSection">
   <div class="newsSection__head">
-    <div class="newsSection__title">News</div>
+    <h2 class="newsSection__title">News</h2>
     <div class="newsSection__linkContainer">
       <%- include('../common/_linktabs', { linkTabData :linkTabData}) %>
 
@@ -14,4 +14,4 @@
       <%- include('../common/_readMoreLink', {link: "./news.html"}) %>
     </div>
   </div>
-</sevtion>
+</section>

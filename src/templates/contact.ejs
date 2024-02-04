@@ -16,43 +16,43 @@
       <div class="contact__inner">
 
         <div class="contactForm">
-          <div class="contact__lead">弊社へのお問い合わせは<br />
-            下記フォームより受け付けております。<br />
+          <div class="contact__lead">弊社へのお問い合わせは<br>
+            下記フォームより受け付けております。<br>
             担当者が確認後、折り返しご連絡させていただきます。</div>
           <form>
             <div class="contactTable">
               <table>
                 <tr>
-                  <th><label labelFor="">会社名<span class="asterisk">*</span></label><span class="inputExplanation">個人の場合は「個人」と入力してください</span></th>
-                  <td><input name="" type="text" placeholder="例）株式会社ABC" value="" /></td>
+                  <th><label for="company">会社名<span class="asterisk">*</span></label><span class="inputExplanation">個人の場合は「個人」と入力してください</span></th>
+                  <td><input id="company" type="text" placeholder="例）株式会社ABC" value=""></td>
                 </tr>
                 <tr>
-                  <th><label labelFor="">ご担当者名<span class="asterisk">*</span></label><span class="inputExplanation">個人の場合は氏名を入力してください</span></th>
-                  <td><input name="" type="text" placeholder="例）輸入車　太郎" value="" /></td>
+                  <th><label for="name">ご担当者名<span class="asterisk">*</span></label><span class="inputExplanation">個人の場合は氏名を入力してください</span></th>
+                  <td><input id="name" type="text" placeholder="例）輸入車　太郎" value=""></td>
                 </tr>
                 <tr>
-                  <th><label labelFor="">電話番号<span class="asterisk">*</span></label></th>
-                  <td><input name="" type="text" placeholder="例）022-000-0000" value="" /></td>
+                  <th><label for="tel">電話番号<span class="asterisk">*</span></label></th>
+                  <td><input id="tel" type="text" placeholder="例）022-000-0000" value=""></td>
                 </tr>
                 <tr>
-                  <th><label labelFor="">メールアドレス<span class="asterisk">*</span></label></th>
-                  <td><input name="" type="text" placeholder="例）abcdefghijk@excitecode.co.jp" value="" /></td>
+                  <th><label for="mail">メールアドレス<span class="asterisk">*</span></label></th>
+                  <td><input id="mail" type="text" placeholder="例）abcdefghijk@excitecode.co.jp" value=""></td>
                 </tr>
                 <tr>
-                  <th><label labelFor="">お問い合わせの種類<span class="asterisk">*</span></label></th>
-                  <td><select>
+                  <th><label for="kind">お問い合わせの種類<span class="asterisk">*</span></label></th>
+                  <td><select id="kind">
                       <option>選択してください</option>
-                      <option></option>
-                      <option></option>
+                      <option>dummy1</option>
+                      <option>dummy2</option>
                     </select>
                   </td>
                 </tr>
                 <tr>
-                  <th><label labelFor="">お問い合わせ内容<span class="asterisk">*</span></label></th>
-                  <td><textarea name="" type="text" placeholder=""></textarea></td>
+                  <th><label for="inquiry">お問い合わせ内容<span class="asterisk">*</span></label></th>
+                  <td><textarea id="inquiry" name="inquiry"></textarea></td>
                 </tr>
               </table>
-              <p class="personalInformation"><span class="asterisk">*</span><input class="confirmCheckbox" type="checkbox" />「個人情報の取り扱いについて」同意する</p>
+              <p class="personalInformation"><span class="asterisk">*</span><input class="confirmCheckbox" type="checkbox">「個人情報の取り扱いについて」同意する</p>
             </div>
             <div class="contact__buttonContainer">
               <a href="./contactConfirm.html" class="contact__toConfirm">確認画面へ</a>

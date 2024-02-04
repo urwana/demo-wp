@@ -12,7 +12,7 @@
     <% slidePhotoData.forEach(element => { %>
     <li class="slidePhoto__list">
       <picture>
-        <source media="(max-width: 768px)" srcset="<%- element %>-sp.jpg" width="" height="">
+        <source media="(max-width: 768px)" srcset="<%- element %>-sp.jpg" width="180" height="150">
         <source media="(min-width: 769px)" srcset="<%- element %>.jpg" width="480" height="400">
         <img src="<%- element %>.jpg" alt="サービスのイメージ" width="480" height="400">
       </picture>
