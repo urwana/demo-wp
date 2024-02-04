@@ -9,7 +9,7 @@
     <% const mainViewData = {
       pageNameEn: "Contact",
       pageNameJp: "お問合せ",
-      pageNames: ["contact"]
+      pageNames: ["contact","confirm"]
     }; %>
     <%- include('./parts/common/_mainView', { mainViewData : mainViewData }) %>
     <div class="contact">
@@ -42,7 +42,7 @@
                 </tr>
                 <tr>
                   <th><label labelFor="">お問い合わせ内容<span class="asterisk">*</span></label></th>
-                  <td>お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。</td>
+                  <td class="textArea-confirm">お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。お問い合わせ内容がここにはいります。</td>
                 </tr>
               </table>
             </div>
@@ -55,7 +55,7 @@
 
       </div>
     </div>
-    <%- include('./parts/common/_footer') %>
+    <%- include('./parts/common/_footerSimple') %>
   </div>
 </body>
 

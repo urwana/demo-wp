@@ -23,6 +23,10 @@
 .contact__lead {
   font-size: 1.6rem;
   line-height: 3.8rem;
+
+  @include sp {
+    font-size: 1.4rem;
+  }
 }
 
 .contactForm {
@@ -115,28 +119,52 @@
 /////////////////////////////////
 
 .contactTable-confirm {
-  margin-top: 11.2rem;
+  margin-top: 9.5rem;
 
   @include sp {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
 .contactTable-confirm tr {
   display: block;
-  margin-bottom: 3.5rem;
 }
 
 .contactTable-confirm th,
 .contactTable-confirm td {
-  font-size: 1.6rem;
   font-weight: normal;
-  padding-bottom: 4.5rem;
+  padding-bottom: 4.2rem;
 
   @include sp {
     display: block;
+  }
+}
+
+.contactTable-confirm th {
+  font-size: 1.5rem;
+
+  @include sp {
     padding-bottom: 1.5rem;
   }
+}
+
+.contactTable-confirm td {
+  font-size: 1.4rem;
+
+  @include sp {
+    padding-bottom: 3rem;
+  }
+}
+
+.contactTable-confirm tr:last-child {
+  td,
+  tr {
+    padding-bottom: 0;
+  }
+}
+
+.textArea-confirm {
+  line-height: 3rem;
 }
 
 .contactTable-confirm th {
@@ -215,10 +243,8 @@
   font-size: 1.8rem;
   border-radius: 4px;
   transition: background-position 0.3s ease;
-  padding: 2rem 0;
 
   @include sp {
-    padding: 1.3rem 9rem 1.3rem 11rem;
     font-size: 1.4rem;
   }
 }
@@ -226,25 +252,25 @@
 %contact__buttonArrow-before {
   background-image: url("../img/arrow-before.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 %contact__buttonArrow-before-white {
   background-image: url("../img/arrow-before-white.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 %contact__buttonArrow-next-white {
   background-image: url("../img/arrow-next-white.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 .contact__toConfirm {
   @extend %contact__button-dark;
   @extend %contact__buttonArrow-next-white;
-  width: 46rem;
+  //width: 46rem;
 
   background-position: right 11rem center;
 
@@ -253,7 +279,7 @@
   }
 
   @include sp {
-    width: 28rem;
+    //width: 28rem;
 
     background-position: right 5rem center;
 
@@ -266,22 +292,22 @@
 .contact__toInput {
   @extend %contact__button;
   @extend %contact__buttonArrow-before;
+  padding: 2rem 11rem 2rem 13rem;
 
-  width: 28rem;
-  background-position: left 10rem center;
+  background-position: left 11rem center;
 
   &:hover {
-    background-position: left 9rem center;
+    background-position: left 10.5rem center;
   }
 
   @include sp {
-    width: 15rem;
-    margin-left: 2.4rem;
+    padding: 1.3rem 5rem 1.3rem 7rem;
+    //margin-left: 2.4rem;
 
-    background-position: left 3rem center;
+    background-position: left 5rem center;
 
     &:hover {
-      background-position: left 2rem center;
+      background-position: left 4.5rem center;
     }
   }
 }
@@ -289,19 +315,19 @@
 .contact__send {
   @extend %contact__button-dark;
   @extend %contact__buttonArrow-next-white;
+  padding: 2rem 11rem 2rem 9.5rem;
+  margin-left: 8rem;
 
-  width: 28rem;
-  margin-left: 4rem;
-
-  background-position: right 5rem center;
+  background-position: right 9.5rem center;
 
   &:hover {
-    background-position: right 4rem center;
+    background-position: right 9rem center;
   }
 
   @include sp {
-    width: 15rem;
-    margin-left: 2.4rem;
+    padding: 1.3rem 5rem 1.3rem 4rem;
+
+    margin-left: 2.3rem;
 
     background-position: right 3rem center;
 
@@ -314,7 +340,7 @@
 .contact__toTop {
   @extend %contact__button-dark;
   @extend %contact__buttonArrow-before-white;
-  //width: 46rem;
+  padding: 2rem 17.4rem 2rem 19.5rem;
 
   background-position: left 17rem center;
 
@@ -323,6 +349,7 @@
   }
 
   @include sp {
+    padding: 1.3rem 9rem 1.3rem 11rem;
     background-position: left 9rem center;
 
     &:hover {

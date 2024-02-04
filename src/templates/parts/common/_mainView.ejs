@@ -1,5 +1,6 @@
 <% if (typeof mainViewData === 'undefined') { mainViewData = []; } %>
-<div class="mainView-<%- mainViewData.pageNames %>">
+<% if (typeof mainViewData.pageNames === 'undefined') { mainViewData.pageNames = []; } %>
+<div class="mainView-<%- mainViewData.pageNames[0] %>">
   <div class="mainView__titleContainer">
     <h2 class="mainView__title"><%- mainViewData.pageNameEn %></h2>
     <div class="mainView__subtitle"><%- mainViewData.pageNameJp %></div>

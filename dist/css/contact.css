@@ -767,6 +767,11 @@ footer {
   font-size: 1.6rem;
   line-height: 3.8rem;
 }
+@media only screen and (max-width: 768px) {
+  .contact__lead {
+    font-size: 1.4rem;
+  }
+}
 
 .contactForm {
   margin: 7rem auto 12rem;
@@ -858,31 +863,55 @@ footer {
 }
 
 .contactTable-confirm {
-  margin-top: 11.2rem;
+  margin-top: 9.5rem;
 }
 @media only screen and (max-width: 768px) {
   .contactTable-confirm {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 }
 
 .contactTable-confirm tr {
   display: block;
-  margin-bottom: 3.5rem;
 }
 
 .contactTable-confirm th,
 .contactTable-confirm td {
-  font-size: 1.6rem;
   font-weight: normal;
-  padding-bottom: 4.5rem;
+  padding-bottom: 4.2rem;
 }
 @media only screen and (max-width: 768px) {
   .contactTable-confirm th,
   .contactTable-confirm td {
     display: block;
+  }
+}
+
+.contactTable-confirm th {
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  .contactTable-confirm th {
     padding-bottom: 1.5rem;
   }
+}
+
+.contactTable-confirm td {
+  font-size: 1.4rem;
+}
+@media only screen and (max-width: 768px) {
+  .contactTable-confirm td {
+    padding-bottom: 3rem;
+  }
+}
+
+.contactTable-confirm tr:last-child td,
+.contactTable-confirm tr:last-child tr {
+  padding-bottom: 0;
+}
+
+.textArea-confirm {
+  line-height: 3rem;
 }
 
 .contactTable-confirm th {
@@ -964,11 +993,9 @@ footer {
   font-size: 1.8rem;
   border-radius: 4px;
   transition: background-position 0.3s ease;
-  padding: 2rem 0;
 }
 @media only screen and (max-width: 768px) {
   .contact__toTop, .contact__send, .contact__toConfirm {
-    padding: 1.3rem 9rem 1.3rem 11rem;
     font-size: 1.4rem;
   }
 }
@@ -976,23 +1003,22 @@ footer {
 .contact__toInput {
   background-image: url("../img/arrow-before.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 .contact__toTop {
   background-image: url("../img/arrow-before-white.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 .contact__send, .contact__toConfirm {
   background-image: url("../img/arrow-next-white.svg");
   background-repeat: no-repeat;
-  background-size: 0.5rem;
+  background-size: 0.6rem;
 }
 
 .contact__toConfirm {
-  width: 46rem;
   background-position: right 11rem center;
 }
 .contact__toConfirm:hover {
@@ -1000,7 +1026,6 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .contact__toConfirm {
-    width: 28rem;
     background-position: right 5rem center;
   }
   .contact__toConfirm:hover {
@@ -1009,35 +1034,34 @@ footer {
 }
 
 .contact__toInput {
-  width: 28rem;
-  background-position: left 10rem center;
+  padding: 2rem 11rem 2rem 13rem;
+  background-position: left 11rem center;
 }
 .contact__toInput:hover {
-  background-position: left 9rem center;
+  background-position: left 10.5rem center;
 }
 @media only screen and (max-width: 768px) {
   .contact__toInput {
-    width: 15rem;
-    margin-left: 2.4rem;
-    background-position: left 3rem center;
+    padding: 1.3rem 5rem 1.3rem 7rem;
+    background-position: left 5rem center;
   }
   .contact__toInput:hover {
-    background-position: left 2rem center;
+    background-position: left 4.5rem center;
   }
 }
 
 .contact__send {
-  width: 28rem;
-  margin-left: 4rem;
-  background-position: right 5rem center;
+  padding: 2rem 11rem 2rem 9.5rem;
+  margin-left: 8rem;
+  background-position: right 9.5rem center;
 }
 .contact__send:hover {
-  background-position: right 4rem center;
+  background-position: right 9rem center;
 }
 @media only screen and (max-width: 768px) {
   .contact__send {
-    width: 15rem;
-    margin-left: 2.4rem;
+    padding: 1.3rem 5rem 1.3rem 4rem;
+    margin-left: 2.3rem;
     background-position: right 3rem center;
   }
   .contact__send:hover {
@@ -1046,6 +1070,7 @@ footer {
 }
 
 .contact__toTop {
+  padding: 2rem 17.4rem 2rem 19.5rem;
   background-position: left 17rem center;
 }
 .contact__toTop:hover {
@@ -1053,6 +1078,7 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .contact__toTop {
+    padding: 1.3rem 9rem 1.3rem 11rem;
     background-position: left 9rem center;
   }
   .contact__toTop:hover {
