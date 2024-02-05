@@ -4,6 +4,7 @@
 
   @include sp {
     width: 100%;
+    max-width: none;
   }
 }
 
@@ -22,6 +23,13 @@
 
 .imgWrapper-card {
   position: relative;
+
+  @include sp {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .pictureText {

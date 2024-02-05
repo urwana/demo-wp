@@ -1,6 +1,11 @@
 .worksSection__title {
   @include topSectiontitle-h2;
   animation: slideIn 1s ease;
+
+  @include sp {
+    width: 94.6%;
+    margin: auto;
+  }
 }
 
 @keyframes slideIn {
@@ -19,6 +24,11 @@
   padding: 0 2.5rem 6rem 0;
   background-color: #ffffff;
   animation: displayeInFluff 1s ease;
+
+  @include sp {
+    padding: 0 2.7% 6rem 2.7%;
+    margin: 4rem auto 0 auto;
+  }
 }
 
 @keyframes displayeInFluff {

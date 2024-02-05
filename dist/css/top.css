@@ -33,6 +33,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .contents__inner-dark {
     width: 100%;
+    padding-top: 6rem;
   }
 }
 
@@ -389,7 +390,7 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutSection__imgWrapper > img {
+  .aboutSection__imgWrapper img {
     width: 100%;
     height: auto;
   }
@@ -423,6 +424,7 @@ footer {
 }
 
 .aboutSection__readMore {
+  margin-top: 4.6rem;
   text-align: right;
 }
 
@@ -433,6 +435,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .card {
     width: 100%;
+    max-width: none;
   }
 }
 
@@ -451,6 +454,12 @@ footer {
 
 .imgWrapper-card {
   position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .imgWrapper-card img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .pictureText {
@@ -495,6 +504,16 @@ footer {
   font-family: "Oswald";
   font-size: 7rem;
   text-align: right;
+}
+@media only screen and (max-width: 768px) {
+  .serviceSection__title {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .serviceSection__title {
+    text-align: left;
+  }
 }
 
 .cardHorizontal {
@@ -599,6 +618,17 @@ footer {
   font-size: 7rem;
   animation: slideIn 1s ease;
 }
+@media only screen and (max-width: 768px) {
+  .worksSection__title {
+    font-size: 3.8rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .worksSection__title {
+    width: 94.6%;
+    margin: auto;
+  }
+}
 
 @keyframes slideIn {
   from {
@@ -615,6 +645,12 @@ footer {
   padding: 0 2.5rem 6rem 0;
   background-color: #ffffff;
   animation: displayeInFluff 1s ease;
+}
+@media only screen and (max-width: 768px) {
+  .worksSection__body {
+    padding: 0 2.7% 6rem 2.7%;
+    margin: 4rem auto 0 auto;
+  }
 }
 
 @keyframes displayeInFluff {
@@ -754,6 +790,8 @@ footer {
 @media only screen and (max-width: 768px) {
   .newsSection {
     display: block;
+    width: 94.6%;
+    margin: 6rem auto 0 auto;
   }
 }
 
@@ -765,19 +803,25 @@ footer {
   font-family: "Oswald";
   font-size: 7rem;
 }
+@media only screen and (max-width: 768px) {
+  .newsSection__title {
+    font-size: 3.8rem;
+  }
+}
 
 .newsSection__linkContainer {
   margin-top: 5rem;
 }
 
 .newsSection__body {
-  padding-left: 6rem;
+  padding-left: 12%;
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 }
 @media only screen and (max-width: 768px) {
   .newsSection__body {
     padding-left: 3rem;
+    border-left: none;
   }
 }
 

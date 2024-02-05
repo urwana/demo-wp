@@ -17,4 +17,8 @@
 .serviceSection__title {
   @include topSectiontitle-h2;
   text-align: right;
+
+  @include sp {
+    text-align: left;
+  }
 }

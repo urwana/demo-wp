@@ -33,6 +33,7 @@ footer {
 @media only screen and (max-width: 768px) {
   .contents__inner-dark {
     width: 100%;
+    padding-top: 6rem;
   }
 }
 

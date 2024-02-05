@@ -6,6 +6,8 @@
 
   @include sp {
     display: block;
+    width: 94.6%;
+    margin: 6rem auto 0 auto;
   }
 }
 
@@ -22,12 +24,13 @@
 }
 
 .newsSection__body {
-  padding-left: 6rem;
+  padding-left: 12%;
   border-left: #e2e2e2 solid 1px;
   flex: 1;
 
   @include sp {
     padding-left: 3rem;
+    border-left: none;
   }
 }
 

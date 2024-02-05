@@ -10,12 +10,13 @@
 
 @include sp {
   .aboutSection__imgWrapper {
-    > img {
+    img {
       width: 100%;
       height: auto;
     }
   }
 }
+
 .aboutSection__textContainer {
   margin-left: 6rem;
 
@@ -43,5 +44,6 @@
 }
 
 .aboutSection__readMore {
+  margin-top: 4.6rem;
   text-align: right;
 }

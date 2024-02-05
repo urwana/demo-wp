@@ -25,6 +25,10 @@
 @mixin topSectiontitle-h2 {
   font-family: "Oswald";
   font-size: 7rem;
+
+  @include sp {
+    font-size: 3.8rem;
+  }
 }
 
 @mixin title-sideBar {
