@@ -29,8 +29,8 @@ const swiper = new Swiper(".swiper", {
   direction: "vertical",
   reverse: true,
   navigation: {
-    nextEl: false, // 次へボタンを非表示
-    prevEl: null, // 前へボタンを非表示
+    nextEl: false,
+    prevEl: false,
   },
   speed: 400,
   spaceBetween: 100,

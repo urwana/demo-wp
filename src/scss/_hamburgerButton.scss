@@ -32,8 +32,6 @@
     top: 1.4rem;
   }
 
-  // activeクラスが付与されると線が回転して×に
-
   .hamburgerButton.active span {
     background: #ffffff;
   }
@@ -46,7 +44,7 @@
   }
 
   .hamburgerButton.active span:nth-of-type(2) {
-    opacity: 0; // 真ん中の線は透過
+    opacity: 0;
   }
 
   .hamburgerButton.active span:nth-of-type(3) {

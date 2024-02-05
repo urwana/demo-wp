@@ -74,5 +74,3 @@ export default series(
   imageCompress,
   parallel(startServer, watchFile)
 );
-
-// parallel() 同時に処理を行う
