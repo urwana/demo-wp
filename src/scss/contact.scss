@@ -121,8 +121,6 @@
   font-size: 1.4rem;
 }
 
-/////////////////////////////////
-
 .contactTable-confirm {
   margin-top: 9.5rem;
 
@@ -296,7 +294,6 @@
   @extend %contact__button;
   @extend %contact__buttonArrow-before;
   padding: 2rem 11rem 2rem 13rem;
-
   background-position: left 11rem center;
 
   &:hover {
@@ -305,7 +302,6 @@
 
   @include sp {
     padding: 1.3rem 5rem 1.3rem 7rem;
-
     background-position: left 5rem center;
 
     &:hover {
@@ -319,7 +315,6 @@
   @extend %contact__buttonArrow-next-white;
   padding: 2rem 11rem 2rem 9.5rem;
   margin-left: 8rem;
-
   background-position: right 9.5rem center;
 
   &:hover {
@@ -328,9 +323,7 @@
 
   @include sp {
     padding: 1.3rem 5rem 1.3rem 4rem;
-
     margin-left: 2.3rem;
-
     background-position: right 3rem center;
 
     &:hover {
@@ -343,7 +336,6 @@
   @extend %contact__button-dark;
   @extend %contact__buttonArrow-before-white;
   padding: 2rem 17.4rem 2rem 19.5rem;
-
   background-position: left 17rem center;
 
   &:hover {
