@@ -38,6 +38,7 @@
 
   > li {
     margin-left: 4.9rem;
+    @include underlineAnimation(#000000, 1px, 0.3s);
   }
 
   a {
@@ -88,6 +89,10 @@
     align-items: center;
     color: #ffffff;
     padding: 3rem 4rem;
+  }
+
+  &::after {
+    display: none;
   }
 
   span {

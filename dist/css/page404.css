@@ -110,6 +110,22 @@ footer {
 }
 .navigation__lists > li {
   margin-left: 4.9rem;
+  position: relative;
+}
+.navigation__lists > li::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000000;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.navigation__lists > li:hover::after {
+  transform: scale(1, 1);
 }
 .navigation__lists a {
   font-size: 1.6rem;
@@ -151,6 +167,9 @@ footer {
   align-items: center;
   color: #ffffff;
   padding: 3rem 4rem;
+}
+.nav__contact::after {
+  display: none;
 }
 .nav__contact span {
   margin-left: 1rem;
@@ -497,6 +516,22 @@ footer {
 }
 .footerNavigation a {
   font-size: 1.6rem;
+  position: relative;
+}
+.footerNavigation a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ffffff;
+  transform: scale(0, 1);
+  transform-origin: left top;
+  transition: transform 0.3s;
+}
+.footerNavigation a:hover::after {
+  transform: scale(1, 1);
 }
 .footerNavigation li:not(:first-child) {
   margin-top: 2.3rem;

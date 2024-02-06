@@ -198,6 +198,7 @@
 .footerNavigation {
   a {
     font-size: 1.6rem;
+    @include underlineAnimation(#ffffff, 1px, 0.3s);
   }
 
   li:not(:first-child) {

@@ -29,4 +29,5 @@
 
 .readMoreButton__text {
   line-height: 1;
+  @include underlineAnimation(#000000, 1px, 0.3s);
 }

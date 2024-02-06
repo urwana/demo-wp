@@ -2,6 +2,11 @@
 <ul class="breadCrumbs">
   <li class="breadCrumb"><a href="./top.html">Top</a></li>
   <% pageNames.forEach((page, index) => { %>
+  <% if(index === pageNames.length - 1) { %>
   <li class="breadCrumb <%= index === pageNames.length - 1 ? 'current' : '' %>"><%- page %></li>
+  <% } else { %>
+  <li class="breadCrumb"><a href="./<%- page %>.html"><%- page %></a></li>
+  <% } %>
+  <% %>
   <% }) %>
 </ul>
